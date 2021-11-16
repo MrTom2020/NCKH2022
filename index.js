@@ -13,4 +13,4 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
 
 
-require("./Cotroller/Signup")(app);
+//require("./Cotroller/Signup")(app);

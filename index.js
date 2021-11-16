@@ -5,12 +5,10 @@ app.set("view engine","ejs");
 app.set("views","./View");
 app.listen(process.env.PORT || 5000);
 
-app.get('/',(req,res)=>{
- res.send("1234");
-});
+
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended:false}));
 
 
-//require("./Cotroller/Signup")(app);
+require("./Cotroller/Signup")(app);

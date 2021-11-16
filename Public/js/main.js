@@ -57,17 +57,17 @@
         }
     }
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
+    // function showValidate(input) {
+    //     var thisAlert = $(input).parent();
 
-        $(thisAlert).addClass('alert-validate');
-    }
+    //     $(thisAlert).addClass('alert-validate');
+    // }
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
+    // function hideValidate(input) {
+    //     var thisAlert = $(input).parent();
 
-        $(thisAlert).removeClass('alert-validate');
-    }
+    //     $(thisAlert).removeClass('alert-validate');
+    // }
     
 
 })(jQuery);

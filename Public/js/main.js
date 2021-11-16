@@ -18,8 +18,8 @@
   
     $('#btn_login').click(function(req,res)
     {
-        res.redirect('https://giphy.com/gifs/BigScaryMonsters-bsm-big-scary-monsters-orchards-JNsDdfwziM7o2yRXqY' );
-          res.end();
+        res.writeHead(302, {'Location': 'https://qastack.vn/programming/4062260/nodejs-redirect-url'});
+        res.end();
     });
     /*==================================================================
     [ Validate ]*/

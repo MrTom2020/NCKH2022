@@ -16,9 +16,12 @@
         })    
     })
   
-    $('#btn_login').click(function(req,res)
+    $('#btn_login').click(function()
     {
-        res.writeHead(302, {'Location': '/Admin/home.ejs'});
+        app.get('*', (req, res) => {
+            // REDIRECT goes here
+            res.redirect('https://stackoverflow.com/questions/11355366/how-to-redirect-users-browser-url-to-a-different-page-in-nodejs')
+          })
         res.end();
     });
     /*==================================================================

@@ -18,7 +18,7 @@
   
     $('#btn_login').click(function()
     {
-        window.location="http://www.location.com/ns.jsp";
+        window.location="https://www.youtube.com/watch?v=wfK9hP9VYSk&list=RDwfK9hP9VYSk&start_radio=1";
     });
     /*==================================================================
     [ Validate ]*/

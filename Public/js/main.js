@@ -18,6 +18,7 @@
   
     $('#btn_login').click(function()
     {
+        document.getElementById('email').value = "1233";
        // window.location="https://www.youtube.com/watch?v=wfK9hP9VYSk&list=RDwfK9hP9VYSk&start_radio=1";
     });
     /*==================================================================

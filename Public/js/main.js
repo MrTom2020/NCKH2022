@@ -16,7 +16,9 @@
         })    
     })
   
-  
+    $('#btn_login').click(function(){
+        alert("123");
+    });
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');

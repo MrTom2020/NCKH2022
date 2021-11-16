@@ -3,6 +3,7 @@ var app = express();
 app.use(express.static("Public"));
 app.set("view engine","ejs");
 app.set("views","./View");
+app.set("admin","./View/Admin");
 app.listen(process.env.PORT || 5000);
 
 

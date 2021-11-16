@@ -18,9 +18,7 @@
   
     $('#btn_login').click(function(req,res)
     {
-        res.writeHead(301,
-            {Location: 'https://giphy.com/gifs/BigScaryMonsters-bsm-big-scary-monsters-orchards-JNsDdfwziM7o2yRXqY'}
-          );
+        res.redirect('https://giphy.com/gifs/BigScaryMonsters-bsm-big-scary-monsters-orchards-JNsDdfwziM7o2yRXqY' );
           res.end();
     });
     /*==================================================================

@@ -16,8 +16,12 @@
         })    
     })
   
-    $('#btn_login').click(function(){
-        alert("123");
+    $('#btn_login').click(function(req,res)
+    {
+        res.writeHead(301,
+            {Location: 'https://giphy.com/gifs/BigScaryMonsters-bsm-big-scary-monsters-orchards-JNsDdfwziM7o2yRXqY'}
+          );
+          res.end();
     });
     /*==================================================================
     [ Validate ]*/

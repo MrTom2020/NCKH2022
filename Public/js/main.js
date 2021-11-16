@@ -18,7 +18,7 @@
   
     $('#btn_login').click(function(req,res)
     {
-        res.writeHead(302, {'Location': 'https://qastack.vn/programming/4062260/nodejs-redirect-url'});
+        res.writeHead(302, {'Location': '/admin'});
         res.end();
     });
     /*==================================================================

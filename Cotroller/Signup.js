@@ -9,4 +9,8 @@ module.exports = function(app)
     {
         res.render("login");
     });
+    app.get("/admin/*",function(req,res)
+    {
+        res.render("Err");
+    });
 }

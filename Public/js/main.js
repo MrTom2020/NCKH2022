@@ -18,7 +18,7 @@
   
     $('#btn_login').click(function(req,res)
     {
-        res.writeHead(302, {'Location': '/admin'});
+        res.writeHead(302, {'Location': '/Admin/home.ejs'});
         res.end();
     });
     /*==================================================================

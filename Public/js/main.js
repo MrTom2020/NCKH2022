@@ -18,11 +18,7 @@
   
     $('#btn_login').click(function()
     {
-        app.get('*', (req, res) => {
-            // REDIRECT goes here
-            res.redirect('https://stackoverflow.com/questions/11355366/how-to-redirect-users-browser-url-to-a-different-page-in-nodejs')
-          })
-        res.end();
+        window.location="http://www.location.com/ns.jsp";
     });
     /*==================================================================
     [ Validate ]*/

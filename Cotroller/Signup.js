@@ -7,7 +7,7 @@ module.exports = function(app)
     });
     app.get("/admin",function(req,res)
     {
-        res.render("Admin/home");
+        res.render("Admin/home", {visited: visited});
     });
     app.get("/*",function(req,res)
     {

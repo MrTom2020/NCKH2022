@@ -40,7 +40,8 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            res.json({kq:a(u.Name,u.Password),loi:"Dữ liệu bị trống"})
+            setTimeout(a(tk,mk), 6000);
+            res.json({kq:kqqq,loi:"Dữ liệu bị trống"})
         }
         });
 }
@@ -56,5 +57,5 @@ async function a(tk,mk)
            kqqq = "ok";
         }
         });
-            return 1;
+            return JSON.stringify(kqqq);
 }

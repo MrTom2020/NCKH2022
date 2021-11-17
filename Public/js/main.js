@@ -14,8 +14,8 @@
     $('#btn_login').click(function()
     {
         $.post("./login",{
-           Name:$("email").val(),
-           Password:$("pass").val()
+           Name:$("#email").val(),
+           Password:$("#pass").val()
         },function(data)
         {
             alert(data.loi.toString());

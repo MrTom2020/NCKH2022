@@ -10,7 +10,7 @@
             }
         })    
     })
-  
+    const mongoose = require('mongoose');
     $('#btn_login').click(function()
     {
         $.post("./login",{
@@ -18,6 +18,19 @@
            Password:$("#pass").val()
         },function(data)
         {
+            if(data.kq == 1)
+            {
+                mongoose.connect('mongodb+srv://'+ $("#email").val() +':'+$("#pass").val() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+                 if(err)
+                 {
+                   alert("ko");
+                 }
+                  else if(db)
+                 {
+                    alert("ok");
+                  }
+                 });
+            }
             alert(data.kq.toString());
         });
        // window.location="https://nckh2022.herokuapp.com/home";

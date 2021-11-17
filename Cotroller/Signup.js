@@ -39,15 +39,15 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-           // var kk = a(u.Name,u.Password);
-            res.json({kq:u.Name,loi:"Dữ liệu bị trống"})
+            var kk = a(u.Name,u.Password);
+            res.json({kq:kk,loi:"Dữ liệu bị trống"})
         }
         });
 }
 function a(tk,mk)
 {
     var kqq;
-    mongoose.connect('mongodb+srv://'+ tk.toString() +':'+ mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    mongoose.connect('mongodb+srv://'+ tk +':'+ mk + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
             if(err)
             {
                 kqq = "ko";

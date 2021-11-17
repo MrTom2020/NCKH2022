@@ -1,5 +1,5 @@
 var user = require("../Models/Users");
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 module.exports = function(app)
 {
     app.get("/",function(req,res){

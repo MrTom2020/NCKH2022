@@ -18,7 +18,7 @@
            Password:$("#pass").val()
         },function(data)
         {
-            alert(data.loi.toString());
+            alert(data.kq.toString());
         });
        // window.location="https://nckh2022.herokuapp.com/home";
     });

@@ -1,5 +1,6 @@
 var user = require("../Models/Users");
 var mongoose = require('mongoose');
+var kqqq;
 module.exports = function(app)
 {
     app.get("/",function(req,res){
@@ -17,16 +18,16 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-    // mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    //     if(err)
-    //     {
-    //         console.log("ko");
-    //     }
-    //     else if(db)
-    //      {
-    //         console.log("ok");
-    //     }
-    //     });
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+        if(err)
+        {
+            console.log("ko");
+        }
+        else if(db)
+         {
+           kqqq = "01111";
+        }
+        });
     app.post('/login',function(req,res)
     {
         if(!req.body.Name || !req.body.Password)
@@ -39,8 +40,8 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            var kk = a(u.Name,u.Password);
-            res.json({kq:kk,loi:"Dữ liệu bị trống"})
+            //var kk = a(u.Name,u.Password);
+            res.json({kq:kqqq,loi:"Dữ liệu bị trống"})
         }
         });
 }

@@ -15,7 +15,7 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
-    app.post("/*",function(req,res)
+    app.post("/aa",function(req,res)
     {
         res.send('POST request to the homepage');
     });

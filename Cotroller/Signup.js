@@ -39,23 +39,23 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            var kk = a();
+            var kk = a(u.Name,u.Password);
             res.json({kq:kk,loi:"Dữ liệu bị trống"})
-            // u.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, hocviens)
-            // {
-            //   if (err)
-            //   {
-            //     res.json({kq:4,loi:"k0"});
-            //   }
-            //   else
-            //   {
-            //     res.json({kq:5,loi:"k0"});
-            //   }
-            //  });
         }
         });
 }
-function a()
+function a(tk,mk)
 {
-    return 1000;
+    var kqq;
+    mongoose.connect('mongodb+srv://'+ tk.toString() +':'+ mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+            if(err)
+            {
+                kqq = "ko";
+            }
+            else if(db)
+             {
+               kqq = "ok";
+            }
+            });
+            return kqq;
 }

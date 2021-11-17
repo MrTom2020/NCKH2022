@@ -16,11 +16,11 @@ const { json } = require("body-parser");
 mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
             if(err)
             {
-                res.json({kq:2,loi:"k0"});
+                console.log("ko");
             }
             else if(db)
              {
-                res.json({kq:1,loi:"ok"});
+                console.log("ok");
             }
             });
 require("./Cotroller/Signup")(app);

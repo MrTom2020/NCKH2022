@@ -1,6 +1,7 @@
 var user = require("../Models/Users");
 var mongoose = require('mongoose');
 var kqqq;
+var chuoi;
 module.exports = function(app)
 {
     app.get("/",function(req,res){
@@ -42,13 +43,14 @@ module.exports = function(app)
             });
            // setTimeout(6000);
             var kq = a(u.Name,u.Password);
-            res.json({kq:kq,loi:"Dữ liệu bị trống"})
+            res.json({kq:kq,loi:chuoi})
         }
         });
 }
 function a(tk,mk)
 {
-  mongoose.connect('mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority';
+  mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             kqqq = "ko";

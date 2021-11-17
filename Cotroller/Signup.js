@@ -36,8 +36,8 @@ module.exports = function(app)
                 Password:req.body.Password
             });
            // setTimeout(6000);
-            var kq = a(u.Name,u.Password);
-            res.json({kq:kq,loi:chuoi})
+            var kqtv = a(u.Name,u.Password);
+            res.json({kq:kqtv,loi:chuoi})
         }
         });
 }
@@ -54,5 +54,5 @@ function a(tk,mk)
            kqqq = 1;
         }
         });
-            return JSON.stringify(kqqq);
+            return kqqq;
 }

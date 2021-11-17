@@ -15,6 +15,10 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
+    app.get("/home",function(req,res)
+    {
+        res.render("Admin/home");
+    });
     app.get("/*",function(req,res)
     {
         res.render("Err");

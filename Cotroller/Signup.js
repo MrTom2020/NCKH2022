@@ -40,7 +40,7 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            setTimeout(6000);
+           // setTimeout(6000);
             var kq = a(u.Name,u.Password);
             res.json({kq:kq,loi:"Dữ liệu bị trống"})
         }

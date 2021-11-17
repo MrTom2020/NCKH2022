@@ -9,6 +9,10 @@ module.exports = function(app)
     {
         res.render("admin");
     });
+    app.get("/Signup",function(req,res)
+    {
+        res.render("Signup");
+    });
     app.get("/*",function(req,res)
     {
         res.render("Err");

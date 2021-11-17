@@ -40,7 +40,14 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+            var kk = a(u.Name,u.Password);
+            res.json({kq:kk,loi:"Dữ liệu bị trống"})
+        }
+        });
+}
+function a(tk,mk)
+{
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             console.log("ko");
@@ -50,23 +57,5 @@ module.exports = function(app)
            kqqq = "01111";
         }
         });
-            //var kk = a(u.Name,u.Password);
-            res.json({kq:kqqq,loi:"Dữ liệu bị trống"})
-        }
-        });
-}
-function a(tk,mk)
-{
-    var kqq;
-    mongoose.connect('mongodb+srv://'+ tk +':'+ mk + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-            if(err)
-            {
-                kqq = "ko";
-            }
-            else if(db)
-             {
-               kqq = "ok";
-            }
-            });
-            return kqq;
+            return kqqq;
 }

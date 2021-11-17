@@ -35,16 +35,20 @@ module.exports = function(app)
         }
         else
         {
-            res.json({kq:4,loi:"k0"});
             var u = new user({
                 Name:req.body.Name,
                 Password:req.body.Password
             });
             u.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, hocviens)
             {
-              if (err) throw err;
-             kqq = hocviens;
-              console.log(hocviens);
+              if (err)
+              {
+                res.json({kq:4,loi:"k0"});
+              }
+              else
+              {
+                res.json({kq:5,loi:"k0"});
+              }
              });
         }
         });

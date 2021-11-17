@@ -32,7 +32,7 @@ module.exports = function(app)
             mongoose.connect('mongodb+srv://'+ u.Name.toString() +':'+u.Password.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
             if(err)
             {
-              console.log("...11" + err);
+                res.json({kq:2,loi:"k0"});
             }
             else if(db)
              {

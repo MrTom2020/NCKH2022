@@ -56,5 +56,5 @@ async function a(tk,mk)
            kqqq = "ok";
         }
         });
-            return kqqq;
+            return kqqq[0];
 }

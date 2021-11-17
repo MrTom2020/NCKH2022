@@ -17,7 +17,7 @@ module.exports = function(app)
     });
     app.post("/aa",function(req,res)
     {
-        res.send('POST request to the homepage');
+        res.redirect("Signup");
     });
     // mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
     //     if(err)

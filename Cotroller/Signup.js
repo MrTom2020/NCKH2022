@@ -47,7 +47,7 @@ module.exports = function(app)
 }
 async function a(tk,mk)
 {
-  await mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+  await mongoose.connect('mongodb+srv://'+ tk +':'+mk + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             kqqq = "ko";

@@ -1,10 +1,5 @@
 
 (function ($) {
-    "use strict";
-
-
-    /*==================================================================
-    [ Focus Contact2 ]*/
     $('.input100').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -18,7 +13,14 @@
   
     $('#btn_login').click(function()
     {
-        window.location="https://nckh2022.herokuapp.com/home";
+        $.post("./login",{
+           Name:$("email").val(),
+           Password:$("pass").val()
+        },function(data)
+        {
+            alert(data.loi.toString());
+        });
+       // window.location="https://nckh2022.herokuapp.com/home";
     });
     $('#btn_signup').click(function()
     {

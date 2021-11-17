@@ -1,4 +1,4 @@
-var user = require("../Models/user");
+var user = require("../Models/Users");
 
 module.exports = function(app)
 {
@@ -17,8 +17,28 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-    // app.post('/dangky',function(req,res)
-    // {
-
-    // });
+    app.post('/login',function(req,res)
+    {
+        if(!req.body.Name || !req.body.Password)
+        {
+            res.json({kq:0,loi:"Dữ liệu bị trống"})
+        }
+        else
+        {
+            var u = new user({
+                Name:req.body.Name,
+                Password:req.body.Password
+            });
+            mongoose.connect('mongodb+srv://'+ u.Name.toString() +':'+u.Password.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+            if(err)
+            {
+              console.log("...11" + err);
+            }
+            else if(db)
+             {
+                res.json({kq:1,loi:"ok"});
+            }
+            });
+        }
+        });
 }

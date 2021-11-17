@@ -13,4 +13,8 @@ module.exports = function(app)
     {
         res.render("Err");
     });
+    // app.post('/dangky',function(req,res)
+    // {
+
+    // });
 }

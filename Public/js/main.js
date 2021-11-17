@@ -16,9 +16,13 @@
         })    
     })
   
-    $('#btn_login').click(function(req,res)
+    $('#btn_login').click(function()
     {
         window.location="https://nckh2022.herokuapp.com/NCKH2022/View/Admin/home.ejs";
+    });
+    $('#btn_signup').click(function()
+    {
+        window.location="https://nckh2022.herokuapp.com/NCKH2022/View/Signup.ejs";
     });
     /*==================================================================
     [ Validate ]*/

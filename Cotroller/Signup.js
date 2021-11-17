@@ -29,7 +29,7 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            mongoose.connect('mongodb+srv://'+ u.Name.toString() +':'+u.Password.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+            mongoose.connect('mongodb+srv://'+ "admin01" +':'+"hiep1234" + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
             if(err)
             {
                 res.json({kq:2,loi:"k0"});

@@ -47,11 +47,11 @@ function a(tk,mk)
   mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
-            kqqq = "ko";
+            kqqq = 0;
         }
         else if(db)
          {
-           kqqq = "ok";
+           kqqq = 1;
         }
         });
             return JSON.stringify(kqqq);

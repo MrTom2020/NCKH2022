@@ -17,7 +17,7 @@
            Password:$("#pass").val()
         },function(data)
         {
-            if(data.kq.toString() == "ok")
+            if(data.kq == 1)
             {
                 window.location="https://nckh2022.herokuapp.com/home";
             }

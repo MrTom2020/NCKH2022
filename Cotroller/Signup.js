@@ -1,5 +1,5 @@
 var user = require("../Models/Users");
-var mongoose = require('mongoose');
+var mongoose = require('../mongoose');
 module.exports = function(app)
 {
     app.get("/",function(req,res){
@@ -39,7 +39,7 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            u.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+            mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
             if(err)
             {
                 res.json({kq:2,loi:"k0"});

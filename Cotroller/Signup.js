@@ -15,20 +15,10 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
-    app.post("/aa",function(req,res)
+    app.get("/*",function(req,res)
     {
-        res.redirect("/Signup");
+        res.render("Err");
     });
-    // mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    //     if(err)
-    //     {
-    //         console.log("ko");
-    //     }
-    //     else if(db)
-    //      {
-    //        kqqq = "01111";
-    //     }
-    //     });
     app.post('/login',function(req,res)
     {
         if(!req.body.Name || !req.body.Password)

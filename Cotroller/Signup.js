@@ -35,6 +35,7 @@ module.exports = function(app)
         }
         else
         {
+            res.json({kq:4,loi:"k0"});
             var u = new user({
                 Name:req.body.Name,
                 Password:req.body.Password

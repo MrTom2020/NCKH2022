@@ -15,7 +15,7 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
-    app.get("/*",function(req,res)
+    app.post("/*",function(req,res)
     {
         res.render("Err");
     });

@@ -40,16 +40,12 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-            if(err)
+            u.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, hocviens)
             {
-                res.json({kq:2,loi:"k0"});
-            }
-            else if(db)
-             {
-                res.json({kq:1,loi:"ok"});
-            }
-            });
+              if (err) throw err;
+             kqq = hocviens;
+              console.log(hocviens);
+             });
         }
         });
 }

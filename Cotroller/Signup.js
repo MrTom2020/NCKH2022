@@ -18,16 +18,16 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-        if(err)
-        {
-            console.log("ko");
-        }
-        else if(db)
-         {
-           kqqq = "01111";
-        }
-        });
+    // mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    //     if(err)
+    //     {
+    //         console.log("ko");
+    //     }
+    //     else if(db)
+    //      {
+    //        kqqq = "01111";
+    //     }
+    //     });
     app.post('/login',function(req,res)
     {
         if(!req.body.Name || !req.body.Password)
@@ -40,6 +40,16 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
+            mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+        if(err)
+        {
+            console.log("ko");
+        }
+        else if(db)
+         {
+           kqqq = "01111";
+        }
+        });
             //var kk = a(u.Name,u.Password);
             res.json({kq:kqqq,loi:"Dữ liệu bị trống"})
         }

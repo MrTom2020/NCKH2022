@@ -18,8 +18,7 @@
   
     $('#btn_login').click(function(req,res)
     {
-        alert(req.url.toString());
-       // window.location="https://nckh2022.herokuapp.com/NCKH2022/View/Admin/home.ejs";
+        window.location="https://nckh2022.herokuapp.com/NCKH2022/View/Admin/home.ejs";
     });
     /*==================================================================
     [ Validate ]*/

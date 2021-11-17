@@ -10,7 +10,7 @@
             }
         })    
     })
-    const mongoose = require('mongoose');
+    var mongoose = require('../mongoose');
     $('#btn_login').click(function()
     {
         $.post("./login",{

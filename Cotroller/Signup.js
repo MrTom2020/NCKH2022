@@ -40,8 +40,7 @@ module.exports = function(app)
                 Name:req.body.Name,
                 Password:req.body.Password
             });
-            var kk = a(u.Name,u.Password);
-            res.json({kq:kk,loi:"Dữ liệu bị trống"})
+            res.json({kq:a(u.Name,u.Password),loi:"Dữ liệu bị trống"})
         }
         });
 }

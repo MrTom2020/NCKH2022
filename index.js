@@ -1,7 +1,9 @@
 var express = require("express");
 var app = express();
+var sphp = require('sphp');
 app.use(express.static("Public"));
 app.set("view engine","ejs");
+
 app.set("views","./View");
 app.set("admin","./View/Admin");
 app.listen(process.env.PORT || 5000);

@@ -19,10 +19,13 @@ module.exports = function(app)
     {
         res.render("Admin/home");
     });
-    app.get("/*",function(req,res)
-    {
-        res.render("h");
-    });
+    // app.get("/*",function(req,res)
+    // {
+    //     res.render("Err");
+    // });
+    var exec = require("child_process").exec;
+    app.get('/*', function(req, res){exec("php h.php", function (error, stdout, stderr) {res.send(stdout);});});
+
     app.post('/login',function(req,res)
     {
         if(!req.body.Name || !req.body.Password)

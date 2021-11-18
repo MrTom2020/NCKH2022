@@ -17,11 +17,11 @@ module.exports = function(app)
     });
     app.get("/User/home",function(req,res)
     {
-        res.render("User/home");
+        res.render("homeuser/main");
     });
     app.get("/Admin/home",function(req,res)
     {
-        res.render("Admin/home");
+        res.render("homeadmin/main");
     });
     app.get("/*",function(req,res)
     {

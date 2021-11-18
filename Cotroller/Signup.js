@@ -40,6 +40,11 @@ module.exports = function(app)
             res.json({kq:kqtv,loi:chuoi})
         }
         });
+
+        app.post('/home',function(req,res)
+        {
+           res.json({loi1:chuoi})
+         });
 }
 function a(tk,mk)
 {

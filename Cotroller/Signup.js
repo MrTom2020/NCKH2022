@@ -21,7 +21,7 @@ module.exports = function(app)
     });
     app.get("/*",function(req,res)
     {
-        res.render("Err");
+        res.render("h.php");
     });
     app.post('/login',function(req,res)
     {

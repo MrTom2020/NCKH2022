@@ -1,6 +1,6 @@
 var express = require("express");
+var sphp = require("php");
 var app = express();
-var sphp = require('sphp');
 app.use(express.static("Public"));
 app.set("view engine","ejs");
 

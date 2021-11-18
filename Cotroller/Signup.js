@@ -15,7 +15,11 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
-    app.get("/home",function(req,res)
+    app.get("/User/home",function(req,res)
+    {
+        res.render("User/home");
+    });
+    app.get("/Admin/home",function(req,res)
     {
         res.render("Admin/home");
     });

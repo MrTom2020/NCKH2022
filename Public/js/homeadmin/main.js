@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    $.post("./home",function(data)
+    $.post("./Admin/home",function(data)
      {
          alert("12344");
      });

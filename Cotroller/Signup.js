@@ -47,7 +47,7 @@ module.exports = function(app)
 
         app.post('/home',function(req,res)
         {
-           res.json({loi1:chuoi})
+           res.json({loi1:"1234"})
          });
 }
 function a(tk,mk)

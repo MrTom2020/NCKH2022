@@ -105,7 +105,7 @@ $(document).ready(function()
     });
     $("#test").click(function()
     {
-        var myTableDiv = document.getElementById("#content");
+        var myTableDiv = document.getElementById("content");
 
         var table = document.createElement('TABLE');
         table.border = '1';

@@ -2,6 +2,7 @@ var user = require("../Models/user");
 var mongoose = require('mongoose');
 var kqqq;
 var chuoi;
+var chuoi2;
 module.exports = function(app)
 {
     app.get("/",function(req,res){
@@ -47,7 +48,7 @@ module.exports = function(app)
 
         app.post("/home",function(req,res)
         {
-           res.json({loi1:chuoi})
+           res.json({loi1:chuoi2})
          });
 }
 function a(tk,mk)
@@ -65,7 +66,7 @@ function a(tk,mk)
            user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
              {
               if (err) throw err;
-              chuoi = u;  
+              chuoi2 = u;  
             });
         }
         });

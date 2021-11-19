@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
-    $.post("./login",function(data)
+    $.post("./Admin/home",function(data)
      {
-         alert(data.loi.toString());
+         alert(data.loi1.toString());
      });
 });

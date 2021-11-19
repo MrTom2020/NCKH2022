@@ -45,7 +45,7 @@ module.exports = function(app)
         }
         });
 
-        app.post('/home',function(req,res)
+        app.post('/Admin/home',function(req,res)
         {
            res.json({loi1:"1234"})
          });

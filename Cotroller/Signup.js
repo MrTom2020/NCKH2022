@@ -31,18 +31,20 @@ module.exports = function(app)
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
-            kqqq = 0;
+           // console.log(err);
+           // kqqq = 0;
         }
         else if(db)
          {
-           kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
-             {
-              if (err) throw err;
-              chuoi2 = u;  
-            });
+            console.log("ok");
         }
         });
+        user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
+             {
+              if (err) throw err;
+              //console.log(u);
+              chuoi2 = u;  
+            });
     app.post('/login',function(req,res)
     {
         res.json({kq:1});

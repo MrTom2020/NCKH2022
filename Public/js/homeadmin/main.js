@@ -179,7 +179,7 @@ function checkBM()
         var ip = document.createElement("input");
         ip.setAttribute('type','text');
         ip.setAttribute('id','ht');
-
+        ip.setAttribute('class','form-control');
         fr.appendChild(ip);
         myTableDiv.appendChild(fr);
       }

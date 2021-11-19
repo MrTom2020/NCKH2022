@@ -103,8 +103,10 @@ $(document).ready(function()
             });
         }
     });
-    $("#test").click(function(){
-        tableCreate();
+    $("#test").click(function()
+    {
+        alert("000");
+       // tableCreate();
     });
     
     $("#btnDangKy").click(function()

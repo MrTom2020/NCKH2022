@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    $.post("./Adminhome",function(data)
+    $.post("./home",function(data)
      {
          alert(data.loi1.toString());
      });

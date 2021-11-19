@@ -175,11 +175,11 @@ function checkBM()
         // }
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
-        fr.setAttribute('style','margin-left:15vw');
+        fr.setAttribute('style','margin-left:5vw');
         var ip = document.createElement("input");
         ip.setAttribute('type','text');
         ip.setAttribute('id','ht');
-        ip.setAttribute('style','margin-top:1vw');
+        ip.setAttribute('style','margin-top:2vw');
         ip.setAttribute('class','form-control col-sm-6');
         fr.appendChild(ip);
         myTableDiv.appendChild(fr);

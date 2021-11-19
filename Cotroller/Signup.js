@@ -19,7 +19,7 @@ module.exports = function(app)
     {
         res.render("User/home");
     });
-    app.get("/h",function(req,res)
+    app.get("/Admin/home",function(req,res)
     {
         res.render("Admin/h");
     });

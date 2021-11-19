@@ -19,7 +19,7 @@ module.exports = function(app)
     {
         res.render("User/home");
     });
-    app.get("/Admin/home",function(req,res)
+    app.get("/Adminhome",function(req,res)
     {
         res.render("Admin/h");
     });
@@ -45,7 +45,7 @@ module.exports = function(app)
         }
         });
 
-        app.post('/Admin/home',function(req,res)
+        app.post("/Adminhome",function(req,res)
         {
            res.json({loi1:"12345678"})
          });

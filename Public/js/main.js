@@ -20,7 +20,7 @@
             alert(data.kq.toString());
             if(data.kq == 1)
             {
-                window.location="https://nckh2022.herokuapp.com/Admin/home";
+                window.location="https://nckh2022.herokuapp.com/Adminhome";
             }
             // alert(data.kq.toString());
         });

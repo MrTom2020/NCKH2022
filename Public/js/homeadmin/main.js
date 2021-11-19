@@ -1,3 +1,4 @@
+var user = require("../Models/User");
 $(document).ready(function()
 {
     var db;
@@ -5,15 +6,10 @@ $(document).ready(function()
      {
         db = data.loi1.toString();
      });
-     var mongoose = require('mongoose');
-     mongoose.connect(db.toString(),{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-            if(err)
-            {
-                alert("ko");
-            }
-            else if(db)
-             {
-                alert("ok");
-            }
-            });
+     user.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, u)
+     {
+        if (err) throw err;
+        alert(u);
+      });
+     
 });

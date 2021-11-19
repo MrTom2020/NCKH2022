@@ -53,7 +53,8 @@ module.exports = function(app)
 function a(tk,mk)
 {
     chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority';
-  mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+  //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             kqqq = 0;
@@ -61,7 +62,7 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, u)
+           user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
              {
               if (err) throw err;
               chuoi = u[0];  

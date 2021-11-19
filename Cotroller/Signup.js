@@ -65,7 +65,7 @@ function a(tk,mk)
            user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
              {
               if (err) throw err;
-              chuoi = u[0];  
+              chuoi = u;  
             });
         }
         });

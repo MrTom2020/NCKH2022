@@ -28,23 +28,39 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-    app.post('/login',function(req,res)
-    {
-        if(!req.body.Name || !req.body.Password)
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+        if(err)
         {
-            res.json({kq:0,loi:"Dữ liệu bị trống"})
+            kqqq = 0;
         }
-        else
-        {
-            var u = new user({
-                Name:req.body.Name,
-                Password:req.body.Password
+        else if(db)
+         {
+           kqqq = 1;
+           user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
+             {
+              if (err) throw err;
+              chuoi2 = u;  
             });
-           // setTimeout(6000);
-            var kqtv = a(u.Name,u.Password);
-            res.json({kq:kqtv,loi:chuoi})
         }
         });
+    app.post('/login',function(req,res)
+    {
+        res.json({kq:1});
+        // if(!req.body.Name || !req.body.Password)
+        // {
+        //     res.json({kq:0,loi:"Dữ liệu bị trống"})
+        // }
+        // else
+        // {
+        //     var u = new user({
+        //         Name:req.body.Name,
+        //         Password:req.body.Password
+        //     });
+        //    // setTimeout(6000);
+        //     var kqtv = a(u.Name,u.Password);
+        //     res.json({kq:kqtv,loi:chuoi})
+        // }
+         });
 
         app.post("/home",function(req,res)
         {

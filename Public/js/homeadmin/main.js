@@ -105,27 +105,26 @@ $(document).ready(function()
     });
     $("#test").click(function()
     {
-        var body = document.getElementsByTagName('body')[0];
-        var tbl = document.createElement('table');
-        tbl.style.width = '100%';
-        tbl.setAttribute('border', '1');
-        var tbdy = document.createElement('tbody');
+        var myTableDiv = document.getElementById("#content");
+
+        var table = document.createElement('TABLE');
+        table.border = '1';
+      
+        var tableBody = document.createElement('TBODY');
+        table.appendChild(tableBody);
+      
         for (var i = 0; i < 3; i++) {
-          var tr = document.createElement('tr');
-          for (var j = 0; j < 2; j++) {
-            if (i == 2 && j == 1) {
-              break
-            } else {
-              var td = document.createElement('td');
-              td.appendChild(document.createTextNode('\u0020'))
-              i == 1 && j == 1 ? td.setAttribute('rowSpan', '2') : null;
-              tr.appendChild(td)
-            }
+          var tr = document.createElement('TR');
+          tableBody.appendChild(tr);
+      
+          for (var j = 0; j < 4; j++) {
+            var td = document.createElement('TD');
+            td.width = '75';
+            td.appendChild(document.createTextNode("Cell " + i + "," + j));
+            tr.appendChild(td);
           }
-          tbdy.appendChild(tr);
         }
-        tbl.appendChild(tbdy);
-        body.appendChild(tbl)
+        myTableDiv.appendChild(table);
     });
     
     $("#btnDangKy").click(function()

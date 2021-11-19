@@ -1,4 +1,4 @@
-var user = require("../Models/User");
+var user = require("../Models/user");
 var mongoose = require('mongoose');
 var kqqq;
 var chuoi;

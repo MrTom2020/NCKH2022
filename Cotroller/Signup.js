@@ -39,10 +39,10 @@ module.exports = function(app)
             console.log("ok");
         }
         });
-        user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
+        user.find({Email:'tomhumchinvn@gmail.com'}).limit(1).exec(function(err, u)
              {
               if (err) throw err;
-              //console.log(u);
+              console.log(u);
               chuoi2 = u;  
             });
     app.post('/login',function(req,res)

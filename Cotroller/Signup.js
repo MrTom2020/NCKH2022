@@ -61,6 +61,11 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
+           user.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, u)
+             {
+              if (err) throw err;
+              chuoi = u[0];  
+            });
         }
         });
             return kqqq;

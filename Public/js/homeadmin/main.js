@@ -1,4 +1,3 @@
-var user = require("../Models/User");
 $(document).ready(function()
 {
     var db;
@@ -6,10 +5,4 @@ $(document).ready(function()
      {
         db = data.loi1.toString();
      });
-     user.find({Email:'tomhumchinvn@gmail.com'},{Email:1}).limit(6).exec(function(err, u)
-     {
-        if (err) throw err;
-        alert(u);
-      });
-     
 });

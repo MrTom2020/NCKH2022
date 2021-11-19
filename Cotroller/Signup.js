@@ -21,7 +21,7 @@ module.exports = function(app)
     });
     app.get("/Admin/home",function(req,res)
     {
-        res.render("Admin/h");
+        res.render("Admin/home");
     });
     app.get("/*",function(req,res)
     {
@@ -47,7 +47,7 @@ module.exports = function(app)
 
         app.post("/home",function(req,res)
         {
-           res.json({loi1:"12345678"})
+           res.json({loi1:chuoi})
          });
 }
 function a(tk,mk)

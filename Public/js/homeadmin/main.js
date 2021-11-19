@@ -2,7 +2,6 @@ $(document).ready(function()
 {
     $.post("./Admin/home",function(data)
      {
-         alert("12344");
+         alert(data.loi.toString());
      });
-    alert("0k11111");
 });

@@ -1,4 +1,4 @@
-var user = require("../Models/User");
+//var user = require("../Models/User");
 $(document).ready(function()
 {
     var db;

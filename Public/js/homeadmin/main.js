@@ -175,9 +175,9 @@ function checkBM()
         // }
         while(myTableDiv.hasChildNodes())
         {
-            if(document.getElementById("content").childElementCount > 1)
+            if(myTableDiv.hasChildNodes().length > 1)
             {
-                myTableDiv.removeChild(myTableDiv.firstChild);
+                myTableDiv.removeChild(myTableDiv.lastChild);
             }
         }
 

@@ -131,6 +131,10 @@ $(document).ready(function()
         });
        }
     });
+    $("#btny").click(function()
+    {
+        alert("oooo");
+    });
     $.post("../home",function(data)
      {
        alert(JSON.stringify(data.loi1[0]._id));
@@ -274,6 +278,7 @@ function checkBM()
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
+        btny.setAttribute('id','btny');
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);

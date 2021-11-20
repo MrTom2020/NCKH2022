@@ -186,7 +186,6 @@ function checkBM()
         tEmail.setAttribute('style','margin-top:2vh');
         var iphtEmail = document.createElement("input");
         iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('style','margin-top:2vh');
         iphtEmail.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtEmail);
         fr.appendChild(tEmail);
@@ -196,7 +195,6 @@ function checkBM()
         tPassword.setAttribute('style','margin-top:2vh');
         var iphtPassword = document.createElement("input");
         iphtPassword.setAttribute('id','iphtPassword');
-        iphtPassword.setAttribute('style','margin-top:2vh');
         iphtPassword.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtPassword);
         fr.appendChild(tPassword);
@@ -206,7 +204,6 @@ function checkBM()
         tName.setAttribute('style','margin-top:2vh');
         var iphtName = document.createElement("input");
         iphtName.setAttribute('id','iphtName');
-        iphtName.setAttribute('style','margin-top:2vh');
         iphtName.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtName);
         fr.appendChild(tName);
@@ -216,7 +213,6 @@ function checkBM()
         tSDT.setAttribute('style','margin-top:2vh');
         var iphtSDT = document.createElement("input");
         iphtSDT.setAttribute('id','iphtSDT');
-        iphtSDT.setAttribute('style','margin-top:2vh');
         iphtSDT.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtSDT);
         fr.appendChild(tSDT);
@@ -226,7 +222,6 @@ function checkBM()
         tBirthDay.setAttribute('style','margin-top:2vh');
         var iphtBirthDay = document.createElement("input");
         iphtBirthDay.setAttribute('id','iphtBirthDay');
-        iphtBirthDay.setAttribute('style','margin-top:2vh');
         iphtBirthDay.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtBirthDay);
         fr.appendChild(tBirthDay);
@@ -236,7 +231,6 @@ function checkBM()
         tCMND.setAttribute('style','margin-top:2vh');
         var iphtCMND = document.createElement("input");
         iphtCMND.setAttribute('id','iphtCMND');
-        iphtCMND.setAttribute('style','margin-top:2vh');
         iphtCMND.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtCMND);
         fr.appendChild(tCMND);
@@ -246,7 +240,6 @@ function checkBM()
         tDC.setAttribute('style','margin-top:2vh');
         var iphtDC = document.createElement("input");
         iphtDC.setAttribute('id','iphtDC');
-        iphtDC.setAttribute('style','margin-top:2vh');
         iphtDC.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtDC);
         fr.appendChild(tDC);
@@ -256,7 +249,6 @@ function checkBM()
         tLoai.setAttribute('style','margin-top:2vh');
         var iphtLoai = document.createElement("input");
         iphtLoai.setAttribute('id','iphtLoai');
-        iphtLoai.setAttribute('style','margin-top:2vh');
         iphtLoai.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtLoai);
         fr.appendChild(tLoai);
@@ -266,7 +258,6 @@ function checkBM()
         tNoitiem.setAttribute('style','margin-top:2vh');
         var iphtNoitiem = document.createElement("input");
         iphtNoitiem.setAttribute('id','iphtNoitiem');
-        iphtNoitiem.setAttribute('style','margin-top:2vh');
         iphtNoitiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtNoitiem);
         fr.appendChild(tNoitiem);
@@ -276,7 +267,6 @@ function checkBM()
         tNgaytiem.setAttribute('style','margin-top:2vh');
         var iphtNgaytiem = document.createElement("input");
         iphtNgaytiem.setAttribute('id','iphtNgaytiem');
-        iphtNgaytiem.setAttribute('style','margin-top:2vh');
         iphtNgaytiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtNgaytiem);
         fr.appendChild(tNgaytiem);

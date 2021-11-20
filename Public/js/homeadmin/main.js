@@ -176,14 +176,71 @@ function checkBM()
         var t = document.createElement("h3");
         t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";
+
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');
-        var ip = document.createElement("input");
-        ip.setAttribute('id','ht');
-        ip.setAttribute('style','margin-top:2vw');
-        ip.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(ip);
+        
+        var iphtEmail = document.createElement("input");
+        iphtEmail.setAttribute('id','iphtEmail');
+        iphtEmail.setAttribute('style','margin-top:2vw');
+        iphtEmail.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtEmail);
+
+        var iphtPassword = document.createElement("input");
+        iphtPassword.setAttribute('id','iphtPassword');
+        iphtPassword.setAttribute('style','margin-top:2vw');
+        iphtPassword.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtPassword);
+
+        var iphtName = document.createElement("input");
+        iphtName.setAttribute('id','iphtName');
+        iphtName.setAttribute('style','margin-top:2vw');
+        iphtName.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtName);
+
+        var iphtSDT = document.createElement("input");
+        iphtSDT.setAttribute('id','iphtSDT');
+        iphtSDT.setAttribute('style','margin-top:2vw');
+        iphtSDT.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtSDT);
+
+        var iphtBirthDay = document.createElement("input");
+        iphtBirthDay.setAttribute('id','iphtBirthDay');
+        iphtBirthDay.setAttribute('style','margin-top:2vw');
+        iphtBirthDay.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtBirthDay);
+
+        var iphtCMND = document.createElement("input");
+        iphtCMND.setAttribute('id','iphtCMND');
+        iphtCMND.setAttribute('style','margin-top:2vw');
+        iphtCMND.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtCMND);
+
+        var iphtDC = document.createElement("input");
+        iphtDC.setAttribute('id','iphtDC');
+        iphtDC.setAttribute('style','margin-top:2vw');
+        iphtDC.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtDC);
+
+        var iphtLoai = document.createElement("input");
+        iphtLoai.setAttribute('id','iphtLoai');
+        iphtLoai.setAttribute('style','margin-top:2vw');
+        iphtLoai.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtLoai);
+
+        var iphtNoitiem = document.createElement("input");
+        iphtNoitiem.setAttribute('id','iphtNoitiem');
+        iphtNoitiem.setAttribute('style','margin-top:2vw');
+        iphtNoitiem.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtNoitiem);
+
+        var iphtNgaytiem = document.createElement("input");
+        iphtNgaytiem.setAttribute('id','iphtNgaytiem');
+        iphtNgaytiem.setAttribute('style','margin-top:2vw');
+        iphtNgaytiem.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(iphtNgaytiem);
+
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
       }

@@ -173,20 +173,21 @@ function checkBM()
         //     tr.appendChild(td);
         //   }
         // }
-        while(myTableDiv.hasChildNodes())
-        {
-            myTableDiv.removeChild(myTableDiv.firstChild);
-        }
+        // while(myTableDiv.hasChildNodes())
+        // {
+        //     myTableDiv.removeChild(myTableDiv.firstChild);
+        // }
+
         var t = document.createElement("h3");
-        t.innerHTML = "0k";
-        var fr = document.createElement("form");
-        fr.setAttribute('method','post');
-        fr.setAttribute('style','margin-left:5vw');
-        var ip = document.createElement("input");
-        ip.setAttribute('id','ht');
-        ip.setAttribute('style','margin-top:2vw');
-        ip.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(ip);
+        t.innerHTML = document.getElementById("content").childElementCount;;
+        // var fr = document.createElement("form");
+        // fr.setAttribute('method','post');
+        // fr.setAttribute('style','margin-left:5vw');
+        // var ip = document.createElement("input");
+        // ip.setAttribute('id','ht');
+        // ip.setAttribute('style','margin-top:2vw');
+        // ip.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(ip);
         myTableDiv.appendChild(t);
-        myTableDiv.appendChild(fr);
+        //myTableDiv.appendChild(fr);
       }

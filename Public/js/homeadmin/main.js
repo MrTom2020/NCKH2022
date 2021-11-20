@@ -188,6 +188,7 @@ function checkBM()
         iphtEmail.setAttribute('style','margin-top:2vw');
         iphtEmail.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtEmail);
+        fr.appendChild(tEmail);
 
         var tPassword = document.createElement("h3");
         tPassword.innerHTML = "Nhập thông tin người tiêm";
@@ -196,6 +197,7 @@ function checkBM()
         iphtPassword.setAttribute('style','margin-top:2vw');
         iphtPassword.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtPassword);
+        fr.appendChild(tPassword);
 
         var tName = document.createElement("h3");
         tName.innerHTML = "Nhập thông tin người tiêm";
@@ -204,6 +206,7 @@ function checkBM()
         iphtName.setAttribute('style','margin-top:2vw');
         iphtName.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtName);
+        fr.appendChild(tName);
 
         var tSDT = document.createElement("h3");
         tSDT.innerHTML = "Nhập thông tin người tiêm";
@@ -212,6 +215,7 @@ function checkBM()
         iphtSDT.setAttribute('style','margin-top:2vw');
         iphtSDT.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtSDT);
+        fr.appendChild(tSDT);
 
         var tBirthDay = document.createElement("h3");
         tBirthDay.innerHTML = "Nhập thông tin người tiêm";
@@ -220,6 +224,7 @@ function checkBM()
         iphtBirthDay.setAttribute('style','margin-top:2vw');
         iphtBirthDay.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtBirthDay);
+        fr.appendChild(tBirthDay);
 
         var tCMND = document.createElement("h3");
         tCMND.innerHTML = "Nhập thông tin người tiêm";
@@ -228,6 +233,7 @@ function checkBM()
         iphtCMND.setAttribute('style','margin-top:2vw');
         iphtCMND.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtCMND);
+        fr.appendChild(tCMND);
 
         var tDC = document.createElement("h3");
         tDC.innerHTML = "Nhập thông tin người tiêm";
@@ -236,6 +242,7 @@ function checkBM()
         iphtDC.setAttribute('style','margin-top:2vw');
         iphtDC.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtDC);
+        fr.appendChild(tDC);
 
         var tLoai = document.createElement("h3");
         tLoai.innerHTML = "Nhập thông tin người tiêm";
@@ -244,6 +251,7 @@ function checkBM()
         iphtLoai.setAttribute('style','margin-top:2vw');
         iphtLoai.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtLoai);
+        fr.appendChild(tLoai);
 
         var tNoitiem = document.createElement("h3");
         tNoitiem.innerHTML = "Nhập thông tin người tiêm";
@@ -252,6 +260,7 @@ function checkBM()
         iphtNoitiem.setAttribute('style','margin-top:2vw');
         iphtNoitiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtNoitiem);
+        fr.appendChild(tNoitiem);
 
         var tNgaytiem = document.createElement("h3");
         tNgaytiem.innerHTML = "Nhập thông tin người tiêm";
@@ -260,6 +269,7 @@ function checkBM()
         iphtNgaytiem.setAttribute('style','margin-top:2vw');
         iphtNgaytiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtNgaytiem);
+        fr.appendChild(tNgaytiem);
 
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);

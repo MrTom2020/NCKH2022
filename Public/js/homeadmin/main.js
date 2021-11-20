@@ -173,19 +173,6 @@ function checkBM()
         //     tr.appendChild(td);
         //   }
         // }
-        while(myTableDiv.hasChildNodes())
-        {
-            if(myTableDiv.hasChildNodes().length == 2)
-            {
-                myTableDiv.removeChild(myTableDiv.lastChild);
-                break
-            }
-            else if(myTableDiv.hasChildNodes().length > 2)
-            {
-                myTableDiv.removeChild(myTableDiv.firstChild);
-            }
-        }
-
         var t = document.createElement("h3");
         t.innerHTML = "ok";
         var fr = document.createElement("form");
@@ -197,5 +184,5 @@ function checkBM()
         ip.setAttribute('class','form-control col-sm-6');
         fr.appendChild(ip);
         myTableDiv.appendChild(t);
-        myTableDiv.appendChild(fr);
+        myTableDiv.innerHTML = fr;
       }

@@ -279,7 +279,7 @@ function checkBM()
         {
             var th = document.createElement("th");
             th.setAttribute('scope','row');
-            th.innerHTML = "1";
+            th.innerHTML = $i;
             tr.appendChild(th);
         }
         thd.appendChild(tr);
@@ -293,7 +293,7 @@ function checkBM()
             for($ii = 0;$ii < 5;$ii++)
             {
                 var td = document.createElement("td");
-                td.innerHTML = "1";
+                td.innerHTML = $ii;
                 trr.appendChild(td);
             }
             tbody.appendChild(trr);

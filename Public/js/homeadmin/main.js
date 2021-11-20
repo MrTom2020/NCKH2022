@@ -174,7 +174,7 @@ function checkBM()
         //   }
         // }
         var t = document.createElement("h3");
-        t.textContent("ok");
+        t.setAttribute('text','ok');
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');

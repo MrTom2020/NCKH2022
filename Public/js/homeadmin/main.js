@@ -103,7 +103,7 @@ $(document).ready(function()
             });
         }
     });
-    $("#test").click(function()
+    $("#inputdata").click(function()
     {
         tableCreate();
     });
@@ -161,7 +161,6 @@ function checkBM()
         t.innerHTML = "Nhập thông tin người tiêm";
 
         var fr = document.createElement("form");
-       // fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vh');
         
         var tEmail = document.createElement("h5");
@@ -261,4 +260,25 @@ function checkBM()
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
+      }
+      function createlist()
+      {
+        var myTableDiv = document.getElementById("content2");
+        myTableDiv.innerHTML = "";
+
+        var tb = document.createElement("table");
+
+        var thd = document.createElement("thead");
+
+        var tr = document.createElement("tr");
+
+        for($i = 0; $i < 5;$i++)
+        {
+            var th = document.createElement("th");
+            th.innerHTML = "1";
+            tr.appendChild(th);
+        }
+        thd.appendChild(tr);
+
+        myTableDiv.appendChild(thd);
       }

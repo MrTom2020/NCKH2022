@@ -271,6 +271,10 @@ function checkBM()
         fr.appendChild(iphtNgaytiem);
         fr.appendChild(tNgaytiem);
 
+        var btny = document.createElement("button");
+        btny.innerHTML = "Đồng ý";
+        btny.setAttribute('class','btn btn-outline-primary');
+        fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
       }

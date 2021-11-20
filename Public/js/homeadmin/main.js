@@ -270,7 +270,7 @@ function checkBM()
         myTableDiv.innerHTML = "";
 
         var tb = document.createElement("table");
-        tb.setAttribute('class','table table-success table-striped');
+        tb.setAttribute('class','table table-hover');
         var thd = document.createElement("thead");
 
         var tr = document.createElement("tr");

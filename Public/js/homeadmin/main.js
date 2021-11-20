@@ -181,7 +181,7 @@ function checkBM()
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vh');
         
-        var tEmail = document.createElement("h4");
+        var tEmail = document.createElement("h5");
         tEmail.innerHTML = "Nhập thông tin người tiêm";
         tEmail.setAttribute('style','margin-top:2vh');
         var iphtEmail = document.createElement("input");

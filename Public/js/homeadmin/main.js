@@ -279,7 +279,7 @@ function checkBM()
         {
             var th = document.createElement("th");
             th.setAttribute('scope','row');
-            th.innerHTML = $i;
+            th.innerHTML = "ok";
             tr.appendChild(th);
         }
         thd.appendChild(tr);

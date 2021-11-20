@@ -174,12 +174,11 @@ function checkBM()
         //   }
         // }
         var t = document.createElement("h3");
-        t.setAttribute('text','ok');
+        t.innerHTML = "0k";
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');
         var ip = document.createElement("input");
-        ip.innerHTML = "ok";
         ip.setAttribute('id','ht');
         ip.setAttribute('style','margin-top:2vw');
         ip.setAttribute('class','form-control col-sm-6');

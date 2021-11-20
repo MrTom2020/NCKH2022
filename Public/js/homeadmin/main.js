@@ -174,7 +174,8 @@ function checkBM()
         //   }
         // }
         var t = document.createElement("h3");
-        t.innerHTML = "ok";
+        t.setAttribute('style','margin-left:5vw');
+        t.innerHTML = "Nhập thông tin người tiêm";
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');

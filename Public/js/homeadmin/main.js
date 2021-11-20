@@ -178,7 +178,7 @@ function checkBM()
         t.innerHTML = "Nhập thông tin người tiêm";
 
         var fr = document.createElement("form");
-        fr.setAttribute('method','post');
+       // fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vh');
         
         var tEmail = document.createElement("h5");

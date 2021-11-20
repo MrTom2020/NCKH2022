@@ -131,10 +131,6 @@ $(document).ready(function()
         });
        }
     });
-    $("#btny").click(function()
-    {
-        alert("oooo");
-    });
     $.post("../home",function(data)
      {
        alert(JSON.stringify(data.loi1[0]._id));
@@ -282,4 +278,8 @@ function checkBM()
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
+        $("#btny").click(function()
+        {
+            alert("oooo");
+        });
       }

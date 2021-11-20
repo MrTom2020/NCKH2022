@@ -184,5 +184,5 @@ function checkBM()
         ip.setAttribute('class','form-control col-sm-6');
         fr.appendChild(ip);
         myTableDiv.appendChild(t);
-        myTableDiv.innerHTML = fr;
+        myTableDiv.appendChild(fr);
       }

@@ -270,7 +270,7 @@ function checkBM()
         myTableDiv.innerHTML = "";
 
         var tb = document.createElement("table");
-
+        tb.setAttribute('class','table table-success table-striped');
         var thd = document.createElement("thead");
 
         var tr = document.createElement("tr");
@@ -278,10 +278,12 @@ function checkBM()
         for($i = 0; $i < 5;$i++)
         {
             var th = document.createElement("th");
+            th.setAttribute('scope','row');
             th.innerHTML = "1";
             tr.appendChild(th);
         }
         thd.appendChild(tr);
 
-        myTableDiv.appendChild(thd);
+        tb.appendChild(thd);
+        myTableDiv.appendChild(tb);
       }

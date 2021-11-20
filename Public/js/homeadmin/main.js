@@ -175,10 +175,12 @@ function checkBM()
         // }
         while(myTableDiv.hasChildNodes())
         {
-            if(myTableDiv.hasChildNodes().length > 1)
+            if(myTableDiv.hasChildNodes().length < 1)
             {
                 myTableDiv.removeChild(myTableDiv.lastChild);
+                break
             }
+            myTableDiv.removeChild(myTableDiv.firstChild);
         }
 
         var t = document.createElement("h3");

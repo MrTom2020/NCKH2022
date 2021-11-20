@@ -175,7 +175,7 @@ function checkBM()
         // }
         while(myTableDiv.hasChildNodes())
         {
-            if(myTableDiv.hasChildNodes().length < 2)
+            if(myTableDiv.hasChildNodes().length == 1)
             {
                 myTableDiv.removeChild(myTableDiv.lastChild);
                 break

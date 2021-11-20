@@ -273,7 +273,8 @@ function checkBM()
 
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
-       // btny.setAttribute('class','btn btn-outline-primary');
+        btny.setAttribute('class','btn btn-primary');
+        btny.setAttribute('type','submit');
         btny.setAttribute('id','btny');
         fr.appendChild(btny);
         myTableDiv.appendChild(t);

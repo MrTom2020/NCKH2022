@@ -179,7 +179,7 @@ function checkBM()
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');
         var ip = document.createElement("input");
-        ip.setAttribute('type','text');
+        ip.innerHTML = "ok";
         ip.setAttribute('id','ht');
         ip.setAttribute('style','margin-top:2vw');
         ip.setAttribute('class','form-control col-sm-6');

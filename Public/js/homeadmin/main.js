@@ -173,6 +173,8 @@ function checkBM()
         //     tr.appendChild(td);
         //   }
         // }
+        var t = document.createElement("h3");
+        t.textContent("ok");
         var fr = document.createElement("form");
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');
@@ -182,5 +184,6 @@ function checkBM()
         ip.setAttribute('style','margin-top:2vw');
         ip.setAttribute('class','form-control col-sm-6');
         fr.appendChild(ip);
+        myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
       }

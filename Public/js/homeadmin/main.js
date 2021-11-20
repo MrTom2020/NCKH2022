@@ -154,7 +154,7 @@ function checkBM()
 
     function tableCreate() 
     {
-        var myTableDiv = document.getElementById("content2");
+        var myTableDiv = document.getElementById("content");
 
         // var table = document.createElement('TABLE');
         // table.border = '1';

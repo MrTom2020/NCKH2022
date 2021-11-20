@@ -181,60 +181,80 @@ function checkBM()
         fr.setAttribute('method','post');
         fr.setAttribute('style','margin-left:5vw');
         
+        var tEmail = document.createElement("h3");
+        tEmail.innerHTML = "Nhập thông tin người tiêm";
         var iphtEmail = document.createElement("input");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('style','margin-top:2vw');
         iphtEmail.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtEmail);
 
+        var tPassword = document.createElement("h3");
+        tPassword.innerHTML = "Nhập thông tin người tiêm";
         var iphtPassword = document.createElement("input");
         iphtPassword.setAttribute('id','iphtPassword');
         iphtPassword.setAttribute('style','margin-top:2vw');
         iphtPassword.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtPassword);
 
+        var tName = document.createElement("h3");
+        tName.innerHTML = "Nhập thông tin người tiêm";
         var iphtName = document.createElement("input");
         iphtName.setAttribute('id','iphtName');
         iphtName.setAttribute('style','margin-top:2vw');
         iphtName.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtName);
 
+        var tSDT = document.createElement("h3");
+        tSDT.innerHTML = "Nhập thông tin người tiêm";
         var iphtSDT = document.createElement("input");
         iphtSDT.setAttribute('id','iphtSDT');
         iphtSDT.setAttribute('style','margin-top:2vw');
         iphtSDT.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtSDT);
 
+        var tBirthDay = document.createElement("h3");
+        tBirthDay.innerHTML = "Nhập thông tin người tiêm";
         var iphtBirthDay = document.createElement("input");
         iphtBirthDay.setAttribute('id','iphtBirthDay');
         iphtBirthDay.setAttribute('style','margin-top:2vw');
         iphtBirthDay.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtBirthDay);
 
+        var tCMND = document.createElement("h3");
+        tCMND.innerHTML = "Nhập thông tin người tiêm";
         var iphtCMND = document.createElement("input");
         iphtCMND.setAttribute('id','iphtCMND');
         iphtCMND.setAttribute('style','margin-top:2vw');
         iphtCMND.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtCMND);
 
+        var tDC = document.createElement("h3");
+        tDC.innerHTML = "Nhập thông tin người tiêm";
         var iphtDC = document.createElement("input");
         iphtDC.setAttribute('id','iphtDC');
         iphtDC.setAttribute('style','margin-top:2vw');
         iphtDC.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtDC);
 
+        var tLoai = document.createElement("h3");
+        tLoai.innerHTML = "Nhập thông tin người tiêm";
         var iphtLoai = document.createElement("input");
         iphtLoai.setAttribute('id','iphtLoai');
         iphtLoai.setAttribute('style','margin-top:2vw');
         iphtLoai.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtLoai);
 
+        var tNoitiem = document.createElement("h3");
+        tNoitiem.innerHTML = "Nhập thông tin người tiêm";
         var iphtNoitiem = document.createElement("input");
         iphtNoitiem.setAttribute('id','iphtNoitiem');
         iphtNoitiem.setAttribute('style','margin-top:2vw');
         iphtNoitiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(iphtNoitiem);
 
+        var tNgaytiem = document.createElement("h3");
+        tNgaytiem.innerHTML = "Nhập thông tin người tiêm";
         var iphtNgaytiem = document.createElement("input");
         iphtNgaytiem.setAttribute('id','iphtNgaytiem');
         iphtNgaytiem.setAttribute('style','margin-top:2vw');

@@ -173,7 +173,10 @@ function checkBM()
         //     tr.appendChild(td);
         //   }
         // }
-        myTableDiv.innerHTML = "";
+        while(myTableDiv.hasChildNodes())
+        {
+            myTableDiv.removeChild(myTableDiv.firstChild);
+        }
         var t = document.createElement("h3");
         t.innerHTML = "0k";
         var fr = document.createElement("form");

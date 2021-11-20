@@ -107,7 +107,10 @@ $(document).ready(function()
     {
         tableCreate();
     });
-    
+    $("#test").click(function()
+    {
+        createlist();
+    });
     $("#btnDangKy").click(function()
     {
        if(currentAccount.length == 0)

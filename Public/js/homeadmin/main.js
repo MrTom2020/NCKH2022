@@ -283,7 +283,21 @@ function checkBM()
             tr.appendChild(th);
         }
         thd.appendChild(tr);
-
         tb.appendChild(thd);
+
+        var tbody = document.createElement("tbody");
+
+        for($i = 0; $i < 5;$i++)
+        {
+            var trr = document.createElement("tr");
+            for($ii = 0;$ii < 5;$ii++)
+            {
+                var td = document.createElement("td");
+                td.innerHTML = "1";
+                trr.appendChild(td);
+            }
+            tbody.appendChild(trr);
+        }
+        tb.appendChild(tbody);
         myTableDiv.appendChild(tb);
       }

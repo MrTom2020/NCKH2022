@@ -173,8 +173,7 @@ function checkBM()
         //     tr.appendChild(td);
         //   }
         // }
-        myTableDiv.remove();
-        
+        myTableDiv.removeChild();
         var t = document.createElement("h3");
         t.innerHTML = "0k";
         var fr = document.createElement("form");

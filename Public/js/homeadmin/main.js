@@ -180,7 +180,7 @@ function checkBM()
                 myTableDiv.removeChild(myTableDiv.lastChild);
                 break
             }
-            else
+            else if(myTableDiv.hasChildNodes().length > 2)
             {
                 myTableDiv.removeChild(myTableDiv.firstChild);
             }

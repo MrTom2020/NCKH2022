@@ -156,23 +156,6 @@ function checkBM()
     {
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
-        // var table = document.createElement('TABLE');
-        // table.border = '1';
-      
-        // var tableBody = document.createElement('TBODY');
-        // table.appendChild(tableBody);
-      
-        // for (var i = 0; i < 3; i++) {
-        //   var tr = document.createElement('TR');
-        //   tableBody.appendChild(tr);
-      
-        //   for (var j = 0; j < 4; j++) {
-        //     var td = document.createElement('TD');
-        //     td.width = '75';
-        //     td.appendChild(document.createTextNode("Cell " + i + "," + j));
-        //     tr.appendChild(td);
-        //   }
-        // }
         var t = document.createElement("h3");
         t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";
@@ -278,8 +261,4 @@ function checkBM()
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
-        $("#btny").click(function()
-        {
-            alert("oooo");
-        });
       }

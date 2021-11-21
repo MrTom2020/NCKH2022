@@ -69,6 +69,7 @@ $(document).ready(function()
     var web3_infura = new Web3(provider);
     var constract_infura = new web3_infura.eth.Contract(api,addressSM);
     var dt_User;
+    var kt;
     constract_infura.events.SM_Ban_Data({filter:{},fromBlock:"latest"},function(error,data){
         if(error)
         {
@@ -141,6 +142,7 @@ $(document).ready(function()
     $.post("../home",function(data)
      {
        dt_User = data.loi1;
+       kt = data.loi1.length;
        alert(JSON.stringify(data.loi1.length));
      });
 });
@@ -177,7 +179,7 @@ function checkBM()
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < dt_User.length;$i++)
+        for($i = 0;$i < kt;$i++)
         {
             var op = document.createElement("option");
             op.innerHTML = dt_User[$i].Email;

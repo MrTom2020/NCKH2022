@@ -273,7 +273,18 @@ function checkBM()
 
         $("#btny").click(function()
         {
-           $.post('../insertdt',function(data)
+           $.post('../insertdt',{
+             Email:$("#iphtEmail").val(),
+             Password:$("#iphtEmail").val(),
+             Name:$("#iphtEmail").val(),
+             SDT:$("#iphtEmail").val(),
+             BirthDay:$("#iphtEmail").val(),
+             CMND:$("#iphtEmail").val(),
+             DC:$("#iphtEmail").val(),
+             Loai:$("#iphtEmail").val(),
+             noitiem:$("#iphtEmail").val(),
+             Ngaytiem:$("#iphtEmail").val()
+           },function(data)
            {
                 alert(data.kq.toString());
            });

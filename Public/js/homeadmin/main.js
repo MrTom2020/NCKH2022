@@ -312,7 +312,7 @@ function checkBM()
         myTableDiv.innerHTML = "";
         var t = document.createElement("h3");
         t.setAttribute('style','margin-left:5vw');
-        t.innerHTML = "Nhập thông tin người tiêm";
+        t.innerHTML = "Cập nhật thông tin người tiêm";
 
         var fr = document.createElement("form");
         fr.setAttribute('style','margin-left:5vh');

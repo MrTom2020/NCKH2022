@@ -315,7 +315,7 @@ function checkBM()
         myTableDiv.innerHTML = "";
         var t = document.createElement("h3");
         t.setAttribute('style','margin-left:5vw');
-        t.innerHTML = "Nhập thông tin người tiêm";
+        t.innerHTML = "Cập nhật thông tin người tiêm";
 
         var fr = document.createElement("form");
         fr.setAttribute('style','margin-left:5vh');
@@ -436,4 +436,24 @@ function checkBM()
             iphtBirthDay.value = dt_User[x].BirthDay;
             alert(x);
         });
+      }
+      function insert_vx()
+      {
+        var myTableDiv = document.getElementById("content2");
+        myTableDiv.innerHTML = "";
+
+        var tl = document.createElement("h3");
+        tl.innerHTML = "Nhập thông tin người đã tiêm";
+
+        var iphtEmail = document.createElement("select");
+        iphtEmail.setAttribute('id','iphtEmail');
+        iphtEmail.setAttribute('class','form-control col-sm-6');
+        for($i = 0;$i < dt_User.length;$i++)
+        {
+            var op = document.createElement("option");
+            op.innerHTML = dt_User[$i].Email.toString();
+            iphtEmail.appendChild(op);
+        }
+        myTableDiv.appendChild(iphtEmail);
+        
       }

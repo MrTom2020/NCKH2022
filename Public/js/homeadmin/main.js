@@ -68,7 +68,7 @@ $(document).ready(function()
     var provider = new Web3.providers.WebsocketProvider("wss://rinkeby.infura.io/ws/v3/0e394e33cd2c4bb7aec39f9fad35db5c");
     var web3_infura = new Web3(provider);
     var constract_infura = new web3_infura.eth.Contract(api,addressSM);
-
+    const dt_User;
     constract_infura.events.SM_Ban_Data({filter:{},fromBlock:"latest"},function(error,data){
         if(error)
         {
@@ -140,6 +140,7 @@ $(document).ready(function()
     });
     $.post("../home",function(data)
      {
+       dt_User = data.loi1;
        alert(JSON.stringify(data.loi1.length));
      });
 });
@@ -173,9 +174,15 @@ function checkBM()
         var tEmail = document.createElement("h5");
         tEmail.innerHTML = "Email";
         tEmail.setAttribute('style','margin-top:6vh');
-        var iphtEmail = document.createElement("input");
+        var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');
+        iphtEmail.setAttribute('class','form-select form-select-lg mb-3');
+        for($i = 0;$i < 5;$i++)
+        {
+            var op = document.createElement("option");
+            op.innerHTML = $i;
+            iphtEmail.appendChild(op);
+        }
         fr.appendChild(tEmail);
         fr.appendChild(iphtEmail);
 

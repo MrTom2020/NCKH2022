@@ -179,7 +179,7 @@ function checkBM()
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < kt;$i++)
+        for($i = 0;$i < 2;$i++)
         {
             var op = document.createElement("option");
             op.innerHTML = dt_User[$i].Email;

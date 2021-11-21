@@ -245,36 +245,6 @@ function checkBM()
         fr.appendChild(tDC);
         fr.appendChild(iphtDC);
 
-        var tLoai = document.createElement("h5");
-        tLoai.innerHTML = "Loại vắc xin";
-        tLoai.setAttribute('style','margin-top:2vh');
-        var iphtLoai = document.createElement("input");
-        iphtLoai.setAttribute('id','iphtLoai');
-        iphtLoai.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tLoai);
-        fr.appendChild(iphtLoai);
-
-        
-
-        var tNoitiem = document.createElement("h5");
-        tNoitiem.innerHTML = "Nơi tiêm";
-        tNoitiem.setAttribute('style','margin-top:2vh');
-        var iphtNoitiem = document.createElement("input");
-        iphtNoitiem.setAttribute('id','iphtNoitiem');
-        iphtNoitiem.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tNoitiem);
-        fr.appendChild(iphtNoitiem);
-
-        var tNgaytiem = document.createElement("h5");
-        tNgaytiem.innerHTML = "Ngày tiêm";
-        tNgaytiem.setAttribute('style','margin-top:2vh');
-        var iphtNgaytiem = document.createElement("input");
-        iphtNgaytiem.setAttribute('type','date');
-        iphtNgaytiem.setAttribute('id','iphtNgaytiem');
-        iphtNgaytiem.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tNgaytiem);
-        fr.appendChild(iphtNgaytiem);
-
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
@@ -293,10 +263,7 @@ function checkBM()
              SDT:$("#iphtSDT").val(),
              BirthDay:$("#iphtBirthDay").val(),
              CMND:$("#iphtCMND").val(),
-             DC:$("#iphtDC").val(),
-             Loai:$("#iphtLoai").val(),
-             noitiem:$("#iphtNoitiem").val(),
-             Ngaytiem:$("#iphtNgaytiem").val()
+             DC:$("#iphtDC").val()
            },function(data)
            {
                 alert(data.kq.toString());

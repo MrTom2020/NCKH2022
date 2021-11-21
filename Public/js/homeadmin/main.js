@@ -275,15 +275,15 @@ function checkBM()
         {
            $.post('../insertdt',{
              Email:$("#iphtEmail").val(),
-             Password:$("#iphtEmail").val(),
-             Name:$("#iphtEmail").val(),
-             SDT:$("#iphtEmail").val(),
-             BirthDay:$("#iphtEmail").val(),
-             CMND:$("#iphtEmail").val(),
-             DC:$("#iphtEmail").val(),
-             Loai:$("#iphtEmail").val(),
-             noitiem:$("#iphtEmail").val(),
-             Ngaytiem:$("#iphtEmail").val()
+             Password:$("#iphtPassword").val(),
+             Name:$("#iphtName").val(),
+             SDT:$("#iphtSDT").val(),
+             BirthDay:$("#iphtBirthDay").val(),
+             CMND:$("#iphtCMND").val(),
+             DC:$("#iphtDC").val(),
+             Loai:$("#iphtLoai").val(),
+             noitiem:$("#iphtNoitiem").val(),
+             Ngaytiem:$("#iphtNgaytiem").val()
            },function(data)
            {
                 alert(data.kq.toString());

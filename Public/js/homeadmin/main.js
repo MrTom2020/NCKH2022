@@ -280,8 +280,8 @@ function checkBM()
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
-            iphtPassword.innerHTML = dt_User[x].Password;
-            iphtDC.innerHTML = dt_User[x].DC;
+            iphtPassword.value = dt_User[x].Password;
+            iphtDC.value  = dt_User[x].DC;
             alert(x);
         });
       }

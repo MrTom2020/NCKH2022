@@ -144,6 +144,10 @@ $(document).ready(function()
        dt_User = data.loi1;
        alert(JSON.stringify(data.loi1.length));
      });
+     $("#inputdatavx").click(function()
+     {
+        insert_vx();
+     });
 });
    
 async function connectMM()

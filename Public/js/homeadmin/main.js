@@ -277,7 +277,7 @@ function checkBM()
                 alert(data.kq.toString());
            });
         })
-        $("#iphtEmail").onchange(function()
+        $("#iphtEmail").change(function()
         {
             alert("123");
         });

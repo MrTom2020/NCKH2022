@@ -168,7 +168,7 @@ function checkBM()
         
         var tEmail = document.createElement("h5");
         tEmail.innerHTML = "Email";
-        tEmail.setAttribute('style','margin-top:4vh');
+        tEmail.setAttribute('style','margin-top:6vh');
         var iphtEmail = document.createElement("input");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
@@ -259,6 +259,7 @@ function checkBM()
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
+        btny.setAttribute('style','margin-top:2vh');
         btny.setAttribute('id','btny');
         fr.appendChild(btny);
         myTableDiv.appendChild(t);

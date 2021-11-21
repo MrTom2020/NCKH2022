@@ -273,7 +273,10 @@ function checkBM()
 
         $("#btny").click(function()
         {
-            alert($("#iphtEmail").val());
+           $.post('../insertdt',function(data)
+           {
+                alert(data.kq.toString());
+           });
         })
       }
       function createlist()

@@ -277,6 +277,10 @@ function checkBM()
                 alert(data.kq.toString());
            });
         })
+        $("#iphtEmail").click(function()
+        {
+            alert("123");
+        });
       }
       function createlist()
       {

@@ -182,7 +182,7 @@ function checkBM()
         for($i = 0;$i < 2;$i++)
         {
             var op = document.createElement("option");
-            op.innerHTML = dt_User[1].Email;
+            op.innerHTML = dt_User[1].Email.toString();
             iphtEmail.appendChild(op);
         }
         fr.appendChild(tEmail);

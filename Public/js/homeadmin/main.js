@@ -451,7 +451,7 @@ function checkBM()
         for($i = 0;$i < dt_User.length;$i++)
         {
             var op = document.createElement("option");
-            op.innerHTML = dt_User[$i].Email.toString();
+            op.innerHTML = dt_User[$i].Name.toString();
             iphtEmail.appendChild(op);
         }
         myTableDiv.appendChild(iphtEmail);

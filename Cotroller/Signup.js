@@ -39,7 +39,7 @@ module.exports = function(app)
             console.log("ok");
         }
         });
-        user.find().limit(1).exec(function(err, u)
+        user.find().exec(function(err, u)
              {
               if (err) throw err;
               console.log(u[0].Email.toString());

@@ -168,7 +168,7 @@ function checkBM()
         
         var tEmail = document.createElement("h5");
         tEmail.innerHTML = "Email";
-        tEmail.setAttribute('style','margin-top:2vh');
+        tEmail.setAttribute('style','margin-top:4vh');
         var iphtEmail = document.createElement("input");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');

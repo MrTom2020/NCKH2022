@@ -282,6 +282,10 @@ function checkBM()
             var x = document.getElementById("iphtEmail").selectedIndex;
             iphtPassword.value = dt_User[x].Password;
             iphtDC.value  = dt_User[x].DC;
+            iphtSDT.value = dt_User[x].SDT;
+            iphtCMND.value = dt_User[x].CMND;
+            iphtName.value = dt_User[x].Name;
+            iphtBirthDay.value = dt_User[x].BirthDay;
             alert(x);
         });
       }

@@ -140,7 +140,7 @@ $(document).ready(function()
     });
     $.post("../home",function(data)
      {
-       alert(JSON.stringify(data.loi1));
+       alert(JSON.stringify(data.loi1.length));
      });
 });
    

@@ -10,10 +10,7 @@ module.exports = function(app)
         !req.body.SDT ||
         !req.body.BirthDay ||
         !req.body.CMND ||
-        !req.body.DC ||
-        !req.body.Loai ||
-        !req.body.noitiem ||
-        !req.body.Ngaytiem)
+        !req.body.DC)
         {
             res.json({kq:0});
         }

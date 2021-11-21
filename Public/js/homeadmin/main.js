@@ -242,6 +242,8 @@ function checkBM()
         fr.appendChild(tLoai);
         fr.appendChild(iphtLoai);
 
+        
+
         var tNoitiem = document.createElement("h5");
         tNoitiem.innerHTML = "Nơi tiêm";
         tNoitiem.setAttribute('style','margin-top:2vh');
@@ -268,6 +270,11 @@ function checkBM()
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
+
+        $("#btny").click(function()
+        {
+            alert($("#iphtEmail").val());
+        })
       }
       function createlist()
       {

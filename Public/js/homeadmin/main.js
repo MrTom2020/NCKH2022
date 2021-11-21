@@ -279,7 +279,7 @@ function checkBM()
         })
         $("#iphtEmail").change(function()
         {
-            var x = document.getElementById("iphtEmail").value;
+            var x = document.getElementById("iphtEmail").selectedIndex;
             alert(x);
         });
       }

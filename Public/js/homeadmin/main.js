@@ -1,3 +1,5 @@
+var dt_User;
+var kt;
 $(document).ready(function()
 {
     const api = [
@@ -68,8 +70,6 @@ $(document).ready(function()
     var provider = new Web3.providers.WebsocketProvider("wss://rinkeby.infura.io/ws/v3/0e394e33cd2c4bb7aec39f9fad35db5c");
     var web3_infura = new Web3(provider);
     var constract_infura = new web3_infura.eth.Contract(api,addressSM);
-    var dt_User;
-    var kt;
     constract_infura.events.SM_Ban_Data({filter:{},fromBlock:"latest"},function(error,data){
         if(error)
         {

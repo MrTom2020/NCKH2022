@@ -448,7 +448,8 @@ function checkBM()
 
         var tl = document.createElement("h3");
         tl.innerHTML = "Nhập thông tin người đã tiêm";
-
+        myTableDiv.appendChild(tl);
+        
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');

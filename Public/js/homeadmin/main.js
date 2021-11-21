@@ -331,9 +331,20 @@ function checkBM()
         tPassword.setAttribute('style','margin-top:2vh');
         var iphtPassword = document.createElement("input");
         iphtPassword.setAttribute('id','iphtPassword');
+        iphtPassword.setAttribute('type','password');
         iphtPassword.setAttribute('class','form-control col-sm-6');
         fr.appendChild(tPassword);
         fr.appendChild(iphtPassword);
+
+        var t_again_Password = document.createElement("h5");
+        tPassword.innerHTML = "Nhập lại mật khẩu"; 
+        t_again_Password.setAttribute('style','margin-top:2vh');
+        var ipht_again_Password = document.createElement("input");
+        ipht_again_Password.setAttribute('type','password');
+        ipht_again_Password.setAttribute('id','ipht_again_Password');
+        ipht_again_Password.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(t_again_Password);
+        fr.appendChild(ipht_again_Password);
 
         var tName = document.createElement("h5");
         tName.innerHTML = "Họ và tên";
@@ -403,6 +414,7 @@ function checkBM()
         tNgaytiem.setAttribute('style','margin-top:2vh');
         var iphtNgaytiem = document.createElement("input");
         iphtNgaytiem.setAttribute('id','iphtNgaytiem');
+        iphtNgaytiem.setAttribute('type','date');
         iphtNgaytiem.setAttribute('class','form-control col-sm-6');
         fr.appendChild(tNgaytiem);
         fr.appendChild(iphtNgaytiem);

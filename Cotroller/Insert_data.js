@@ -19,6 +19,26 @@ module.exports = function(app)
         }
         else
         {
+            var u = new user({
+                Email:req.body.Email,
+                Password:req.body.Password,
+                Name:req.body.Name,
+                SDT:req.body.SDT,
+                BirthDay:req.body.BirthDay,
+                CMND:req.body.CMND,
+                DC:req.body.DC
+            });
+            u.save(function(error)
+            {
+                if(error)
+                {
+                    res.json({kq:0});
+                }
+                else
+                {
+                    res.json({kq:1});
+                }
+            });
             res.json({kq:1});
         }
     });

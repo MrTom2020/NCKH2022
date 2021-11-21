@@ -28,3 +28,4 @@ const { json } = require("body-parser");
 //             }
 //             });
 require("./Cotroller/Signup")(app);
+require("./Cotroller/Insert_data")(app);

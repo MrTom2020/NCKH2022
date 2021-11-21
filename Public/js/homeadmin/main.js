@@ -337,7 +337,7 @@ function checkBM()
         fr.appendChild(iphtPassword);
 
         var t_again_Password = document.createElement("h5");
-        tPassword.innerHTML = "Nhập lại mật khẩu"; 
+        t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
         t_again_Password.setAttribute('style','margin-top:2vh');
         var ipht_again_Password = document.createElement("input");
         ipht_again_Password.setAttribute('type','password');

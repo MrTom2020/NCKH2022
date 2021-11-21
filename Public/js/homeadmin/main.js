@@ -176,7 +176,7 @@ function checkBM()
         tEmail.setAttribute('style','margin-top:6vh');
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-select form-select-lg col-sm-6');
+        iphtEmail.setAttribute('class','form-control col-sm-6');
         for($i = 0;$i < 5;$i++)
         {
             var op = document.createElement("option");

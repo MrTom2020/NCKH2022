@@ -531,7 +531,7 @@ function checkBM()
         btn_connect.innerHTML = "Kết nối ví";
         btn_connect.setAttribute('id','btn_connect');
         btn_connect.setAttribute('class','btn btn-outline-primary');
-        btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
         fr.appendChild(btn_connect);
         myTableDiv.appendChild(fr);
 

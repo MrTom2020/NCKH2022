@@ -330,13 +330,26 @@ function checkBM()
 
         var tr = document.createElement("tr");
 
-        for($i = 0; $i < 5;$i++)
-        {
-            var th = document.createElement("th");
+        var th = document.createElement("th");
             th.setAttribute('scope','row');
-            th.innerHTML = "ok";
+            th.innerHTML = "Tên";
             tr.appendChild(th);
-        }
+         var th = document.createElement("th");
+            th.setAttribute('scope','row');
+            th.innerHTML = "Email";
+            tr.appendChild(th);
+        var th = document.createElement("th");
+            th.setAttribute('scope','row');
+            th.innerHTML = "SDT";
+            tr.appendChild(th);
+        var th = document.createElement("th");
+            th.setAttribute('scope','row');
+            th.innerHTML = "Địa chỉ";
+            tr.appendChild(th);
+        var th = document.createElement("th");
+            th.setAttribute('scope','row');
+            th.innerHTML = "Tình trạng";
+            tr.appendChild(th);
         thd.appendChild(tr);
         tb.appendChild(thd);
 

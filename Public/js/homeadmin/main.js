@@ -526,6 +526,22 @@ function checkBM()
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btny');
         fr.appendChild(btny);
+
+        var btn_connect = document.createElement("button");
+        btn_connect.innerHTML = "Kết nối ví";
+        btn_connect.setAttribute('id','btn_connect');
+        btn_connect.setAttribute('class','btn btn-outline-primary');
+        btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        fr.appendChild(btn_connect);
         myTableDiv.appendChild(fr);
+
+        $("#btn_connect").click(function(){
+            connectMM().then((data)=>{
+                currentAccount = data[0];
+                console.log(currentAccount);
+            }).catch((err)=>{
+                console.log(err);
+            });
+        });
         
       }

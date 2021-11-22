@@ -362,7 +362,7 @@ function checkBM()
         for($i = 0; $i < 5;$i++)
         {
             var trr = document.createElement("tr");
-            for($ii = 0;$ii < 5;$ii++)
+            for($ii = 0;$ii < 6;$ii++)
             {
                 var td = document.createElement("td");
                 td.innerHTML = $ii;

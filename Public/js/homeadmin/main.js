@@ -292,7 +292,7 @@ function checkBM()
                     from:currentAccount
                 });
                }
-               else
+               else if(data.kq == 0)
                {
                    alert("Thiếu tham số");
                }

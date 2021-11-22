@@ -359,15 +359,28 @@ function checkBM()
 
         var tbody = document.createElement("tbody");
 
-        for($i = 0; $i < 6;$i++)
+        for($i = 0; $i < dt_User.length;$i++)
         {
             var trr = document.createElement("tr");
-            for($ii = 0;$ii < 6;$ii++)
-            {
-                var td = document.createElement("td");
-                td.innerHTML = $ii;
-                trr.appendChild(td);
-            }
+            var td1 = document.createElement("td");
+                td1.innerHTML = dt_User[$i].Name;
+                var td2 = document.createElement("td");
+                td2.innerHTML = dt_User[$i].Email;
+                var td3 = document.createElement("td");
+                td3.innerHTML = dt_User[$i].CMND;
+                var td4= document.createElement("td");
+                td4innerHTML = dt_User[$i].SDT;
+                var td5 = document.createElement("td");
+                td5.innerHTML = dt_User[$i].DC;
+                var td6 = document.createElement("td");
+                td6.innerHTML = "Có";
+
+                trr.appendChild(td1);
+                trr.appendChild(td2);
+                trr.appendChild(td3);
+                trr.appendChild(td4);
+                trr.appendChild(td5);
+                trr.appendChild(td6);
             tbody.appendChild(trr);
         }
         tb.appendChild(tbody);

@@ -493,7 +493,7 @@ function checkBM()
 
         var l_vx = document.createElement("label");
         l_vx.setAttribute('class','form-label');
-        t_vx.innerHTML = "Loại vắc xin";
+        l_vx.innerHTML = "Loại vắc xin";
         var i_vx = document.createElement("input");
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(l_vx);
@@ -501,7 +501,7 @@ function checkBM()
 
         var n_vx = document.createElement("label");
         n_vx.setAttribute('class','form-label');
-        t_vx.innerHTML = "Nơi tiêm vắc xin";
+        n_vx.innerHTML = "Nơi tiêm vắc xin";
         var i_vx = document.createElement("input");
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(n_vx);
@@ -509,7 +509,7 @@ function checkBM()
 
         var date_vx = document.createElement("label");
         date_vx.setAttribute('class','form-label');
-        t_vx.innerHTML = "Ngày tiêm vắc xin";
+        date_vx.innerHTML = "Ngày tiêm vắc xin";
         var i_vx = document.createElement("input");
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(date_vx);

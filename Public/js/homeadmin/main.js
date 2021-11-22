@@ -1,5 +1,6 @@
 var dt_User;
 var kt;
+var currentAccount = "";
 $(document).ready(function()
 {
     const api = [
@@ -80,7 +81,6 @@ $(document).ready(function()
             console.log(error + "ok");
         }
     });
-    var currentAccount = "0xafD3e49ad3d9fE6a54DbBe8bDAdBE022B35620e3";
     checkBM();
     $("#connectMM").click(function(){
         connectMM().then((data)=>{
@@ -270,36 +270,36 @@ function checkBM()
 
         $("#btny").click(function()
         {
-        //     if(currentAccount.length == 0)
-        //     {
-        //         alert("Vui lòng đăng nhập MetaMask");
-        //     }
-        //     else
-        //     {
-        //         $.post('../insertdt',{
-        //         Email:$("#iphtEmail").val(),
-        //         Password:$("#iphtPassword").val(),
-        //         Name:$("#iphtName").val(),
-        //         SDT:$("#iphtSDT").val(),
-        //         BirthDay:$("#iphtBirthDay").val(),
-        //         CMND:$("#iphtCMND").val(),
-        //         DC:$("#iphtDC").val()
-        //      },function(data)
-        //      {
-        //        if(data.kq == 1)
-        //        {
-        //            constract_MM.methods.Dangky(data.kqtv._id).send({
-        //             from:currentAccount
-        //         });
-        //        }
-        //        else if(data.kq == 0)
-        //        {
-        //            alert("Thiếu tham số");
-        //        }
+            if(currentAccount.length == 0)
+            {
+                alert("Vui lòng đăng nhập MetaMask");
+            }
+            else
+            {
+                $.post('../insertdt',{
+                Email:$("#iphtEmail").val(),
+                Password:$("#iphtPassword").val(),
+                Name:$("#iphtName").val(),
+                SDT:$("#iphtSDT").val(),
+                BirthDay:$("#iphtBirthDay").val(),
+                CMND:$("#iphtCMND").val(),
+                DC:$("#iphtDC").val()
+             },function(data)
+             {
+               if(data.kq == 1)
+               {
+                   constract_MM.methods.Dangky(data.kqtv._id).send({
+                    from:currentAccount
+                });
+               }
+               else if(data.kq == 0)
+               {
+                   alert("Thiếu tham số");
+               }
                 
-        //    });
-         //}
-         alert("1234");
+           });
+         }
+         //alert("1234");
         });
         
       }

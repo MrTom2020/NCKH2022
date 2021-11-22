@@ -463,10 +463,12 @@ function checkBM()
         myTableDiv.innerHTML = "";
 
         var tl = document.createElement("h3");
+        tl.setAttribute('style','margin-left:5vw');
         tl.innerHTML = "Nhập thông tin người đã tiêm";
         myTableDiv.appendChild(tl);
         
         var fr = document.createElement("form");
+        fr.setAttribute('style','margin-left:5vw');
         fr.setAttribute('style','margin-top:5vh');
 
         var t_name_user = document.createElement("label");

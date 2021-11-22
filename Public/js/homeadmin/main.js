@@ -267,7 +267,7 @@ function checkBM()
         fr.appendChild(btny);
 
         var btnconnect = document.createElement("button");
-        btny.innerHTML = "Kết nối";
+        btnconnect.innerHTML = "Kết nối";
         btny.setAttribute('class','btn btn-outline-primary');
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btnconnect');

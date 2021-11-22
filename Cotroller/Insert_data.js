@@ -12,7 +12,7 @@ module.exports = function(app)
         !req.body.CMND ||
         !req.body.DC)
         {
-            res.json({kq:0});
+            res.json({kq:0,kqtv:"Thiếu tham số"});
         }
         else
         {
@@ -29,14 +29,13 @@ module.exports = function(app)
             {
                 if(error)
                 {
-                    res.json({kq:0});
+                    res.json({kq:0,kqtv:"Thiếu tham số"});
                 }
                 else
                 {
-                    res.json({kq:1});
+                    res.json({kq:1,kqtv:u});
                 }
             });
-            res.json({kq:1});
         }
     });
 }

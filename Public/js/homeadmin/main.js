@@ -1,7 +1,7 @@
 var dt_User;
 var kt;
 var currentAccount = "";
-const api = [
+var api = [
     {
         "anonymous": false,
         "inputs": [
@@ -59,8 +59,8 @@ const api = [
         "type": "function"
     }
 ];
-const addressSM = "0x080FC71Dd4dE52eB3916Ee61F59F4Df4887Ce12B";
-const web3 = new Web3(window.ethereum);
+var addressSM = "0x080FC71Dd4dE52eB3916Ee61F59F4Df4887Ce12B";
+var web3 = new Web3(window.ethereum);
 window.ethereum.enable();
 var constract_infura = new web3_infura.eth.Contract(api,addressSM);
 $(document).ready(function()

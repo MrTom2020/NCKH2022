@@ -366,6 +366,8 @@ function checkBM()
                 td1.innerHTML = dt_User[$i].Name;
                 var td2 = document.createElement("td");
                 td2.innerHTML = dt_User[$i].Email;
+                var td3 = document.createElement("td");
+                td3.innerHTML = dt_User[$i].CMND;
                 var td4= document.createElement("td");
                 td4innerHTML = dt_User[$i].SDT;
                 var td5 = document.createElement("td");
@@ -375,6 +377,7 @@ function checkBM()
 
                 trr.appendChild(td1);
                 trr.appendChild(td2);
+                trr.appendChild(td3);
                 trr.appendChild(td4);
                 trr.appendChild(td5);
                 trr.appendChild(td6);

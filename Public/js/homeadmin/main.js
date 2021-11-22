@@ -369,7 +369,7 @@ function checkBM()
                 var td3 = document.createElement("td");
                 td3.innerHTML = dt_User[$i].CMND;
                 var td4= document.createElement("td");
-                td4innerHTML = dt_User[$i].SDT;
+                td4.innerHTML = dt_User[$i].SDT;
                 var td5 = document.createElement("td");
                 td5.innerHTML = dt_User[$i].DC;
                 var td6 = document.createElement("td");

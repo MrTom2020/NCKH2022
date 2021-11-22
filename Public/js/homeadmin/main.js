@@ -478,7 +478,7 @@ function checkBM()
             op.innerHTML = dt_User[$i].Name.toString();
             iphtEmail.appendChild(op);
         }
-        
+
         var t_vx = document.createElement("label");
         t_vx.setAttribute('class','form-label');
         t_vx.setAttribute('style','margin-top:2vh');
@@ -515,6 +515,12 @@ function checkBM()
         fr.appendChild(date_vx);
         fr.appendChild(i_vx);
 
+        var btny = document.createElement("button");
+        btny.innerHTML = "Đồng ý";
+        btny.setAttribute('class','btn btn-outline-primary');
+        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btny.setAttribute('id','btny');
+        fr.appendChild(btny);
         myTableDiv.appendChild(fr);
         
       }

@@ -478,6 +478,7 @@ function checkBM()
             op.innerHTML = dt_User[$i].Name.toString();
             iphtEmail.appendChild(op);
         }
+        fr.appendChild(iphtEmail);
 
         var t_vx = document.createElement("label");
         t_vx.setAttribute('class','form-label');

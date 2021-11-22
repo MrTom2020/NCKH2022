@@ -469,6 +469,9 @@ function checkBM()
         var fr = document.createElement("form");
         fr.setAttribute('style','margin-top:5vh');
 
+        var t_name_user = document.createElement("label");
+        t_name_user.innerHTML = "Tên người tiêm";
+        t_name_user.setAttribute('class','form-label');
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');

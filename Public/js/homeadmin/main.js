@@ -359,7 +359,7 @@ function checkBM()
 
         var tbody = document.createElement("tbody");
 
-        for($i = 0; $i < 5;$i++)
+        for($i = 0; $i < 6;$i++)
         {
             var trr = document.createElement("tr");
             for($ii = 0;$ii < 6;$ii++)

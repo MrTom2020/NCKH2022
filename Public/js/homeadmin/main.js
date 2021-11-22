@@ -285,12 +285,16 @@ function checkBM()
                 CMND:$("#iphtCMND").val(),
                 DC:$("#iphtDC").val()
              },function(data)
-           {
+             {
                if(data.kq == 1)
                {
                    constract_MM.methods.Dangky(data.kqtv._id).send({
                     from:currentAccount
                 });
+               }
+               else
+               {
+                   alert("Thiếu tham số");
                }
                 
            });

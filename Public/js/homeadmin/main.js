@@ -282,7 +282,12 @@ function checkBM()
         {
             if(currentAccount.length == 0)
             {
-                alert("Vui lòng đăng nhập MetaMask");
+                connectMM().then((data)=>{
+                    currentAccount = data[0];
+                    console.log(currentAccount);
+                }).catch((err)=>{
+                    console.log(err);
+                });
             }
             else
             {

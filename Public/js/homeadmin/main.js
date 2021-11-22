@@ -265,9 +265,19 @@ function checkBM()
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btny');
         fr.appendChild(btny);
+
+        var btnconnect = document.createElement("button");
+        btny.innerHTML = "Kết nối";
+        btny.setAttribute('class','btn btn-outline-primary');
+        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btny.setAttribute('id','btnconnect');
+        fr.appendChild(btnconnect);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
-
+        $("#btnconnect").click(function()
+        {
+            alert("ok");
+        });
         $("#btny").click(function()
         {
             if(currentAccount.length == 0)

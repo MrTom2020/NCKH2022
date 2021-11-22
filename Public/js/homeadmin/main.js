@@ -173,8 +173,8 @@ function checkBM()
         t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";
 
-        var fr = document.createElement("form");
-        fr.setAttribute('style','margin-left:5vh');
+        // var fr = document.createElement("form");
+        // fr.setAttribute('style','margin-left:5vh');
         
         var tEmail = document.createElement("label");
         tEmail.setAttribute('class','form-label');
@@ -183,8 +183,8 @@ function checkBM()
         var iphtEmail = document.createElement("input");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tEmail);
-        fr.appendChild(iphtEmail);
+        myTableDiv.appendChild(tEmail);
+        myTableDiv.appendChild(iphtEmail);
 
         var tPassword = document.createElement("label");
         tPassword.setAttribute('class','form-label');
@@ -194,8 +194,8 @@ function checkBM()
         iphtPassword.setAttribute('type','password');
         iphtPassword.setAttribute('id','iphtPassword');
         iphtPassword.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tPassword);
-        fr.appendChild(iphtPassword);
+        myTableDiv.appendChild(tPassword);
+        myTableDiv.appendChild(iphtPassword);
 
         var t_again_Password = document.createElement("label");
         t_again_Password.setAttribute('class','form-label');
@@ -205,8 +205,8 @@ function checkBM()
         ipht_again_Password.setAttribute('type','password');
         ipht_again_Password.setAttribute('id','ipht_again_Password');
         ipht_again_Password.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(t_again_Password);
-        fr.appendChild(ipht_again_Password);
+        myTableDiv.appendChild(t_again_Password);
+        myTableDiv.appendChild(ipht_again_Password);
 
         var tName = document.createElement("label");
         tName.setAttribute('class','form-label');
@@ -215,8 +215,8 @@ function checkBM()
         var iphtName = document.createElement("input");
         iphtName.setAttribute('id','iphtName');
         iphtName.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tName);
-        fr.appendChild(iphtName);
+        myTableDiv.appendChild(tName);
+        myTableDiv.appendChild(iphtName);
 
         var tSDT = document.createElement("label");
         tSDT.setAttribute('class','form-label');
@@ -225,8 +225,8 @@ function checkBM()
         var iphtSDT = document.createElement("input");
         iphtSDT.setAttribute('id','iphtSDT');
         iphtSDT.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tSDT);
-        fr.appendChild(iphtSDT);
+        myTableDiv.appendChild(tSDT);
+        myTableDiv.appendChild(iphtSDT);
 
         var tBirthDay = document.createElement("label");
         tBirthDay.setAttribute('class','form-label');
@@ -236,8 +236,8 @@ function checkBM()
         iphtBirthDay.setAttribute('id','iphtBirthDay');
         iphtBirthDay.setAttribute('type','date');
         iphtBirthDay.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tBirthDay);
-        fr.appendChild(iphtBirthDay);
+        myTableDiv.appendChild(tBirthDay);
+        myTableDiv.appendChild(iphtBirthDay);
 
         var tCMND = document.createElement("label");
         tCMND.setAttribute('class','form-label');
@@ -246,8 +246,8 @@ function checkBM()
         var iphtCMND = document.createElement("input");
         iphtCMND.setAttribute('id','iphtCMND');
         iphtCMND.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tCMND);
-        fr.appendChild(iphtCMND);
+        myTableDiv.appendChild(tCMND);
+        myTableDiv.appendChild(iphtCMND);
 
         var tDC = document.createElement("label");
         tDC.setAttribute('class','form-label');
@@ -256,24 +256,24 @@ function checkBM()
         var iphtDC = document.createElement("input");
         iphtDC.setAttribute('id','iphtDC');
         iphtDC.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tDC);
-        fr.appendChild(iphtDC);
+        myTableDiv.appendChild(tDC);
+        myTableDiv.appendChild(iphtDC);
 
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btny');
-        fr.appendChild(btny);
+        myTableDiv.appendChild(btny);
 
         var btnconnect = document.createElement("button");
         btnconnect.innerHTML = "Kết nối";
         btnconnect.setAttribute('class','btn btn-outline-primary');
         btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btnconnect.setAttribute('id','btnconnect');
-        fr.appendChild(btnconnect);
+        myTableDiv.appendChild(btnconnect);
         myTableDiv.appendChild(t);
-        myTableDiv.appendChild(fr);
+       // myTableDiv.appendChild(fr);
         $("#btnconnect").click(function()
         {
             connectMM().then((data)=>{

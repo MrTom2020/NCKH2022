@@ -340,6 +340,10 @@ function checkBM()
             tr.appendChild(th);
         var th = document.createElement("th");
             th.setAttribute('scope','row');
+            th.innerHTML = "CMND";
+            tr.appendChild(th);
+        var th = document.createElement("th");
+            th.setAttribute('scope','row');
             th.innerHTML = "SDT";
             tr.appendChild(th);
         var th = document.createElement("th");

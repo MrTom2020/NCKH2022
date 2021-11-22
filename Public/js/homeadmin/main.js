@@ -276,18 +276,18 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btnconnect").click(function()
         {
-            alert("ok");
+            connectMM().then((data)=>{
+                currentAccount = data[0];
+                console.log(currentAccount);
+            }).catch((err)=>{
+                console.log(err);
+            });
         });
         $("#btny").click(function()
         {
             if(currentAccount.length == 0)
             {
-                connectMM().then((data)=>{
-                    currentAccount = data[0];
-                    console.log(currentAccount);
-                }).catch((err)=>{
-                    console.log(err);
-                });
+                alert("Vui lòng đăng nhập MetaMask");
             }
             else
             {

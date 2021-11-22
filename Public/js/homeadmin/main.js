@@ -268,9 +268,9 @@ function checkBM()
 
         var btnconnect = document.createElement("button");
         btnconnect.innerHTML = "Kết nối";
-        btny.setAttribute('class','btn btn-outline-primary');
-        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
-        btny.setAttribute('id','btnconnect');
+        btnconnect.setAttribute('class','btn btn-outline-primary');
+        btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btnconnect.setAttribute('id','btnconnect');
         fr.appendChild(btnconnect);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);

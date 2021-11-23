@@ -170,10 +170,11 @@ function checkBM()
     {
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
+        myTableDiv.setAttribute('style','margin-left:5vw');
         var t = document.createElement("h3");
-        t.setAttribute('style','margin-left:5vw');
+       // t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";
-
+        myTableDiv.appendChild(t);
         // var fr = document.createElement("form");
         // fr.setAttribute('style','margin-left:5vh');
         
@@ -273,7 +274,6 @@ function checkBM()
         btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btnconnect.setAttribute('id','btnconnect');
         myTableDiv.appendChild(btnconnect);
-        myTableDiv.appendChild(t);
        // myTableDiv.appendChild(fr);
         $("#btnconnect").click(function()
         {

@@ -6,38 +6,168 @@ $(document).ready(function()
 {
     const api = [
         {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
             "anonymous": false,
             "inputs": [
                 {
                     "indexed": false,
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "indexed": false,
                     "internalType": "address",
-                    "name": "_vi",
+                    "name": "idvi",
                     "type": "address"
                 },
                 {
                     "indexed": false,
                     "internalType": "string",
-                    "name": "_id",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "ngaytiem",
                     "type": "string"
                 }
             ],
-            "name": "SM_Ban_Data",
+            "name": "Send_dt",
             "type": "event"
         },
         {
+            "constant": false,
             "inputs": [
                 {
                     "internalType": "string",
-                    "name": "_id",
+                    "name": "id",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "ngaytiem",
                     "type": "string"
                 }
             ],
-            "name": "Dangky",
+            "name": "Send_data",
             "outputs": [],
+            "payable": false,
             "stateMutability": "nonpayable",
             "type": "function"
         },
         {
+            "constant": true,
+            "inputs": [],
+            "name": "a",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "isOwner",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": false,
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
             "inputs": [
                 {
                     "internalType": "uint256",
@@ -45,19 +175,35 @@ $(document).ready(function()
                     "type": "uint256"
                 }
             ],
-            "name": "arrHV",
+            "name": "userArray",
             "outputs": [
                 {
-                    "internalType": "string",
-                    "name": "_ID",
-                    "type": "string"
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
                 },
                 {
                     "internalType": "address",
-                    "name": "_VI",
+                    "name": "idvi",
                     "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "ngaytiem",
+                    "type": "string"
                 }
             ],
+            "payable": false,
             "stateMutability": "view",
             "type": "function"
         }

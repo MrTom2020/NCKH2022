@@ -606,7 +606,7 @@ function checkBM()
             });
         });
         $("#btny").click(function(){
-            alert("ok");
+            alert(("#iphtEmail").val());
         });
         
       }

@@ -551,6 +551,7 @@ function checkBM()
         t_vx.setAttribute('style','margin-top:2vh');
         t_vx.innerHTML = "Tên vắc xin";
         var i_vx = document.createElement("input");
+        i_vx.setAttribute('id','N_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(t_vx);
         fr.appendChild(i_vx);
@@ -560,6 +561,7 @@ function checkBM()
         l_vx.setAttribute('style','margin-top:2vh');
         l_vx.innerHTML = "Loại vắc xin";
         var i_vx = document.createElement("input");
+        i_vx.setAttribute('id','l_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(l_vx);
         fr.appendChild(i_vx);
@@ -569,6 +571,7 @@ function checkBM()
         n_vx.setAttribute('style','margin-top:2vh');
         n_vx.innerHTML = "Nơi tiêm vắc xin";
         var i_vx = document.createElement("input");
+        i_vx.setAttribute('id','n_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(n_vx);
         fr.appendChild(i_vx);
@@ -578,6 +581,7 @@ function checkBM()
         date_vx.setAttribute('class','form-label');
         date_vx.innerHTML = "Ngày tiêm vắc xin";
         var i_vx = document.createElement("input");
+        i_vx.setAttribute('id','date_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(date_vx);
         fr.appendChild(i_vx);

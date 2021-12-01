@@ -606,7 +606,16 @@ function checkBM()
             });
         });
         $("#btny").click(function(){
-            alert($("#iphtEmail").val());
+           $.post("../insert_vx",{
+            IdUser:$("#iphtEmail").val(),
+            Tenvx:$("#iphtEmail").val(),
+            Loai:$("#iphtEmail").val(),
+            Noitiem:$("#iphtEmail").val(),
+            NgayTiem:$("#iphtEmail").val()
+           },function(data)
+           {
+                alert(data.kq.toString());
+           });
         });
         
       }

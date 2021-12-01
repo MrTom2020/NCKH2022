@@ -2,7 +2,7 @@ var vx = require("../Models/vx");
 
 module.exports = function(app)
 {
-    app.post("../insert_vx",function(req,res){
+    app.post("/insert_vx",function(req,res){
         if(!req.body.Tenvx ||
             !req.body.Loai ||
             !req.body.Noitiem ||

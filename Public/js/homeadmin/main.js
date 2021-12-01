@@ -143,7 +143,6 @@ $(document).ready(function()
     $.post("../home",function(data)
      {
        dt_User = data.loi1;
-       alert(JSON.stringify(data.loi1.length));
      });
      $("#inputdatavx").click(function()
      {
@@ -518,7 +517,6 @@ function checkBM()
             iphtCMND.value = dt_User[x].CMND;
             iphtName.value = dt_User[x].Name;
             iphtBirthDay.value = dt_User[x].BirthDay;
-            alert(x);
         });
       }
       function insert_vx()

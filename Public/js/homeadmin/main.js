@@ -581,6 +581,7 @@ function checkBM()
         date_vx.setAttribute('class','form-label');
         date_vx.innerHTML = "Ngày tiêm vắc xin";
         var i_vx = document.createElement("input");
+        i_vx.setAttribute('type','date');
         i_vx.setAttribute('id','date_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(date_vx);

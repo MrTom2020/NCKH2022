@@ -531,7 +531,7 @@ function checkBM()
         tl.innerHTML = "Nhập thông tin người đã tiêm";
         myTableDiv.appendChild(tl);
         
-        var fr = document.createElement("form");
+        var fr = document.createElement("div");
         fr.setAttribute('style','margin-left:5vw;margin-top:5vh');
 
         var t_name_user = document.createElement("label");

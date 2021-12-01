@@ -610,7 +610,7 @@ function checkBM()
             Tenvx:$("#iphtEmail").val(),
             Loai:$("#iphtEmail").val(),
             Noitiem:$("#iphtEmail").val(),
-            NgayTiem:$("#iphtEmail").val()
+            NgayTiem:""
            },function(data)
            {
                 alert(data.kq.toString());

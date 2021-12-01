@@ -766,7 +766,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data("123","123","123","123","123").send({
+                constract_MM.methods.Send_data("123","123","123","123").send({
                     from:currentAccount
                 });
                }

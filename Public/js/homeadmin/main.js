@@ -607,7 +607,6 @@ function checkBM()
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{
-            IdUser:$("#iphtEmail").val(),
             Tenvx:$("#iphtEmail").val(),
             Loai:$("#iphtEmail").val(),
             Noitiem:$("#iphtEmail").val(),

@@ -551,7 +551,7 @@ function checkBM()
         t_vx.setAttribute('style','margin-top:2vh');
         t_vx.innerHTML = "Tên vắc xin";
         var i_vx = document.createElement("input");
-        i_vx.setAttribute('id','N_vx');
+        i_vx.setAttribute('id','t_vx');
         i_vx.setAttribute('class','form-control col-sm-6');
         fr.appendChild(t_vx);
         fr.appendChild(i_vx);
@@ -611,10 +611,10 @@ function checkBM()
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{
-            Tenvx:$("#iphtEmail").val(),
-            Loai:$("#iphtEmail").val(),
-            Noitiem:$("#iphtEmail").val(),
-            NgayTiem:""
+            Tenvx:$("#t_vx").val(),
+            Loai:$("#l_vx").val(),
+            Noitiem:$("#n_vx").val(),
+            NgayTiem:$("#date_vx").val()
            },function(data)
            {
                 alert(data.kq.toString());

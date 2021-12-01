@@ -6,6 +6,12 @@ $(document).ready(function()
 {
     const api = [
         {
+            "inputs": [],
+            "payable": false,
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
             "anonymous": false,
             "inputs": [
                 {
@@ -38,6 +44,24 @@ $(document).ready(function()
                     "internalType": "address",
                     "name": "idvi",
                     "type": "address"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "ngaytiem",
+                    "type": "string"
                 }
             ],
             "name": "Send_dt",
@@ -50,12 +74,42 @@ $(document).ready(function()
                     "internalType": "string",
                     "name": "id",
                     "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "ngaytiem",
+                    "type": "string"
                 }
             ],
             "name": "Send_data",
             "outputs": [],
             "payable": false,
             "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "constant": true,
+            "inputs": [],
+            "name": "a",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "payable": false,
+            "stateMutability": "view",
             "type": "function"
         },
         {
@@ -132,6 +186,21 @@ $(document).ready(function()
                     "internalType": "address",
                     "name": "idvi",
                     "type": "address"
+                },
+                {
+                    "internalType": "string",
+                    "name": "nt",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "loai",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "ngaytiem",
+                    "type": "string"
                 }
             ],
             "payable": false,
@@ -139,7 +208,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x70d1189e29D804D504F859cAAB39FC6BC1204CaC";
+    const addressSM = "0xDF820F406be1f45433542f88483B5Acf52034c88";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 
@@ -697,7 +766,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data("123").send({
+                constract_MM.methods.Send_data("123","123","123","123","123").send({
                     from:currentAccount
                 });
                }

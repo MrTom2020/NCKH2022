@@ -618,12 +618,12 @@ function checkBM()
             NgayTiem:$("#date_vx").val()
            },function(data)
            {
-               if(data.kq == 1)
-               {
-                constract_MM.methods.Send_data(data.kq._id,$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString()).send({
-                    from:currentAccount
-                });
-               }
+            //    if(data.kq == 1)
+            //    {
+            //     constract_MM.methods.Send_data(data.kq._id,$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString()).send({
+            //         from:currentAccount
+            //     });
+            //    }
            });
         });
         

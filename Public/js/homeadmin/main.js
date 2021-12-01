@@ -50,21 +50,6 @@ $(document).ready(function()
                     "internalType": "string",
                     "name": "id",
                     "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "nt",
-                    "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "loai",
-                    "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "ngaytiem",
-                    "type": "string"
                 }
             ],
             "name": "Send_data",
@@ -147,21 +132,6 @@ $(document).ready(function()
                     "internalType": "address",
                     "name": "idvi",
                     "type": "address"
-                },
-                {
-                    "internalType": "string",
-                    "name": "nt",
-                    "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "loai",
-                    "type": "string"
-                },
-                {
-                    "internalType": "string",
-                    "name": "ngaytiem",
-                    "type": "string"
                 }
             ],
             "payable": false,
@@ -169,7 +139,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x4D0118a91AAa39E8d69a61a0f4c30010916321a9";
+    const addressSM = "0x70d1189e29D804D504F859cAAB39FC6BC1204CaC";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 

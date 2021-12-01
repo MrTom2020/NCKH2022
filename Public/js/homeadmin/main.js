@@ -620,7 +620,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send(data.kqtv._id,$("#n_vx").val(),$("#l_vx").val(),$("#date_vx").val()).send({
+                constract_MM.methods.Send(data.kqtv._id,$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString()).send({
                     from:currentAccount
                 });
                }

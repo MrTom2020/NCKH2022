@@ -62,7 +62,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x355A617CD7b02BC2fd39dd530f950F0b5a6CfEc0";
+    const addressSM = "0x60881c90C8707aD51c769E370ac759F5d4dE77Ca";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 

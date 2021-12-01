@@ -62,7 +62,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x080FC71Dd4dE52eB3916Ee61F59F4Df4887Ce12B";
+    const addressSM = "0x355A617CD7b02BC2fd39dd530f950F0b5a6CfEc0";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 
@@ -315,7 +315,6 @@ function checkBM()
                 
            });
          }
-         //alert("1234");
         });
         
       }
@@ -509,7 +508,7 @@ function checkBM()
            {
                 alert(data.kq.toString());
            });
-        })
+        });
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
@@ -607,6 +606,9 @@ function checkBM()
             }).catch((err)=>{
                 console.log(err);
             });
+        });
+        $("#btny").click(function(){
+            alert("ok");
         });
         
       }

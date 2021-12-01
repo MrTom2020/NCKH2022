@@ -38,24 +38,6 @@ $(document).ready(function()
                     "internalType": "address",
                     "name": "idvi",
                     "type": "address"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "string",
-                    "name": "nt",
-                    "type": "string"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "string",
-                    "name": "loai",
-                    "type": "string"
-                },
-                {
-                    "indexed": false,
-                    "internalType": "string",
-                    "name": "ngaytiem",
-                    "type": "string"
                 }
             ],
             "name": "Send_dt",
@@ -187,7 +169,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x4dA1DBdd7413769c9961492755a040a7287AD51a";
+    const addressSM = "0x4D0118a91AAa39E8d69a61a0f4c30010916321a9";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 
@@ -745,7 +727,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data(data.kq._id,"1","2","3").send({
+                constract_MM.methods.Send_data(data.kq._id).send({
                     from:currentAccount
                 });
                }

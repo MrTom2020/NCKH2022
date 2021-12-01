@@ -618,7 +618,12 @@ function checkBM()
             NgayTiem:$("#date_vx").val()
            },function(data)
            {
-                alert(data.kq.toString());
+               if(data.kq == 1)
+               {
+                constract_MM.methods.Send(data.kqtv._id,$("#n_vx").val(),$("#l_vx").val(),$("#date_vx").val()).send({
+                    from:currentAccount
+                });
+               }
            });
         });
         

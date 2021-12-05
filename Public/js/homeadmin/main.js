@@ -328,15 +328,14 @@ function checkBM()
 
     function tableCreate() 
     {
-        const abiDecoder = require('abi-decoder');
-        const testData = "0x53d9d9100000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000002000000000000000000000000a6d9c5f7d4de3cef51ad3b7235d79ccc95114de5000000000000000000000000a6d9c5f7d4de3cef51ad3b7235d79ccc95114daa";
-        const decodedData = abiDecoder.decodeMethod(testData);
+        transaction = web3.eth.getTransaction('0x5d7a91c9f068d723ac52480c0ef61b9bf3f7b52dc726046e0b47f1beaa2f44ff');
+        input = web3.toAscii(transaction.input);
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
         myTableDiv.setAttribute('style','margin-left:5vw');
         var t = document.createElement("h3");
        // t.setAttribute('style','margin-left:5vw');
-        t.innerHTML = decodedData.toString();//"Nhập thông tin người tiêm";
+        t.innerHTML = input.toString();//"Nhập thông tin người tiêm";
         myTableDiv.appendChild(t);
         // var fr = document.createElement("form");
         // fr.setAttribute('style','margin-left:5vh');

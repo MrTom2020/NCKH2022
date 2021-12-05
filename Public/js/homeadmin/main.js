@@ -2,6 +2,7 @@ var dt_User;
 var kt;
 var currentAccount = "";
 var constract_MM;
+var k;
 $(document).ready(function()
 {
     const api = [
@@ -226,8 +227,8 @@ $(document).ready(function()
     ];
     const addressSM = "0x6Acc04F519C04C47D070e7F68B0d99cB16593DDe";
     const web3 = new Web3(window.ethereum);
+    k = web3.toAscii("0x1da55efda1e5f90a4ce5c7c63efef4c6f9a7059cdd5736f0956c3dfbc97da439");
     window.ethereum.enable();
-
     constract_MM = new web3.eth.Contract(api,addressSM);
     console.log(constract_MM);
 
@@ -684,7 +685,7 @@ function checkBM()
       function insert_vx()
       {
         var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = "";
+        myTableDiv.innerHTML = k;
 
         var tl = document.createElement("h3");
         tl.setAttribute('style','margin-left:5vw');

@@ -62,6 +62,12 @@ $(document).ready(function()
                     "internalType": "string",
                     "name": "ngaytiem",
                     "type": "string"
+                },
+                {
+                    "indexed": false,
+                    "internalType": "string",
+                    "name": "tenvx",
+                    "type": "string"
                 }
             ],
             "name": "Send_dt",
@@ -88,6 +94,11 @@ $(document).ready(function()
                 {
                     "internalType": "string",
                     "name": "ngaytiem",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
+                    "name": "tenvx",
                     "type": "string"
                 }
             ],
@@ -189,6 +200,11 @@ $(document).ready(function()
                 },
                 {
                     "internalType": "string",
+                    "name": "tenvx",
+                    "type": "string"
+                },
+                {
+                    "internalType": "string",
                     "name": "nt",
                     "type": "string"
                 },
@@ -208,7 +224,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0xDF820F406be1f45433542f88483B5Acf52034c88";
+    const addressSM = "0x6Acc04F519C04C47D070e7F68B0d99cB16593DDe";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
 
@@ -766,7 +782,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data("123","123","123","123").send({
+                constract_MM.methods.Send_data("123",$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#n_vx").val().toString()).send({
                     from:currentAccount
                 });
                }

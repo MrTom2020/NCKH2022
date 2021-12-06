@@ -35,9 +35,9 @@ $(document).ready(function()
             "inputs": [
                 {
                     "indexed": false,
-                    "internalType": "uint256",
+                    "internalType": "string",
                     "name": "id",
-                    "type": "uint256"
+                    "type": "string"
                 },
                 {
                     "indexed": false,
@@ -189,9 +189,9 @@ $(document).ready(function()
             "name": "userArray",
             "outputs": [
                 {
-                    "internalType": "uint256",
+                    "internalType": "string",
                     "name": "id",
-                    "type": "uint256"
+                    "type": "string"
                 },
                 {
                     "internalType": "address",
@@ -224,7 +224,7 @@ $(document).ready(function()
             "type": "function"
         }
     ];
-    const addressSM = "0x6Acc04F519C04C47D070e7F68B0d99cB16593DDe";
+    const addressSM = "0x50e26207F8E47DE56F3710523873584A8402B1da";
     const web3 = new Web3(window.ethereum);
     window.ethereum.enable();
     constract_MM = new web3.eth.Contract(api,addressSM);

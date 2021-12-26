@@ -276,7 +276,7 @@ $(document).ready(function()
     });
     $("#updatedata").click(function()
     {
-      //  updateuser();
+        updateuser();
     });
     $("#btnDangKy").click(function()
     {
@@ -328,156 +328,156 @@ function checkBM()
 
     function tableCreate() 
     {
-        transaction = web3.eth.getTransaction('0x5d7a91c9f068d723ac52480c0ef61b9bf3f7b52dc726046e0b47f1beaa2f44ff');
-        input = web3.toAscii(transaction.input);
-        var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = "";
-        myTableDiv.setAttribute('style','margin-left:5vw');
-        var t = document.createElement("h3");
-       // t.setAttribute('style','margin-left:5vw');
-        t.innerHTML = input.toString();//"Nhập thông tin người tiêm";
-        myTableDiv.appendChild(t);
-        // var fr = document.createElement("form");
-        // fr.setAttribute('style','margin-left:5vh');
+    //     transaction = web3.eth.getTransaction('0x5d7a91c9f068d723ac52480c0ef61b9bf3f7b52dc726046e0b47f1beaa2f44ff');
+    //     input = web3.toAscii(transaction.input);
+    //     var myTableDiv = document.getElementById("content2");
+    //     myTableDiv.innerHTML = "";
+    //     myTableDiv.setAttribute('style','margin-left:5vw');
+    //     var t = document.createElement("h3");
+    //    // t.setAttribute('style','margin-left:5vw');
+    //     t.innerHTML = input.toString();//"Nhập thông tin người tiêm";
+    //     myTableDiv.appendChild(t);
+    //     // var fr = document.createElement("form");
+    //     // fr.setAttribute('style','margin-left:5vh');
         
-        var tEmail = document.createElement("label");
-        tEmail.setAttribute('class','form-label');
-        tEmail.innerHTML = "Email";
-        tEmail.setAttribute('style','margin-top:6vh');
-        var iphtEmail = document.createElement("input");
-        iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tEmail);
-        myTableDiv.appendChild(iphtEmail);
+    //     var tEmail = document.createElement("label");
+    //     tEmail.setAttribute('class','form-label');
+    //     tEmail.innerHTML = "Email";
+    //     tEmail.setAttribute('style','margin-top:6vh');
+    //     var iphtEmail = document.createElement("input");
+    //     iphtEmail.setAttribute('id','iphtEmail');
+    //     iphtEmail.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tEmail);
+    //     myTableDiv.appendChild(iphtEmail);
 
-        var tPassword = document.createElement("label");
-        tPassword.setAttribute('class','form-label');
-        tPassword.innerHTML = "Mật khẩu"; 
-        tPassword.setAttribute('style','margin-top:2vh');
-        var iphtPassword = document.createElement("input");
-        iphtPassword.setAttribute('type','password');
-        iphtPassword.setAttribute('id','iphtPassword');
-        iphtPassword.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tPassword);
-        myTableDiv.appendChild(iphtPassword);
+    //     var tPassword = document.createElement("label");
+    //     tPassword.setAttribute('class','form-label');
+    //     tPassword.innerHTML = "Mật khẩu"; 
+    //     tPassword.setAttribute('style','margin-top:2vh');
+    //     var iphtPassword = document.createElement("input");
+    //     iphtPassword.setAttribute('type','password');
+    //     iphtPassword.setAttribute('id','iphtPassword');
+    //     iphtPassword.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tPassword);
+    //     myTableDiv.appendChild(iphtPassword);
 
-        var t_again_Password = document.createElement("label");
-        t_again_Password.setAttribute('class','form-label');
-        t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
-        t_again_Password.setAttribute('style','margin-top:2vh');
-        var ipht_again_Password = document.createElement("input");
-        ipht_again_Password.setAttribute('type','password');
-        ipht_again_Password.setAttribute('id','ipht_again_Password');
-        ipht_again_Password.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(t_again_Password);
-        myTableDiv.appendChild(ipht_again_Password);
+    //     var t_again_Password = document.createElement("label");
+    //     t_again_Password.setAttribute('class','form-label');
+    //     t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
+    //     t_again_Password.setAttribute('style','margin-top:2vh');
+    //     var ipht_again_Password = document.createElement("input");
+    //     ipht_again_Password.setAttribute('type','password');
+    //     ipht_again_Password.setAttribute('id','ipht_again_Password');
+    //     ipht_again_Password.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(t_again_Password);
+    //     myTableDiv.appendChild(ipht_again_Password);
 
-        var tName = document.createElement("label");
-        tName.setAttribute('class','form-label');
-        tName.innerHTML = "Họ và tên";
-        tName.setAttribute('style','margin-top:2vh');
-        var iphtName = document.createElement("input");
-        iphtName.setAttribute('id','iphtName');
-        iphtName.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tName);
-        myTableDiv.appendChild(iphtName);
+    //     var tName = document.createElement("label");
+    //     tName.setAttribute('class','form-label');
+    //     tName.innerHTML = "Họ và tên";
+    //     tName.setAttribute('style','margin-top:2vh');
+    //     var iphtName = document.createElement("input");
+    //     iphtName.setAttribute('id','iphtName');
+    //     iphtName.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tName);
+    //     myTableDiv.appendChild(iphtName);
 
-        var tSDT = document.createElement("label");
-        tSDT.setAttribute('class','form-label');
-        tSDT.innerHTML = "Số điện thoại";
-        tSDT.setAttribute('style','margin-top:2vh');
-        var iphtSDT = document.createElement("input");
-        iphtSDT.setAttribute('id','iphtSDT');
-        iphtSDT.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tSDT);
-        myTableDiv.appendChild(iphtSDT);
+    //     var tSDT = document.createElement("label");
+    //     tSDT.setAttribute('class','form-label');
+    //     tSDT.innerHTML = "Số điện thoại";
+    //     tSDT.setAttribute('style','margin-top:2vh');
+    //     var iphtSDT = document.createElement("input");
+    //     iphtSDT.setAttribute('id','iphtSDT');
+    //     iphtSDT.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tSDT);
+    //     myTableDiv.appendChild(iphtSDT);
 
-        var tBirthDay = document.createElement("label");
-        tBirthDay.setAttribute('class','form-label');
-        tBirthDay.innerHTML = "Ngày sinh";
-        tBirthDay.setAttribute('style','margin-top:2vh');
-        var iphtBirthDay = document.createElement("input");
-        iphtBirthDay.setAttribute('id','iphtBirthDay');
-        iphtBirthDay.setAttribute('type','date');
-        iphtBirthDay.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tBirthDay);
-        myTableDiv.appendChild(iphtBirthDay);
+    //     var tBirthDay = document.createElement("label");
+    //     tBirthDay.setAttribute('class','form-label');
+    //     tBirthDay.innerHTML = "Ngày sinh";
+    //     tBirthDay.setAttribute('style','margin-top:2vh');
+    //     var iphtBirthDay = document.createElement("input");
+    //     iphtBirthDay.setAttribute('id','iphtBirthDay');
+    //     iphtBirthDay.setAttribute('type','date');
+    //     iphtBirthDay.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tBirthDay);
+    //     myTableDiv.appendChild(iphtBirthDay);
 
-        var tCMND = document.createElement("label");
-        tCMND.setAttribute('class','form-label');
-        tCMND.innerHTML = "CMND";
-        tCMND.setAttribute('style','margin-top:2vh');
-        var iphtCMND = document.createElement("input");
-        iphtCMND.setAttribute('id','iphtCMND');
-        iphtCMND.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tCMND);
-        myTableDiv.appendChild(iphtCMND);
+    //     var tCMND = document.createElement("label");
+    //     tCMND.setAttribute('class','form-label');
+    //     tCMND.innerHTML = "CMND";
+    //     tCMND.setAttribute('style','margin-top:2vh');
+    //     var iphtCMND = document.createElement("input");
+    //     iphtCMND.setAttribute('id','iphtCMND');
+    //     iphtCMND.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tCMND);
+    //     myTableDiv.appendChild(iphtCMND);
 
-        var tDC = document.createElement("label");
-        tDC.setAttribute('class','form-label');
-        tDC.innerHTML = "Địa chỉ";
-        tDC.setAttribute('style','margin-top:2vh');
-        var iphtDC = document.createElement("input");
-        iphtDC.setAttribute('id','iphtDC');
-        iphtDC.setAttribute('class','form-control col-sm-6');
-        myTableDiv.appendChild(tDC);
-        myTableDiv.appendChild(iphtDC);
+    //     var tDC = document.createElement("label");
+    //     tDC.setAttribute('class','form-label');
+    //     tDC.innerHTML = "Địa chỉ";
+    //     tDC.setAttribute('style','margin-top:2vh');
+    //     var iphtDC = document.createElement("input");
+    //     iphtDC.setAttribute('id','iphtDC');
+    //     iphtDC.setAttribute('class','form-control col-sm-6');
+    //     myTableDiv.appendChild(tDC);
+    //     myTableDiv.appendChild(iphtDC);
 
-        var btny = document.createElement("button");
-        btny.innerHTML = "Đồng ý";
-        btny.setAttribute('class','btn btn-outline-primary');
-        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
-        btny.setAttribute('id','btny');
-        myTableDiv.appendChild(btny);
+    //     var btny = document.createElement("button");
+    //     btny.innerHTML = "Đồng ý";
+    //     btny.setAttribute('class','btn btn-outline-primary');
+    //     btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+    //     btny.setAttribute('id','btny');
+    //     myTableDiv.appendChild(btny);
 
-        var btnconnect = document.createElement("button");
-        btnconnect.innerHTML = "Kết nối";
-        btnconnect.setAttribute('class','btn btn-outline-primary');
-        btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
-        btnconnect.setAttribute('id','btnconnect');
-        myTableDiv.appendChild(btnconnect);
-       // myTableDiv.appendChild(fr);
-        $("#btnconnect").click(function()
-        {
-            connectMM().then((data)=>{
-                currentAccount = data[0];
-                console.log(currentAccount);
-            }).catch((err)=>{
-                console.log(err);
-            });
-        });
-        $("#btny").click(function()
-        {
-            if(currentAccount.length == 0)
-            {
-                alert("Vui lòng đăng nhập MetaMask");
-            }
-            else
-            {
-                $.post('../insertdt',{
-                Email:$("#iphtEmail").val(),
-                Password:$("#iphtPassword").val(),
-                Name:$("#iphtName").val(),
-                SDT:$("#iphtSDT").val(),
-                BirthDay:$("#iphtBirthDay").val(),
-                CMND:$("#iphtCMND").val(),
-                DC:$("#iphtDC").val()
-             },function(data)
-             {
-               if(data.kq == 1)
-               {
-                   constract_MM.methods.Dangky(data.kqtv._id).send({
-                    from:currentAccount
-                });
-               }
-               else if(data.kq == 0)
-               {
-                   alert("Thiếu tham số");
-               }
+    //     var btnconnect = document.createElement("button");
+    //     btnconnect.innerHTML = "Kết nối";
+    //     btnconnect.setAttribute('class','btn btn-outline-primary');
+    //     btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
+    //     btnconnect.setAttribute('id','btnconnect');
+    //     myTableDiv.appendChild(btnconnect);
+    //    // myTableDiv.appendChild(fr);
+    //     $("#btnconnect").click(function()
+    //     {
+    //         connectMM().then((data)=>{
+    //             currentAccount = data[0];
+    //             console.log(currentAccount);
+    //         }).catch((err)=>{
+    //             console.log(err);
+    //         });
+    //     });
+    //     $("#btny").click(function()
+    //     {
+    //         if(currentAccount.length == 0)
+    //         {
+    //             alert("Vui lòng đăng nhập MetaMask");
+    //         }
+    //         else
+    //         {
+    //             $.post('../insertdt',{
+    //             Email:$("#iphtEmail").val(),
+    //             Password:$("#iphtPassword").val(),
+    //             Name:$("#iphtName").val(),
+    //             SDT:$("#iphtSDT").val(),
+    //             BirthDay:$("#iphtBirthDay").val(),
+    //             CMND:$("#iphtCMND").val(),
+    //             DC:$("#iphtDC").val()
+    //          },function(data)
+    //          {
+    //            if(data.kq == 1)
+    //            {
+    //                constract_MM.methods.Dangky(data.kqtv._id).send({
+    //                 from:currentAccount
+    //             });
+    //            }
+    //            else if(data.kq == 0)
+    //            {
+    //                alert("Thiếu tham số");
+    //            }
                 
-           });
-         }
-        });
+    //        });
+    //      }
+    //     });
         
       }
       function createlist()

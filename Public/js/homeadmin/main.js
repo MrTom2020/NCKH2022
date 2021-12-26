@@ -268,7 +268,7 @@ $(document).ready(function()
     });
     $("#inputdata").click(function()
     {
-        //tableCreate();
+        tableCreate();
     });
     $("#test").click(function()
     {
@@ -276,7 +276,7 @@ $(document).ready(function()
     });
     $("#updatedata").click(function()
     {
-        updateuser();
+      //  updateuser();
     });
     $("#btnDangKy").click(function()
     {

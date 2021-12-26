@@ -272,7 +272,7 @@ $(document).ready(function()
     });
     $("#test").click(function()
     {
-        createlist();
+       // createlist();
     });
     $("#updatedata").click(function()
     {

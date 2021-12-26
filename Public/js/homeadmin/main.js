@@ -328,14 +328,14 @@ function checkBM()
 
     function tableCreate() 
     {
-        transaction = web3.eth.getTransaction('0x5d7a91c9f068d723ac52480c0ef61b9bf3f7b52dc726046e0b47f1beaa2f44ff');
-        input = web3.toAscii(transaction.input);
+        // transaction = web3.eth.getTransaction('0x5d7a91c9f068d723ac52480c0ef61b9bf3f7b52dc726046e0b47f1beaa2f44ff');
+        // input = web3.toAscii(transaction.input);
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
         myTableDiv.setAttribute('style','margin-left:5vw');
         var t = document.createElement("h3");
        // t.setAttribute('style','margin-left:5vw');
-        t.innerHTML = input.toString();//"Nhập thông tin người tiêm";
+        t.innerHTML = "Nhập thông tin người tiêm";//"Nhập thông tin người tiêm";
         myTableDiv.appendChild(t);
         // var fr = document.createElement("form");
         // fr.setAttribute('style','margin-left:5vh');

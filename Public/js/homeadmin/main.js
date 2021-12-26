@@ -482,70 +482,70 @@ function checkBM()
       }
       function createlist()
       {
-        var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = "";
+        // var myTableDiv = document.getElementById("content2");
+        // myTableDiv.innerHTML = "";
 
-        var tb = document.createElement("table");
-        tb.setAttribute('class','table table-hover');
-        var thd = document.createElement("thead");
+        // var tb = document.createElement("table");
+        // tb.setAttribute('class','table table-hover');
+        // var thd = document.createElement("thead");
 
-        var tr = document.createElement("tr");
+        // var tr = document.createElement("tr");
 
-        var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "Tên";
-            tr.appendChild(th);
-         var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "Email";
-            tr.appendChild(th);
-        var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "CMND";
-            tr.appendChild(th);
-        var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "SDT";
-            tr.appendChild(th);
-        var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "Địa chỉ";
-            tr.appendChild(th);
-        var th = document.createElement("th");
-            th.setAttribute('scope','row');
-            th.innerHTML = "Tình trạng";
-            tr.appendChild(th);
-        thd.appendChild(tr);
-        tb.appendChild(thd);
+        // var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "Tên";
+        //     tr.appendChild(th);
+        //  var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "Email";
+        //     tr.appendChild(th);
+        // var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "CMND";
+        //     tr.appendChild(th);
+        // var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "SDT";
+        //     tr.appendChild(th);
+        // var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "Địa chỉ";
+        //     tr.appendChild(th);
+        // var th = document.createElement("th");
+        //     th.setAttribute('scope','row');
+        //     th.innerHTML = "Tình trạng";
+        //     tr.appendChild(th);
+        // thd.appendChild(tr);
+        // tb.appendChild(thd);
 
-        var tbody = document.createElement("tbody");
+        // var tbody = document.createElement("tbody");
 
-        for($i = 0; $i < dt_User.length;$i++)
-        {
-            var trr = document.createElement("tr");
-            var td1 = document.createElement("td");
-                td1.innerHTML = dt_User[$i].Name;
-                var td2 = document.createElement("td");
-                td2.innerHTML = dt_User[$i].Email;
-                var td3 = document.createElement("td");
-                td3.innerHTML = dt_User[$i].CMND;
-                var td4= document.createElement("td");
-                td4.innerHTML = dt_User[$i].SDT;
-                var td5 = document.createElement("td");
-                td5.innerHTML = dt_User[$i].DC;
-                var td6 = document.createElement("td");
-                td6.innerHTML = "Có";
+        // for($i = 0; $i < dt_User.length;$i++)
+        // {
+        //     var trr = document.createElement("tr");
+        //     var td1 = document.createElement("td");
+        //         td1.innerHTML = dt_User[$i].Name;
+        //         var td2 = document.createElement("td");
+        //         td2.innerHTML = dt_User[$i].Email;
+        //         var td3 = document.createElement("td");
+        //         td3.innerHTML = dt_User[$i].CMND;
+        //         var td4= document.createElement("td");
+        //         td4.innerHTML = dt_User[$i].SDT;
+        //         var td5 = document.createElement("td");
+        //         td5.innerHTML = dt_User[$i].DC;
+        //         var td6 = document.createElement("td");
+        //         td6.innerHTML = "Có";
 
-                trr.appendChild(td1);
-                trr.appendChild(td2);
-                trr.appendChild(td3);
-                trr.appendChild(td4);
-                trr.appendChild(td5);
-                trr.appendChild(td6);
-            tbody.appendChild(trr);
-        }
-        tb.appendChild(tbody);
-        myTableDiv.appendChild(tb);
+        //         trr.appendChild(td1);
+        //         trr.appendChild(td2);
+        //         trr.appendChild(td3);
+        //         trr.appendChild(td4);
+        //         trr.appendChild(td5);
+        //         trr.appendChild(td6);
+        //     tbody.appendChild(trr);
+        // }
+        // tb.appendChild(tbody);
+        // myTableDiv.appendChild(tb);
       }
       function updateuser()
       {

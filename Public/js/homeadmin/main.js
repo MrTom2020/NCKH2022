@@ -347,7 +347,7 @@ function checkBM()
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
         fr.appendChild(tEmail);
-        frv.appendChild(iphtEmail);
+        fr.appendChild(iphtEmail);
 
         var tPassword = document.createElement("label");
         tPassword.setAttribute('class','form-label');

@@ -429,23 +429,7 @@ function checkBM()
         btny.setAttribute('id','btny');
         fr.appendChild(btny);
 
-        var btnconnect = document.createElement("button");
-        btnconnect.innerHTML = "Kết nối";
-        btnconnect.setAttribute('class','btn btn-outline-primary');
-        btnconnect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
-        btnconnect.setAttribute('id','btnconnect');
-        fr.appendChild(btnconnect);
-
         myTableDiv.appendChild(fr);
-        $("#btnconnect").click(function()
-        {
-            connectMM().then((data)=>{
-                currentAccount = data[0];
-                console.log(currentAccount);
-            }).catch((err)=>{
-                console.log(err);
-            });
-        });
         $("#btny").click(function()
         {
             if(currentAccount.length == 0)

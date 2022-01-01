@@ -675,13 +675,14 @@ function checkBM()
              DC:$("#iphtDC").val()
            },function(data)
            {
-                if(data.kq==1)
-                {
-                    alert("ok");
-                }
-                else {
-                    alert("KO");
-                }
+            alert(data.kq);
+                // if(data.kq==1)
+                // {
+                //     alert("ok");
+                // }
+                // else {
+                //     alert("KO");
+                // }
            });
         });
         $("#iphtEmail").change(function()

@@ -467,13 +467,6 @@ function checkBM()
                if(data.kq == 1)
                {
                 alert("Thêm dữ liệu thành công");
-                   iphtEmail.innerHTML = "";
-                   iphtPassword.innerHTML = "";
-                   iphtName.innerHTML = "";
-                   iphtSDT.innerHTML = "";
-                   iphtBirthDay.innerHTML = ""; 
-                   iphtCMND.innerHTML = "";
-                   iphtDC.innerHTML = "";
                }
                else if(data.kq == 0)
                {

@@ -683,6 +683,7 @@ function checkBM()
       }
       function insert_vx()
       {
+        alert("1234");
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = k;
 

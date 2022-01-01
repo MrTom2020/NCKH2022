@@ -657,12 +657,14 @@ function checkBM()
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
+            alert(dt_User[x]._id);
             iphtPassword.value = dt_User[x].Password;
             iphtDC.value  = dt_User[x].DC;
             iphtSDT.value = dt_User[x].SDT;
             iphtCMND.value = dt_User[x].CMND;
             iphtName.value = dt_User[x].Name;
             iphtBirthDay.value = dt_User[x].BirthDay;
+    
         });
       }
       function insert_vx()

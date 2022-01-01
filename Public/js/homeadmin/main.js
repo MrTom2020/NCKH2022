@@ -331,7 +331,7 @@ function checkBM()
 
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
-        myTableDiv.setAttribute('style','margin-left:5vw');
+        myTableDiv.setAttribute('style','margin-left:2vw');
         var t = document.createElement("h3");
        // t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";//"Nhập thông tin người tiêm";

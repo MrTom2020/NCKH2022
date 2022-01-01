@@ -551,11 +551,11 @@ function checkBM()
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
         var t = document.createElement("h3");
-        t.setAttribute('style','margin-left:5vw');
+        t.setAttribute('style','margin-left:2vw');
         t.innerHTML = "Cập nhật thông tin người tiêm";
 
         var fr = document.createElement("form");
-        fr.setAttribute('style','margin-left:5vh');
+        fr.setAttribute('style','margin-left:2vh');
     
         var tEmail = document.createElement("label");
         tEmail.setAttribute('class','form-label');    

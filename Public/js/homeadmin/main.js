@@ -466,17 +466,14 @@ function checkBM()
              {
                if(data.kq == 1)
                {
-                alert("OK");
-                //    alert($("#iphtEmail").val() + 
-                //   $("#iphtPassword").val() + 
-                //   $("#iphtName").val() + 
-                //    $("#iphtSDT").val() + 
-                //    $("#iphtBirthDay").val() + 
-                //    $("#iphtCMND").val() + 
-                //    $("#iphtDC").val());
-                //    constract_MM.methods.Dangky(data.kqtv._id).send({
-                //     from:currentAccount
-                // });
+                alert("Thêm dữ liệu thành công");
+                   $("#iphtEmail").val() = "";
+                  $("#iphtPassword").val() = "";
+                  $("#iphtName").val() = "";
+                   $("#iphtSDT").val() = "";
+                   $("#iphtBirthDay").val() = ""; 
+                   $("#iphtCMND").val() = "";
+                   $("#iphtDC").val() = "";
                }
                else if(data.kq == 0)
                {

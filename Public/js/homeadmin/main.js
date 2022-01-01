@@ -466,12 +466,12 @@ function checkBM()
              {
                if(data.kq == 1)
                {
-                   alert($("#iphtEmail").val(),
-                  $("#iphtPassword").val(),
-                  $("#iphtName").val(),
-                   $("#iphtSDT").val(),
-                   $("#iphtBirthDay").val(),
-                   $("#iphtCMND").val(),
+                   alert($("#iphtEmail").val() + 
+                  $("#iphtPassword").val() + 
+                  $("#iphtName").val() + 
+                   $("#iphtSDT").val() + 
+                   $("#iphtBirthDay").val() + 
+                   $("#iphtCMND").val() + 
                    $("#iphtDC").val());
                 //    constract_MM.methods.Dangky(data.kqtv._id).send({
                 //     from:currentAccount

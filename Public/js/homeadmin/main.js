@@ -432,20 +432,14 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-            if(currentAccount.length == 0)
-            {
-                alert("Vui lòng đăng nhập MetaMask");
-            }
-            else
-            {
-                $.post('../insertdt',{
-                Email:$("#iphtEmail").val(),
-                Password:$("#iphtPassword").val(),
-                Name:$("#iphtName").val(),
-                SDT:$("#iphtSDT").val(),
-                BirthDay:$("#iphtBirthDay").val(),
-                CMND:$("#iphtCMND").val(),
-                DC:$("#iphtDC").val()
+             $.post('../insertdt',{
+             Email:$("#iphtEmail").val(),
+             Password:$("#iphtPassword").val(),
+            Name:$("#iphtName").val(),
+            SDT:$("#iphtSDT").val(),
+             BirthDay:$("#iphtBirthDay").val(),
+             CMND:$("#iphtCMND").val(),
+            DC:$("#iphtDC").val()
              },function(data)
              {
                if(data.kq == 1)
@@ -459,7 +453,7 @@ function checkBM()
                 
            });
          }
-        });
+        );
         
       }
       function createlist()

@@ -466,6 +466,7 @@ function checkBM()
              {
                if(data.kq == 1)
                {
+                alert("OK");
                 //    alert($("#iphtEmail").val() + 
                 //   $("#iphtPassword").val() + 
                 //   $("#iphtName").val() + 
@@ -675,7 +676,7 @@ function checkBM()
              DC:$("#iphtDC").val()
            },function(data)
            {
-            alert(data.kq);
+            //alert(data.kq);
                 // if(data.kq==1)
                 // {
                 //     alert("ok");

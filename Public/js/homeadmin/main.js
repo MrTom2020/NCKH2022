@@ -687,12 +687,12 @@ function checkBM()
         myTableDiv.innerHTML = "";
 
         var tl = document.createElement("h3");
-        tl.setAttribute('style','margin-left:5vw');
+        tl.setAttribute('style','margin-left:2vw');
         tl.innerHTML = "Nhập thông tin người đã tiêm";
         myTableDiv.appendChild(tl);
         
         var fr = document.createElement("div");
-        fr.setAttribute('style','margin-left:5vw;margin-top:5vh');
+        fr.setAttribute('style','margin-left:5vw;margin-top:2vh');
 
         var t_name_user = document.createElement("label");
         t_name_user.innerHTML = "Tên người tiêm";

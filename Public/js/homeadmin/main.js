@@ -685,7 +685,7 @@ function checkBM()
       {
         alert("1234");
         var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = k;
+        myTableDiv.innerHTML = "";
 
         var tl = document.createElement("h3");
         tl.setAttribute('style','margin-left:5vw');

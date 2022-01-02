@@ -54,7 +54,16 @@ module.exports = function(app)
         else
         {
             user.update({'_id':ObjectId("619d061d6848d9ccb17a661d")},
-            {$set:{"SDT":'999999999'}});
+            {$set:{"SDT":'999999999'}},function(err,res){
+                if(err)
+                {
+                    res.json({kq:0,kqtv:"Thiếu tham số"});
+                }
+                else{
+                    res.json({kq:1,kqtv:"Thiếu tham số"});
+                }
+            });
+
         }
     });
 }

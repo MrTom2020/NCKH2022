@@ -644,6 +644,13 @@ function checkBM()
              DC:$("#iphtDC").val()
            },function(data)
            {
+               if(data.kq == 0)
+               {
+                   alert("ko");
+               }
+               else{
+                   alert("ok");
+               }
             //alert(data.kq);
                 // if(data.kq==1)
                 // {

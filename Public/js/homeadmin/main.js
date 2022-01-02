@@ -665,7 +665,7 @@ function checkBM()
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
-            alert(dt_User[x]._id);
+            alert("11111111111");
             iphtPassword.value = dt_User[x].Password;
             iphtDC.value  = dt_User[x].DC;
             iphtSDT.value = dt_User[x].SDT;

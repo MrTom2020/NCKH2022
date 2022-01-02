@@ -53,7 +53,8 @@ module.exports = function(app)
         }
         else
         {
-            user.update({'BirthDay':'2021-11-10'},{$set:{'BirthDa':'2030-12-12'}});
+            user.update({'_id':ObjectId("619d061d6848d9ccb17a661d")},
+            {$set:{"SDT":'999999999'}});
         }
     });
 }

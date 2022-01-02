@@ -661,7 +661,7 @@ function checkBM()
                 // }
            });
         });
-
+        alert("11111111111");
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;

@@ -634,7 +634,7 @@ function checkBM()
 
         $("#btny").click(function()
         {
-           $.post('../insertdt',{
+           $.post('../updatedt',{
              Email:$("#iphtEmail").val(),
              Password:$("#iphtPassword").val(),
              Name:$("#iphtName").val(),
@@ -654,7 +654,7 @@ function checkBM()
                 // }
            });
         });
-        
+
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;

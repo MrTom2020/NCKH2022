@@ -648,7 +648,8 @@ function checkBM()
                {
                    alert("ko");
                }
-               else{
+               else if(data.kq == 1)
+               {
                    alert("ok");
                }
             //alert(data.kq);
@@ -661,7 +662,6 @@ function checkBM()
                 // }
            });
         });
-        alert("11111111111");
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;

@@ -654,6 +654,7 @@ function checkBM()
                 // }
            });
         });
+        
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
@@ -664,7 +665,6 @@ function checkBM()
             iphtCMND.value = dt_User[x].CMND;
             iphtName.value = dt_User[x].Name;
             iphtBirthDay.value = dt_User[x].BirthDay;
-    
         });
       }
       function insert_vx()

@@ -46,7 +46,7 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-           user.findOneAndUpdate({SDT:"123456789"},{SDT:"9999999999"},(err)=>{
+           user.findOneAndUpdate({Name:"hà lan"},{Name:"hà lan anh"},(err)=>{
               if(err)
               {
                   console.log(err);

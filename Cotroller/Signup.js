@@ -46,7 +46,7 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.find({SDT:"0901913820"}).limit(6).exec(function(err, u2)
+            user.find({SDT:"0901913820"}).exec(function(err, u2)
              {
               if (err) throw err;
               chuoi = u2;  

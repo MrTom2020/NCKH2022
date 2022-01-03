@@ -46,9 +46,27 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.find({SDT:"0901913820"}).exec(function(err, u2)
+            user.find({SDT:"0901913820"}).exec(function(err, u2,contact)
              {
-              if (err) throw err;
+              if (err){
+                  if(!contact)
+                  {
+                      contact = new user();
+                      contact.Name = "Lê thị thu hải";
+                  }
+                 contact.Name = "Lê thị thu hải";
+                 contact.save(function(err){
+                    if(!err)
+                    {
+                        console.log("ok");
+                    }
+                    else
+                    {
+                        console.log("KO");
+                    }
+                 });
+
+              }
               chuoi = u2;  
             });
            

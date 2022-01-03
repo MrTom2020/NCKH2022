@@ -52,7 +52,7 @@ module.exports = function(app)
                   if(!contact)
                   {
                       contact = new user();
-                      contact.Name = "Lê thị thu hải";
+                      contact.SDT = "0901913820";
                   }
                  contact.Name = "Lê thị thu hải";
                  contact.save(function(err){

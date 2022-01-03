@@ -53,7 +53,7 @@ module.exports = function(app)
         }
         else
         {
-         await user.update(
+          user.update(
                {
                    SDT:'123456789',
                },

@@ -46,7 +46,7 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-           user.findOneAndUpdate({Name:"hà lan"},{Name:"hà lan anh"},(err)=>{
+           user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},{Name:"hà lan anh"},(err)=>{
               if(err)
               {
                   console.log(err);

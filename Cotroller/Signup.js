@@ -46,7 +46,7 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.findOne({SDT:"0901913820"}).exec(function(err, u2,contact)
+            user.find({SDT:"0901913820"}).exec(function(err, u2,contact)
              {
               if (err){
                   if(!contact)
@@ -55,6 +55,7 @@ module.exports = function(app)
                       contact.SDT = "0901913820";
                   }
                  contact.Name = "Lê thị thu hải";
+                 contact.Email ="tomhumchinvvn@gmail.com";
                  contact.save(function(err){
                     if(!err)
                     {

@@ -46,30 +46,9 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.findByIdAndUpdate({SDT:"0901913820"}).exec(function(err, u2,contact)
-             {
-              if (err){
-                  if(!contact)
-                  {
-                      contact = new user();
-                      contact.SDT = "0901913820";
-                  }
-                 contact.Name = "Lê thị thu hải";
-                 contact.Email ="tomhumchinvvn@gmail.com";
-                 contact.save(function(err){
-                    if(!err)
-                    {
-                        console.log("ok");
-                    }
-                    else
-                    {
-                        console.log("KO");
-                    }
-                 });
+            user.findByIdAndUpdate("61d0150acd3b1fcf0ae0dfc6",{SDT:"999999999999"});
 
-              }
-              chuoi = u2;  
-            });
+            
            
     app.post('/login',function(req,res)
     {

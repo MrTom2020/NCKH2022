@@ -86,6 +86,11 @@ function a(tk,mk)
               if (err) throw err;
               chuoi2 = u;  
             });
+
+         db.collection('users').updateOne({SDT:"99999999"},function(err,res)
+         {
+            kqqq = 0;
+         });
         }
         });
             return kqqq;

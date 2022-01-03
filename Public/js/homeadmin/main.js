@@ -330,7 +330,7 @@ function checkBM()
 
     function tableCreate() 
     {
-        alert(dt_u2);
+        alert(dt_u2[0].name);
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
         myTableDiv.setAttribute('style','margin-left:2vw');

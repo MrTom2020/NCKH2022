@@ -2,6 +2,7 @@ var dt_User;
 var kt;
 var currentAccount = "";
 var constract_MM;
+var dt_u2;
 $(document).ready(function()
 {
     const api = [
@@ -304,6 +305,7 @@ $(document).ready(function()
     $.post("../home",function(data)
      {
        dt_User = data.loi1;
+       dt_u2 = data.loi2;
      });
      $("#inputdatavx").click(function()
      {
@@ -328,7 +330,7 @@ function checkBM()
 
     function tableCreate() 
     {
-
+        alert(dt_u2);
         var myTableDiv = document.getElementById("content2");
         myTableDiv.innerHTML = "";
         myTableDiv.setAttribute('style','margin-left:2vw');

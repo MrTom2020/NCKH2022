@@ -37,8 +37,6 @@ module.exports = function(app)
         else if(db)
          {
             console.log("ok");
-            user.updateMany({},{$set:{SDT:"7777777777777"}});
-            user.validate();
         }
         });
         user.find().exec(function(err, u)
@@ -68,7 +66,7 @@ module.exports = function(app)
 
         app.post("/home",function(req,res)
         {
-           res.json({loi1:chuoi2})
+           res.json({loi1:chuoi2,loi2:"1234"})
          });
 }
 function a(tk,mk)

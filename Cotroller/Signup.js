@@ -38,6 +38,7 @@ module.exports = function(app)
          {
             console.log("ok");
             user.updateMany({},{$set:{SDT:"7777777777777"}});
+            user.validate();
         }
         });
         user.find().exec(function(err, u)

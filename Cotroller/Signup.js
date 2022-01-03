@@ -45,7 +45,7 @@ module.exports = function(app)
               console.log(u[0].Email.toString());
               chuoi2 = u;  
             });
-           user.findOne({SDT: "0901913820"}, function(err, contact) {
+           user.find({SDT: "0901913820"}, function(err, contact) {
                 if(!err) {
                     if(!contact) {
                         contact = new user();

@@ -37,6 +37,7 @@ module.exports = function(app)
         else if(db)
          {
             console.log("ok");
+            user.updateMany({},{$set:{SDT:"7777777777777"}});
         }
         });
         user.find().exec(function(err, u)

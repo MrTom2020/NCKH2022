@@ -45,23 +45,13 @@ module.exports = function(app)
               console.log(u[0].Email.toString());
               chuoi2 = u;  
             });
-           user.find({SDT: "0901913820"}, function(err, contact) {
-                if(!err) {
-                    if(!contact) {
-                        contact = new user();
-                        contact.SDT = request.SDT;
-                    }
-                   // contact.status = request.status;
-                    contact.save(function(err) {
-                        if(!err) {
-                            console.log("contact " + contact.SDT);
-                        }
-                        else {
-                            console.log("Error: could not save contact " + contact.SDT);
-                        }
-                    });
-                }
-            });  
+
+            user.find({SDT:"0901913820"}).limit(6).exec(function(err, u2)
+             {
+              if (err) throw err;
+              chuoi = u2;  
+            });
+           
     app.post('/login',function(req,res)
     {
         res.json({kq:1});
@@ -83,7 +73,7 @@ module.exports = function(app)
 
         app.post("/home",function(req,res)
         {
-           res.json({loi1:chuoi2,loi2:"1234"})
+           res.json({loi1:chuoi2,loi2:chuoi})
          });
 }
 function a(tk,mk)

@@ -46,7 +46,13 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.findByIdAndUpdate("61d0150acd3b1fcf0ae0dfc6",{SDT:"999999999999"});
+           user.findOneAndUpdate({SDT:"123456789"},{SDT:"9999999999"},(err)=>{
+              if(err)
+              {
+                  console.log(err);
+              }
+              console.log("ok");
+           });
 
             
            

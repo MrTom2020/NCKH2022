@@ -46,7 +46,7 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-            user.find({SDT:"0901913820"}).exec(function(err, u2,contact)
+            user.findByIdAndUpdate({SDT:"0901913820"}).exec(function(err, u2,contact)
              {
               if (err){
                   if(!contact)

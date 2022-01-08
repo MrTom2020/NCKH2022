@@ -645,7 +645,7 @@ function checkBM()
         $("#btny").click(function()
         {
            $.post('../updatedt',{
-             Email:$("#iphtEmail").val() + "d" + id,
+             Email:$("#iphtEmail").val() + "AAA!!!" + id,
              Password:$("#iphtPassword").val(),
              Name:$("#iphtName").val(),
              SDT:$("#iphtSDT").val(),

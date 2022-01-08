@@ -46,7 +46,9 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-           user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},{Name:"hà lan anh abcdef"},(err)=>{
+           user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},{Name:"hà lan anh abcdef",SDT:"123456789",BirthDay:"31-10-2000",CMND:"236",DC
+:"456",Password:"988888",Email
+:"tomhumchin33@gmail.com"},(err)=>{
               if(err)
               {
                   console.log(err);

@@ -17,8 +17,9 @@ module.exports = function(app)
         else
         {
             var s = req.body.Email;
-            var vt = s.indexOf("AAA!!!",1);
+            var vt = s.indexOf("AAA!!!",0);
             var e = s.substring(0,vt);
+            var id = s.substring(vt + 1,s.length);
             var u = new user({
                 Email:req.body.Email,
                 Password:req.body.Password,
@@ -28,7 +29,7 @@ module.exports = function(app)
                 CMND:req.body.CMND,
                 DC:req.body.DC
             });
-            res.json({kq:1,kqtv:e});
+            res.json({kq:1,kqtv:id});
         }
     });
 }

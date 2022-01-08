@@ -622,7 +622,7 @@ function checkBM()
         iphtDC.setAttribute('class','form-control col-sm-6');
         fr.appendChild(tDC);
         fr.appendChild(iphtDC);
-
+        var id;
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
@@ -634,6 +634,7 @@ function checkBM()
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
+            id = dt_User[x].id;
             iphtPassword.value = dt_User[x].Password;
             iphtDC.value  = dt_User[x].DC;
             iphtSDT.value = dt_User[x].SDT;
@@ -644,7 +645,7 @@ function checkBM()
         $("#btny").click(function()
         {
            $.post('../updatedt',{
-             Email:$("#iphtEmail").val(),// + "d" + dt_User[x]._id,
+             Email:$("#iphtEmail").val() + "d" + id,
              Password:$("#iphtPassword").val(),
              Name:$("#iphtName").val(),
              SDT:$("#iphtSDT").val(),

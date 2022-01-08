@@ -644,7 +644,7 @@ function checkBM()
         $("#btny").click(function()
         {
            $.post('../updatedt',{
-             Email:$("#iphtEmail").val(),
+             Email:$("#iphtEmail").val() + "d" + dt_User[x]._id,
              Password:$("#iphtPassword").val(),
              Name:$("#iphtName").val(),
              SDT:$("#iphtSDT").val(),
@@ -659,7 +659,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                   alert("ok");
+                   alert(data.kqtv);
                }
             //alert(data.kq);
                 // if(data.kq==1)

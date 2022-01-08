@@ -16,7 +16,7 @@ module.exports = function(app)
         }
         else
         {
-            res.json({kq:1,kqtv:"Thiếu tham số"});
+            res.json({kq:1,kqtv:req.body.Email});
         }
     });
 }

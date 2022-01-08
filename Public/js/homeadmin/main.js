@@ -659,7 +659,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                   alert(data.kqtv);
+                   alert(data.kqtv.toString());
                }
             //alert(data.kq);
                 // if(data.kq==1)

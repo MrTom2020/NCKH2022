@@ -25,7 +25,7 @@ module.exports = function(app)
                 CMND:req.body.CMND,
                 DC:req.body.DC
             });
-            res.json({kq:1,kqtv:u.Email});
+            res.json({kq:1,kqtv:u.Email.toString()});
         }
     });
 }

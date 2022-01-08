@@ -16,7 +16,16 @@ module.exports = function(app)
         }
         else
         {
-            res.json({kq:1,kqtv:req.body.Email});
+            var u = new user({
+                Email:req.body.Email,
+                Password:req.body.Password,
+                Name:req.body.Name,
+                SDT:req.body.SDT,
+                BirthDay:req.body.BirthDay,
+                CMND:req.body.CMND,
+                DC:req.body.DC
+            });
+            res.json({kq:1,kqtv:u.Email});
         }
     });
 }

@@ -659,7 +659,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                   alert(data.kqtv.Email);
+                   alert(data.kqtv[0].Email);
                }
             //alert(data.kq);
                 // if(data.kq==1)

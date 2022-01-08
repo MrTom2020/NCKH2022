@@ -659,7 +659,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                   alert(data.kqtv);
+                alert("sssko");
                }
             //alert(data.kq);
                 // if(data.kq==1)

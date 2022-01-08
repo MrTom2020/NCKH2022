@@ -633,7 +633,17 @@ function checkBM()
         fr.appendChild(btny);
         myTableDiv.appendChild(t);
         myTableDiv.appendChild(fr);
-
+        $("#iphtEmail").change(function()
+        {
+            var x = document.getElementById("iphtEmail").selectedIndex;
+            alert("11111111111");
+            iphtPassword.value = dt_User[x].Password;
+            iphtDC.value  = dt_User[x].DC;
+            iphtSDT.value = dt_User[x].SDT;
+            iphtCMND.value = dt_User[x].CMND;
+            iphtName.value = dt_User[x].Name;
+            iphtBirthDay.value = dt_User[x].BirthDay;
+        });
         $("#btny").click(function()
         {
            $.post('../updatedt',{
@@ -663,17 +673,6 @@ function checkBM()
                 //     alert("KO");
                 // }
            });
-        });
-        $("#iphtEmail").change(function()
-        {
-            var x = document.getElementById("iphtEmail").selectedIndex;
-            alert("11111111111");
-            iphtPassword.value = dt_User[x].Password;
-            iphtDC.value  = dt_User[x].DC;
-            iphtSDT.value = dt_User[x].SDT;
-            iphtCMND.value = dt_User[x].CMND;
-            iphtName.value = dt_User[x].Name;
-            iphtBirthDay.value = dt_User[x].BirthDay;
         });
       }
       function insert_vx()

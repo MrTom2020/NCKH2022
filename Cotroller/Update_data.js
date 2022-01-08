@@ -20,16 +20,28 @@ module.exports = function(app)
             var vt = s.indexOf("AAA!!!",0);
             var e = s.substring(0,vt);
             var id = s.substring(vt + 6,s.length);
-            var u = new user({
-                Email:req.body.Email,
-                Password:req.body.Password,
-                Name:req.body.Name,
-                SDT:req.body.SDT,
-                BirthDay:req.body.BirthDay,
-                CMND:req.body.CMND,
-                DC:req.body.DC
-            });
-            res.json({kq:1,kqtv:id});
+            // var u = new user({
+            //     Email:req.body.Email,
+            //     Password:req.body.Password,
+            //     Name:req.body.Name,
+            //     SDT:req.body.SDT,
+            //     BirthDay:req.body.BirthDay,
+            //     CMND:req.body.CMND,
+            //     DC:req.body.DC
+            // });
+            user.findOneAndUpdate({_id:id},
+            {Name:req.body.Name,
+           SDT:req.body.SDT,
+           BirthDay:req.body.BirthDay,
+           CMND:req.body.CMND,
+           DC:req.body.DC,
+           Password:req.body.Password},(err)=>{
+              if(err)
+              {
+                res.json({kq:0,kqtv:"Thiếu tham số"});
+              }
+              res.json({kq:1,kqtv:"Thiếu tham số"});
+           });
         }
     });
 }

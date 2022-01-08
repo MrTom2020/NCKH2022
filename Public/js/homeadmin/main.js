@@ -660,7 +660,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                alert(data.kqtv);
+                alert("ok");
                }
             //alert(data.kq);
                 // if(data.kq==1)

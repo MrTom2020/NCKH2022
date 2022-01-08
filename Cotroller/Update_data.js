@@ -19,7 +19,7 @@ module.exports = function(app)
             var s = req.body.Email;
             var vt = s.indexOf("AAA!!!",0);
             var e = s.substring(0,vt);
-            var id = s.substring(vt + 1,s.length);
+            var id = s.substring(vt + 6,s.length);
             var u = new user({
                 Email:req.body.Email,
                 Password:req.body.Password,

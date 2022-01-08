@@ -38,30 +38,4 @@ module.exports = function(app)
             });
         }
     });
-
-    app.post('/updatedt',function(req,res)
-    {
-        if(!req.body.Email ||
-        !req.body.Password ||
-        !req.body.Name ||
-        !req.body.SDT ||
-        !req.body.BirthDay ||
-        !req.body.CMND ||
-        !req.body.DC)
-        {
-            res.json({kq:0,kqtv:"Thiếu tham số"});
-        }
-        else
-        {
-          user.update(
-               {
-                   SDT:'123456789',
-               },
-               {
-                   SDT:'999999999',
-               }
-           );
-
-        }
-    });
 }

@@ -660,7 +660,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                alert("ok");
+                alert("Cập nhật thông tin thành công");
                }
             //alert(data.kq);
                 // if(data.kq==1)

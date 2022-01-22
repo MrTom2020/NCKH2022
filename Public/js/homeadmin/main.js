@@ -680,7 +680,7 @@ function checkBM()
 
         var tl = document.createElement("h3");
         tl.setAttribute('style','margin-left:1vw');
-        tl.innerHTML = "Nhập thông tin người đã tiêm";
+        tl.innerHTML = "Nhập thông tin người đã tiêm zzz";
         myTableDiv.appendChild(tl);
         
         var fr = document.createElement("div");
@@ -689,6 +689,7 @@ function checkBM()
         var t_name_user = document.createElement("label");
         t_name_user.innerHTML = "Tên người tiêm";
         t_name_user.setAttribute('class','form-label');
+        fr.appendChild(t_name_user);
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');

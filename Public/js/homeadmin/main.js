@@ -680,7 +680,7 @@ function checkBM()
 
         var tl = document.createElement("h3");
         tl.setAttribute('style','margin-left:1vw');
-        tl.innerHTML = "Nhập thông tin người đã tiêm zzz";
+        tl.innerHTML = "Nhập thông tin người đã tiêm";
         myTableDiv.appendChild(tl);
         
         var fr = document.createElement("div");

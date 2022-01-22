@@ -684,10 +684,9 @@ function checkBM()
         myTableDiv.appendChild(tl);
         
         var fr = document.createElement("div");
-        fr.setAttribute('style','margin-left:1vw;margin-top:2vh');
+        fr.setAttribute('style','margin-left:1vw;margin-top:4vh');
 
         var t_name_user = document.createElement("label");
-        t_name_user.setAttribute('style','margin-top:3vh');
         t_name_user.innerHTML = "Tên người tiêm";
         t_name_user.setAttribute('class','form-label');
         var iphtEmail = document.createElement("select");

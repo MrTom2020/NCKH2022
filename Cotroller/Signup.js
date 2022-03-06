@@ -28,15 +28,6 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-        app.get('/Admin/home/123/*',(req,res)=>
-    {
-    
-  laptop =  {"employees":[    
-    {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-    {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-    {"name":"John", "email":"john@gmail.com", "age":33},    
-    {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-]};});
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {

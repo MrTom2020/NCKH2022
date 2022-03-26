@@ -280,7 +280,7 @@ $(document).ready(function()
     });
     $("#btnDangKy").click(function()
     {
-        alert("Vui lòng đăng nhập MetaMask");
+        //alert("Vui lòng đăng nhập MetaMask");
     //    if(currentAccount.length == 0)
     //    {
     //         alert("Vui lòng đăng nhập MetaMask");

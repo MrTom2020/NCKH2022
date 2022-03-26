@@ -61,7 +61,7 @@ module.exports = function(app)
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
         chuoi3 = "";
-        user.find({_id:ObjectId("619a43066dbcf3f00e6737f3")}).exec(function(err, u)
+        user.find({_id:new ObjectId("619a43066dbcf3f00e6737f3")}).exec(function(err, u)
         {
          if (err) throw err;
          console.log(u[0].Email.toString());

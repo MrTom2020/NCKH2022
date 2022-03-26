@@ -784,7 +784,7 @@ function checkBM()
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{
-            IdUser:id,
+            IdUser:$("#id_userr").val(),
             Tenvx:$("#t_vx").val(),
             Loai:$("#l_vx").val(),
             Noitiem:$("#n_vx").val(),

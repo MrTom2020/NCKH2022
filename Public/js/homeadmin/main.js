@@ -383,7 +383,7 @@ function checkBM()
 
         var tSDT = document.createElement("label");
         tSDT.setAttribute('class','form-label');
-        tSDT.innerHTML = "Số điện thoại";
+        tSDT.innerHTML = "Số điện thoại 123";
         tSDT.setAttribute('style','margin-top:2vh');
         var iphtSDT = document.createElement("input");
         iphtSDT.setAttribute('id','iphtSDT');

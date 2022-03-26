@@ -60,6 +60,7 @@ module.exports = function(app)
         l = str.lastIndexOf("/");
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
+
         //res.send(sdt);
         res.send(b(nameUser));
     });
@@ -162,5 +163,5 @@ function b(NameUser)
             });
         }
         });
-            return kqqq;
+            return chuoi2;
 }

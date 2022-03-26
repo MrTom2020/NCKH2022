@@ -2,7 +2,7 @@ var user = require("../Models/user");
 
 module.exports = function(app)
 {
-    app.post('../insertdt',function(req,res)
+    app.post('/insertdt',function(req,res)
     {
         if(!req.body.Email ||
         !req.body.Password ||

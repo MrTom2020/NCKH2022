@@ -432,26 +432,27 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-             $.post('../insertdt',{
-             Email:$("#iphtEmail").val(),
-             Password:$("#iphtPassword").val(),
-            Name:$("#iphtName").val(),
-            SDT:$("#iphtSDT").val(),
-             BirthDay:$("#iphtBirthDay").val(),
-             CMND:$("#iphtCMND").val(),
-            DC:$("#iphtDC").val()
-             },function(data)
-             {
-               if(data.kq == 1)
-               {
-                alert("Thêm dữ liệu thành công");
-               }
-               else if(data.kq == 0)
-               {
-                   alert("Thiếu tham số");
-               }
+            alert("123");
+        //      $.post('../insertdt',{
+        //      Email:$("#iphtEmail").val(),
+        //      Password:$("#iphtPassword").val(),
+        //     Name:$("#iphtName").val(),
+        //     SDT:$("#iphtSDT").val(),
+        //      BirthDay:$("#iphtBirthDay").val(),
+        //      CMND:$("#iphtCMND").val(),
+        //     DC:$("#iphtDC").val()
+        //      },function(data)
+        //      {
+        //        if(data.kq == 1)
+        //        {
+        //         alert("Thêm dữ liệu thành công");
+        //        }
+        //        else if(data.kq == 0)
+        //        {
+        //            alert("Thiếu tham số");
+        //        }
                 
-           });
+        //    });
          }
         );
         

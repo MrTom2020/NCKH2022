@@ -65,10 +65,9 @@ module.exports = function(app)
         {
          if (err) throw err;
          console.log(u[0].Email.toString());
-         chuoi3 = u;  
+         res.send(u);  
        });
         //res.send(sdt);
-        res.send(chuoi3);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

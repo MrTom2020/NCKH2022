@@ -667,129 +667,129 @@ function checkBM()
       }
       function insert_vx()
       {
-        var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = "";
+        // var myTableDiv = document.getElementById("content2");
+        // myTableDiv.innerHTML = "";
 
-        var tl = document.createElement("h3");
-        tl.setAttribute('style','margin-left:1vw');
-        tl.innerHTML = "Nhập thông tin người đã tiêm";
-        myTableDiv.appendChild(tl);
+        // var tl = document.createElement("h3");
+        // tl.setAttribute('style','margin-left:1vw');
+        // tl.innerHTML = "Nhập thông tin người đã tiêm";
+        // myTableDiv.appendChild(tl);
         
-        var fr = document.createElement("div");
-        fr.setAttribute('style','margin-left:1vw;margin-top:4vh');
+        // var fr = document.createElement("div");
+        // fr.setAttribute('style','margin-left:1vw;margin-top:4vh');
 
-        var t_name_user = document.createElement("label");
-        t_name_user.innerHTML = "Tên người tiêm";
-        t_name_user.setAttribute('class','form-label');
-        fr.appendChild(t_name_user);
-        var iphtEmail = document.createElement("select");
-        iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < dt_User.length;$i++)
-        {
-            var op = document.createElement("option");
-            op.innerHTML = dt_User[$i].Email.toString();
-            iphtEmail.appendChild(op);
-        }
-        fr.appendChild(iphtEmail);
+        // var t_name_user = document.createElement("label");
+        // t_name_user.innerHTML = "Tên người tiêm";
+        // t_name_user.setAttribute('class','form-label');
+        // fr.appendChild(t_name_user);
+        // var iphtEmail = document.createElement("select");
+        // iphtEmail.setAttribute('id','iphtEmail');
+        // iphtEmail.setAttribute('class','form-control col-sm-6');
+        // for($i = 0;$i < dt_User.length;$i++)
+        // {
+        //     var op = document.createElement("option");
+        //     op.innerHTML = dt_User[$i].Email.toString();
+        //     iphtEmail.appendChild(op);
+        // }
+        // fr.appendChild(iphtEmail);
 
-        var t_id = document.createElement("label");
-        t_id.setAttribute('class','form-label');
-        t_id.setAttribute('style','margin-top:2vh');
-        t_id.innerHTML = "ID người dùng";
-        var i_id = document.createElement("input");
-        i_id.setAttribute('id','id_userr');
-        i_id.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(t_id);
-        fr.appendChild(i_id);
+        // var t_id = document.createElement("label");
+        // t_id.setAttribute('class','form-label');
+        // t_id.setAttribute('style','margin-top:2vh');
+        // t_id.innerHTML = "ID người dùng";
+        // var i_id = document.createElement("input");
+        // i_id.setAttribute('id','id_userr');
+        // i_id.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(t_id);
+        // fr.appendChild(i_id);
 
 
-        var t_vx = document.createElement("label");
-        t_vx.setAttribute('class','form-label');
-        t_vx.setAttribute('style','margin-top:2vh');
-        t_vx.innerHTML = "Tên vắc xin";
-        var i_vx = document.createElement("input");
-        i_vx.setAttribute('id','t_vx');
-        i_vx.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(t_vx);
-        fr.appendChild(i_vx);
+        // var t_vx = document.createElement("label");
+        // t_vx.setAttribute('class','form-label');
+        // t_vx.setAttribute('style','margin-top:2vh');
+        // t_vx.innerHTML = "Tên vắc xin";
+        // var i_vx = document.createElement("input");
+        // i_vx.setAttribute('id','t_vx');
+        // i_vx.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(t_vx);
+        // fr.appendChild(i_vx);
 
-        var l_vx = document.createElement("label");
-        l_vx.setAttribute('class','form-label');
-        l_vx.setAttribute('style','margin-top:2vh');
-        l_vx.innerHTML = "Loại vắc xin";
-        var i_vx = document.createElement("input");
-        i_vx.setAttribute('id','l_vx');
-        i_vx.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(l_vx);
-        fr.appendChild(i_vx);
+        // var l_vx = document.createElement("label");
+        // l_vx.setAttribute('class','form-label');
+        // l_vx.setAttribute('style','margin-top:2vh');
+        // l_vx.innerHTML = "Loại vắc xin";
+        // var i_vx = document.createElement("input");
+        // i_vx.setAttribute('id','l_vx');
+        // i_vx.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(l_vx);
+        // fr.appendChild(i_vx);
 
-        var n_vx = document.createElement("label");
-        n_vx.setAttribute('class','form-label');
-        n_vx.setAttribute('style','margin-top:2vh');
-        n_vx.innerHTML = "Nơi tiêm vắc xin";
-        var i_vx = document.createElement("input");
-        i_vx.setAttribute('id','n_vx');
-        i_vx.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(n_vx);
-        fr.appendChild(i_vx);
+        // var n_vx = document.createElement("label");
+        // n_vx.setAttribute('class','form-label');
+        // n_vx.setAttribute('style','margin-top:2vh');
+        // n_vx.innerHTML = "Nơi tiêm vắc xin";
+        // var i_vx = document.createElement("input");
+        // i_vx.setAttribute('id','n_vx');
+        // i_vx.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(n_vx);
+        // fr.appendChild(i_vx);
 
-        var date_vx = document.createElement("label");
-        date_vx.setAttribute('style','margin-top:2vh');
-        date_vx.setAttribute('class','form-label');
-        date_vx.innerHTML = "Ngày tiêm vắc xin";
-        var i_vx = document.createElement("input");
-        i_vx.setAttribute('type','date');
-        i_vx.setAttribute('id','date_vx');
-        i_vx.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(date_vx);
-        fr.appendChild(i_vx);
+        // var date_vx = document.createElement("label");
+        // date_vx.setAttribute('style','margin-top:2vh');
+        // date_vx.setAttribute('class','form-label');
+        // date_vx.innerHTML = "Ngày tiêm vắc xin";
+        // var i_vx = document.createElement("input");
+        // i_vx.setAttribute('type','date');
+        // i_vx.setAttribute('id','date_vx');
+        // i_vx.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(date_vx);
+        // fr.appendChild(i_vx);
 
-        var btny = document.createElement("button");
-        btny.innerHTML = "Đồng ý";
-        btny.setAttribute('class','btn btn-outline-primary');
-        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
-        btny.setAttribute('id','btny');
-        fr.appendChild(btny);
+        // var btny = document.createElement("button");
+        // btny.innerHTML = "Đồng ý";
+        // btny.setAttribute('class','btn btn-outline-primary');
+        // btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        // btny.setAttribute('id','btny');
+        // fr.appendChild(btny);
 
-        var btn_connect = document.createElement("button");
-        btn_connect.innerHTML = "Kết nối ví";
-        btn_connect.setAttribute('id','btn_connect');
-        btn_connect.setAttribute('class','btn btn-outline-primary');
-        btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
-        fr.appendChild(btn_connect);
-        myTableDiv.appendChild(fr);
+        // var btn_connect = document.createElement("button");
+        // btn_connect.innerHTML = "Kết nối ví";
+        // btn_connect.setAttribute('id','btn_connect');
+        // btn_connect.setAttribute('class','btn btn-outline-primary');
+        // btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
+        // fr.appendChild(btn_connect);
+        // myTableDiv.appendChild(fr);
 
-        $("#btn_connect").click(function(){
-            connectMM().then((data)=>{
-                currentAccount = data[0];
-                console.log(currentAccount);
-            }).catch((err)=>{
-                console.log(err);
-            });
-        });
-        $("#iphtEmail").change(function()
-        {
-            var x = document.getElementById("iphtEmail").selectedIndex;
-            i_id.value = dt_User[x]._id;
+        // $("#btn_connect").click(function(){
+        //     connectMM().then((data)=>{
+        //         currentAccount = data[0];
+        //         console.log(currentAccount);
+        //     }).catch((err)=>{
+        //         console.log(err);
+        //     });
+        // });
+        // $("#iphtEmail").change(function()
+        // {
+        //     var x = document.getElementById("iphtEmail").selectedIndex;
+        //     i_id.value = dt_User[x]._id;
             
-        });
-        $("#btny").click(function(){
-           $.post("../insert_vx",{
-            IdUser:$("#id_userr").val(),
-            Tenvx:$("#t_vx").val(),
-            Loai:$("#l_vx").val(),
-            Noitiem:$("#n_vx").val(),
-            NgayTiem:$("#date_vx").val()
-           },function(data)
-           {
-               if(data.kq == 1)
-               {
-                constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
-                    from:currentAccount
-                }); 
-               }
-           });
-        });
+        // });
+        // $("#btny").click(function(){
+        //    $.post("../insert_vx",{
+        //     IdUser:$("#id_userr").val(),
+        //     Tenvx:$("#t_vx").val(),
+        //     Loai:$("#l_vx").val(),
+        //     Noitiem:$("#n_vx").val(),
+        //     NgayTiem:$("#date_vx").val()
+        //    },function(data)
+        //    {
+        //        if(data.kq == 1)
+        //        {
+        //         constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
+        //             from:currentAccount
+        //         }); 
+        //        }
+        //    });
+        // });
         
       }

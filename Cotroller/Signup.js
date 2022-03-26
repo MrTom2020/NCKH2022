@@ -45,13 +45,6 @@ module.exports = function(app)
         app.get('/JSON/*',(req,res)=>
     {
     
-     //laptop = {"dt":kqq,"k":req.url};
-//   laptop =  {"employees":[    
-//     {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-//     {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-//     {"name":"John", "email":"john@gmail.com", "age":33},    
-//     {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-// ]};
         //b
         //res.send(app.get('title'));
         var str = String(req.url);

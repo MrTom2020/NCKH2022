@@ -29,15 +29,28 @@ module.exports = function(app)
     {
         res.render("Err");
     });
-    app.get("/Admin/home/*")
+    // app.get("/Admin/home/*")
+    // {
+    //     employees:[
+    //         {"firstName":"John", "lastName":"Doe"},
+    //         {"firstName":"Anna", "lastName":"Smith"},
+    //         {"firstName":"Peter", "lastName":"Jones"}
+    //       ]
+    //       res.send(employees);
+    // }
+        app.get('/123/*',(req,res)=>
     {
-        employees:[
-            {"firstName":"John", "lastName":"Doe"},
-            {"firstName":"Anna", "lastName":"Smith"},
-            {"firstName":"Peter", "lastName":"Jones"}
-          ]
-          res.send(employees);
-    }
+    
+     //laptop = {"dt":kqq,"k":req.url};
+  laptop =  {"employees":[    
+    {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+    {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+    {"name":"John", "email":"john@gmail.com", "age":33},    
+    {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+]};
+        //res.send(app.get('title'));
+        res.send(laptop);
+    });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {

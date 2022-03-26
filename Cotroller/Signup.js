@@ -126,7 +126,7 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'}).limit(6).exec(function(err, u)
+           user.find({}).exec(function(err, u)
              {
               if (err) throw err;
               chuoi2 = u;  

@@ -44,16 +44,6 @@ module.exports = function(app)
     // }
         app.get('/JSON/*',(req,res)=>
     {
-    
-     //laptop = {"dt":kqq,"k":req.url};
-//   laptop =  {"employees":[    
-//     {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-//     {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-//     {"name":"John", "email":"john@gmail.com", "age":33},    
-//     {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-// ]};
-        //b
-        //res.send(app.get('title'));
         var str = String(req.url);
         s = str.indexOf("/",1);
         email = str.substring(1,s);
@@ -67,13 +57,10 @@ module.exports = function(app)
          console.log(u[0].Email.toString());
          res.send(u);  
        });
-        //res.send(sdt);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
-           // console.log(err);
-           // kqqq = 0;
         }
         else if(db)
          {
@@ -140,11 +127,11 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
-             {
-              if (err) throw err;
-              chuoi2 = u;  
-            });
+        //    user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
+        //      {
+        //       if (err) throw err;
+        //       chuoi2 = u;  
+        //     });
         }
         });
             return kqqq;

@@ -60,9 +60,14 @@ module.exports = function(app)
         l = str.lastIndexOf("/");
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
-        f = b(nameUser);
+        user.find({Email:nameUser}).exec(function(err, u)
+        {
+         if (err) throw err;
+         console.log(u[0].Email.toString());
+         chuoi2 = u;  
+       });
         //res.send(sdt);
-        res.send(f);
+        res.send(chuoi2);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

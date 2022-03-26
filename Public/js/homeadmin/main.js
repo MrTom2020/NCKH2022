@@ -280,26 +280,27 @@ $(document).ready(function()
     });
     $("#btnDangKy").click(function()
     {
-       if(currentAccount.length == 0)
-       {
-            alert("Vui lòng đăng nhập MetaMask");
-       }
-       else{
-        $.post("./dangky",
-        {
-            Email:$("#txtEmail").val(),
-            HoTen:$("#txtHoTen").val(),
-            SDT:$("#txtSDT").val()
-        },function(data)
-        {
-            if(data.ketqua == 1)
-            {
-                constract_MM.methods.Dangky(data.maloi._id).send({
-                    from:currentAccount
-                });
-            }
-        });
-       }
+        alert("Vui lòng đăng nhập MetaMask");
+    //    if(currentAccount.length == 0)
+    //    {
+    //         alert("Vui lòng đăng nhập MetaMask");
+    //    }
+    //    else{
+    //     $.post("./dangky",
+    //     {
+    //         Email:$("#txtEmail").val(),
+    //         HoTen:$("#txtHoTen").val(),
+    //         SDT:$("#txtSDT").val()
+    //     },function(data)
+    //     {
+    //         if(data.ketqua == 1)
+    //         {
+    //             constract_MM.methods.Dangky(data.maloi._id).send({
+    //                 from:currentAccount
+    //             });
+    //         }
+    //     });
+    //    }
     });
     $.post("../home",function(data)
      {

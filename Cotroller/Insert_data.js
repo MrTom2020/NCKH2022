@@ -23,8 +23,8 @@ module.exports = function(app)
                 SDT:req.body.SDT,
                 BirthDay:req.body.BirthDay,
                 CMND:req.body.CMND,
-                DC:req.body.DC
-                //ID_TH:""
+                DC:req.body.DC,
+                ID_TH:""
             });
             u.save(function(error)
             {

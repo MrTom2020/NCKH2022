@@ -252,20 +252,20 @@ $(document).ready(function()
             console.log(err);
         });
     });
-    $.post("./dangky",
-    {
-        Email:$("#txtEmail").val(),
-        HoTen:$("#txtHoTen").val(),
-        SDT:$("#txtSDT").val()
-    },function(data)
-    {
-        if(data.ketqua == 1)
-        {
-            constract_MM.methods.Dangky(data.maloi._id).send({
-                from:currentAccount
-            });
-        }
-    });
+    // $.post("./dangky",
+    // {
+    //     Email:$("#txtEmail").val(),
+    //     HoTen:$("#txtHoTen").val(),
+    //     SDT:$("#txtSDT").val()
+    // },function(data)
+    // {
+    //     if(data.ketqua == 1)
+    //     {
+    //         constract_MM.methods.Dangky(data.maloi._id).send({
+    //             from:currentAccount
+    //         });
+    //     }
+    // });
     $("#inputdata").click(function()
     {
         tableCreate();

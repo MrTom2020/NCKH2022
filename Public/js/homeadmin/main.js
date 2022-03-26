@@ -786,9 +786,9 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
-                    from:currentAccount
-                }); 
+                // constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
+                //     from:currentAccount
+                // }); 
                }
            });
         });

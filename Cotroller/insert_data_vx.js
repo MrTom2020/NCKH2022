@@ -1,5 +1,5 @@
 var vx = require("../Models/vx");
-var user = require("../Models/user");
+
 module.exports = function(app)
 {
     app.post("/insert_vx",function(req,res){

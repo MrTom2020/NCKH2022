@@ -25,10 +25,10 @@ module.exports = function(app)
     {
         res.render("Admin/home");
     });
-    app.get("/*",function(req,res)
-    {
-        res.render("Err");
-    });
+    // app.get("/*",function(req,res)
+    // {
+    //     res.render("Err");
+    // });
     // app.get("/Admin/home/*")
     // {
     //     employees:[

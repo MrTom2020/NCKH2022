@@ -24,7 +24,7 @@ module.exports = function(app)
                 BirthDay:req.body.BirthDay,
                 CMND:req.body.CMND,
                 DC:req.body.DC,
-                ID_TH:""
+                //ID_TH:""
             });
             u.save(function(error)
             {

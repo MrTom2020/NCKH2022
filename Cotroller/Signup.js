@@ -25,10 +25,14 @@ module.exports = function(app)
     {
         res.render("Admin/home");
     });
-    // app.get("/*",function(req,res)
-    // {
-    //     res.render("Err");
-    // });
+    app.get("/Admin/*",function(req,res)
+    {
+        res.render("Err");
+    });
+    app.get("/User/*",function(req,res)
+    {
+        res.render("Err");
+    });
     // app.get("/Admin/home/*")
     // {
     //     employees:[
@@ -38,7 +42,7 @@ module.exports = function(app)
     //       ]
     //       res.send(employees);
     // }
-        app.get('/123/*',(req,res)=>
+        app.get('/JSON/*',(req,res)=>
     {
     
      //laptop = {"dt":kqq,"k":req.url};

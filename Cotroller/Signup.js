@@ -68,7 +68,7 @@ module.exports = function(app)
          chuoi3 = u;  
        });
         //res.send(sdt);
-        res.send(nameUser);
+        res.send(chuoi3);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

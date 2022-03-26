@@ -240,6 +240,7 @@ $(document).ready(function()
         }
         else
         {
+            //$.post("")
             console.log(error + "ok");
         }
     });
@@ -662,14 +663,6 @@ function checkBM()
                {
                 alert("Cập nhật thông tin thành công");
                }
-            //alert(data.kq);
-                // if(data.kq==1)
-                // {
-                //     alert("ok");
-                // }
-                // else {
-                //     alert("KO");
-                // }
            });
         });
       }
@@ -795,7 +788,7 @@ function checkBM()
                {
                 constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
                     from:currentAccount
-                });
+                }); 
                }
            });
         });

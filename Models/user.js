@@ -7,6 +7,6 @@ const userSchema = new mongoose.Schema({
     BirthDay:String,
     CMND:String,
     DC:String,
-    ID_TH:String
+   // ID_TH:String
 });
 module.exports = mongoose.model("user",userSchema);

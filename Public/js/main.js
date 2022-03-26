@@ -28,8 +28,7 @@
     });
     $('#btn_signup').click(function()
     {
-        alert("123");
-        //window.location="https://nckh2022.herokuapp.com/Signup";
+        window.location="https://nckh2022.herokuapp.com/Signup";
     });
     /*==================================================================
     [ Validate ]*/

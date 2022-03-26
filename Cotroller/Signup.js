@@ -53,7 +53,7 @@ module.exports = function(app)
     {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
 ]};
         //res.send(app.get('title'));
-        res.send(laptop);
+        res.send(chuoi2);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

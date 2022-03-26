@@ -140,11 +140,11 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
-             {
-              if (err) throw err;
-              chuoi2 = u;  
-            });
+        //    user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
+        //      {
+        //       if (err) throw err;
+        //       chuoi2 = u;  
+        //     });
         }
         });
             return kqqq;

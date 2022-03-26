@@ -13,7 +13,7 @@ module.exports = function(app)
             else
             {
                 var v = new vx({
-                    IdUser:"req.body.IdUser",
+                    IdUser:req.body.IdUser,
                     Tenvx:req.body.Tenvx,
                     Loai:req.body.Loai,
                     Noitiem:req.body.Noitiem,

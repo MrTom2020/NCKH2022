@@ -784,7 +784,7 @@ function checkBM()
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{
-            IdUser:"1",//$("#id_userr").val(),
+            IdUser:$("#id_userr").val(),
             Tenvx:$("#t_vx").val(),
             Loai:$("#l_vx").val(),
             Noitiem:$("#n_vx").val(),
@@ -793,7 +793,7 @@ function checkBM()
            {
                if(data.kq == 1)
                {
-                constract_MM.methods.Send_data("data.maloi.id",$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
+                constract_MM.methods.Send_data($("#id_userr").val(),$("#n_vx").val().toString(),$("#l_vx").val().toString(),$("#date_vx").val().toString(),$("#t_vx").val().toString()).send({
                     from:currentAccount
                 });
                }

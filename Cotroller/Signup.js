@@ -1,5 +1,6 @@
 var user = require("../Models/user");
 var mongoose = require('mongoose');
+const res = require("express/lib/response");
 var kqqq;
 var chuoi;
 var chuoi2;
@@ -28,6 +29,15 @@ module.exports = function(app)
     {
         res.render("Err");
     });
+    app.get("/Admin/home/*")
+    {
+        employees:[
+            {"firstName":"John", "lastName":"Doe"},
+            {"firstName":"Anna", "lastName":"Smith"},
+            {"firstName":"Peter", "lastName":"Jones"}
+          ]
+          res.json(employees);
+    }
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
@@ -46,20 +56,20 @@ module.exports = function(app)
               chuoi2 = u;  
             });
 
-           user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},
-           {Name:"hà lan anh abcdef",
-           SDT:"18888888",
-           BirthDay:"31-10-2000",
-           CMND:"236",
-           DC:"456",
-           Password:"988888",
-           Email:"tomhumchin33@gmail.com"},(err)=>{
-              if(err)
-              {
-                  console.log(err);
-              }
-              console.log("ok");
-           });
+        //    user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},
+        //    {Name:"hà lan anh abcdef",
+        //    SDT:"18888888",
+        //    BirthDay:"31-10-2000",
+        //    CMND:"236",
+        //    DC:"456",
+        //    Password:"988888",
+        //    Email:"tomhumchin33@gmail.com"},(err)=>{
+        //       if(err)
+        //       {
+        //           console.log(err);
+        //       }
+        //       console.log("ok");
+        //    });
 
             
            

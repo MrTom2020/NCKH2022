@@ -46,14 +46,15 @@ module.exports = function(app)
     {
     
      //laptop = {"dt":kqq,"k":req.url};
-  laptop =  {"employees":[    
-    {"name":"Ram", "email":"ram@gmail.com", "age":23},    
-    {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
-    {"name":"John", "email":"john@gmail.com", "age":33},    
-    {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
-]};
+//   laptop =  {"employees":[    
+//     {"name":"Ram", "email":"ram@gmail.com", "age":23},    
+//     {"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+//     {"name":"John", "email":"john@gmail.com", "age":33},    
+//     {"name":"Bob", "email":"bob32@gmail.com", "age":41}   
+// ]};
+        //b
         //res.send(app.get('title'));
-        res.send(chuoi2);
+        res.send(req);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
@@ -126,7 +127,28 @@ function a(tk,mk)
         else if(db)
          {
            kqqq = 1;
-           user.find({}).exec(function(err, u)
+           user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
+             {
+              if (err) throw err;
+              chuoi2 = u;  
+            });
+        }
+        });
+            return kqqq;
+}
+function b(NameUser)
+{
+    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority';
+  //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+        if(err)
+        {
+            kqqq = 0;
+        }
+        else if(db)
+         {
+           kqqq = 1;
+           user.find({Email:NameUser}).exec(function(err, u)
              {
               if (err) throw err;
               chuoi2 = u;  

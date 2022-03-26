@@ -779,7 +779,7 @@ function checkBM()
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
-            i_id = dt_User[x]._id;
+            i_id.value = dt_User[x]._id;
             
         });
         $("#btny").click(function(){

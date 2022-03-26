@@ -3,7 +3,8 @@ var vx = require("../Models/vx");
 module.exports = function(app)
 {
     app.post("/insert_vx",function(req,res){
-        if(!req.body.Tenvx ||
+        if(!req.body.IdUser ||
+            !req.body.Tenvx ||
             !req.body.Loai ||
             !req.body.Noitiem ||
             !req.body.NgayTiem)
@@ -12,7 +13,24 @@ module.exports = function(app)
             }
             else
             {
-                res.json({kq:1});
+                var v = new vx({
+                    IdUser:req.body.IdUser,
+                    Tenvx:req.body.Tenvx,
+                    Loai:req.body.Loai,
+                    Noitiem:req.body.Noitiem,
+                    NgayTiem:req.body.NgayTiem   
+                });
+                v.save(function(error)
+                {
+                    if(error)
+                    {
+                        res.json({kq:0,kqtv_vx:"Error"});
+                    }
+                    else
+                    {
+                        res.json({kq:1,kqtv_vx:V});
+                    }
+                });
             }
     });
 }

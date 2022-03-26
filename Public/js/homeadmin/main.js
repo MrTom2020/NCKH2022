@@ -765,8 +765,15 @@ function checkBM()
                 console.log(err);
             });
         });
+        var id = "";
+        $("#iphtEmail").change(function()
+        {
+            var x = document.getElementById("iphtEmail").selectedIndex;
+            id = dt_User[x]._id;
+        });
         $("#btny").click(function(){
            $.post("../insert_vx",{
+            IdUser:id,
             Tenvx:$("#t_vx").val(),
             Loai:$("#l_vx").val(),
             Noitiem:$("#n_vx").val(),

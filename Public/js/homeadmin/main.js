@@ -701,6 +701,17 @@ function checkBM()
         }
         fr.appendChild(iphtEmail);
 
+        var t_id = document.createElement("label");
+        t_id.setAttribute('class','form-label');
+        t_id.setAttribute('style','margin-top:2vh');
+        t_id.innerHTML = "ID người dùng";
+        var i_id = document.createElement("input");
+        i_id.setAttribute('id','id_userr');
+        i_id.setAttribute('class','form-control col-sm-6');
+        fr.appendChild(t_id);
+        fr.appendChild(i_id);
+
+
         var t_vx = document.createElement("label");
         t_vx.setAttribute('class','form-label');
         t_vx.setAttribute('style','margin-top:2vh');
@@ -765,11 +776,11 @@ function checkBM()
                 console.log(err);
             });
         });
-        var id = "";
         $("#iphtEmail").change(function()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
-            id = dt_User[x]._id;
+            i_id = dt_User[x]._id;
+            
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{

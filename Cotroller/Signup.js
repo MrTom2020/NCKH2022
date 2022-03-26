@@ -60,7 +60,7 @@ module.exports = function(app)
         l = str.lastIndexOf("/");
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
-        user.find({Email:nameUser}).exec(function(err, u)
+        user.find({_id:nameUser}).exec(function(err, u)
         {
          if (err) throw err;
          console.log(u[0].Email.toString());

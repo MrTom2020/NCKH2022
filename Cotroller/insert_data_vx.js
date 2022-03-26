@@ -27,7 +27,7 @@ module.exports = function(app)
                     }
                     else
                     {
-                        res.json({kq:1,kqtv_vx:V});
+                        res.json({kq:1,kqtv_vx:v});
                     }
                 });
             }

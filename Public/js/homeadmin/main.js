@@ -696,7 +696,7 @@ function checkBM()
         for($i = 0;$i < dt_User.length;$i++)
         {
             var op = document.createElement("option");
-            op.innerHTML = dt_User[$i].name.toString();
+            op.innerHTML = dt_User[$i].Email.toString();
             iphtEmail.appendChild(op);
         }
         fr.appendChild(iphtEmail);

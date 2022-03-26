@@ -525,145 +525,145 @@ function checkBM()
       }
       function updateuser()
       {
-        var myTableDiv = document.getElementById("content2");
-        myTableDiv.innerHTML = "";
-        var t = document.createElement("h3");
-        t.setAttribute('style','margin-left:2vw');
-        t.innerHTML = "Cập nhật thông tin người tiêm";
+        // var myTableDiv = document.getElementById("content2");
+        // myTableDiv.innerHTML = "";
+        // var t = document.createElement("h3");
+        // t.setAttribute('style','margin-left:2vw');
+        // t.innerHTML = "Cập nhật thông tin người tiêm";
 
-        var fr = document.createElement("form");
-        fr.setAttribute('style','margin-left:2vh');
+        // var fr = document.createElement("form");
+        // fr.setAttribute('style','margin-left:2vh');
     
-        var tEmail = document.createElement("label");
-        tEmail.setAttribute('class','form-label');    
-        tEmail.innerHTML = "Email";
-        tEmail.setAttribute('style','margin-top:6vh');
-        var iphtEmail = document.createElement("select");
-        iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < dt_User.length;$i++)
-        {
-            var op = document.createElement("option");
-            op.innerHTML = dt_User[$i].Email.toString();
-            iphtEmail.appendChild(op);
-        }
-        fr.appendChild(tEmail);
-        fr.appendChild(iphtEmail);
+        // var tEmail = document.createElement("label");
+        // tEmail.setAttribute('class','form-label');    
+        // tEmail.innerHTML = "Email";
+        // tEmail.setAttribute('style','margin-top:6vh');
+        // var iphtEmail = document.createElement("select");
+        // iphtEmail.setAttribute('id','iphtEmail');
+        // iphtEmail.setAttribute('class','form-control col-sm-6');
+        // for($i = 0;$i < dt_User.length;$i++)
+        // {
+        //     var op = document.createElement("option");
+        //     op.innerHTML = dt_User[$i].Email.toString();
+        //     iphtEmail.appendChild(op);
+        // }
+        // fr.appendChild(tEmail);
+        // fr.appendChild(iphtEmail);
 
-        var tPassword = document.createElement("label");
-        tPassword.setAttribute('class','form-label');    
-        tPassword.innerHTML = "Mật khẩu"; 
-        tPassword.setAttribute('style','margin-top:2vh');
-        var iphtPassword = document.createElement("input");
-        iphtPassword.setAttribute('type','password');
-        iphtPassword.setAttribute('id','iphtPassword');
-        iphtPassword.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tPassword);
-        fr.appendChild(iphtPassword);
+        // var tPassword = document.createElement("label");
+        // tPassword.setAttribute('class','form-label');    
+        // tPassword.innerHTML = "Mật khẩu"; 
+        // tPassword.setAttribute('style','margin-top:2vh');
+        // var iphtPassword = document.createElement("input");
+        // iphtPassword.setAttribute('type','password');
+        // iphtPassword.setAttribute('id','iphtPassword');
+        // iphtPassword.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tPassword);
+        // fr.appendChild(iphtPassword);
 
-        var t_again_Password = document.createElement("label");
-        t_again_Password.setAttribute('class','form-label'); 
-        t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
-        t_again_Password.setAttribute('style','margin-top:2vh');
-        var ipht_again_Password = document.createElement("input");
-        ipht_again_Password.setAttribute('type','password');
-        ipht_again_Password.setAttribute('id','ipht_again_Password');
-        ipht_again_Password.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(t_again_Password);
-        fr.appendChild(ipht_again_Password);
+        // var t_again_Password = document.createElement("label");
+        // t_again_Password.setAttribute('class','form-label'); 
+        // t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
+        // t_again_Password.setAttribute('style','margin-top:2vh');
+        // var ipht_again_Password = document.createElement("input");
+        // ipht_again_Password.setAttribute('type','password');
+        // ipht_again_Password.setAttribute('id','ipht_again_Password');
+        // ipht_again_Password.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(t_again_Password);
+        // fr.appendChild(ipht_again_Password);
 
-        var tName = document.createElement("label");
-        tName.setAttribute('class','form-label'); 
-        tName.innerHTML = "Họ và tên";
-        tName.setAttribute('style','margin-top:2vh');
-        var iphtName = document.createElement("input");
-        iphtName.setAttribute('id','iphtName');
-        iphtName.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tName);
-        fr.appendChild(iphtName);
+        // var tName = document.createElement("label");
+        // tName.setAttribute('class','form-label'); 
+        // tName.innerHTML = "Họ và tên";
+        // tName.setAttribute('style','margin-top:2vh');
+        // var iphtName = document.createElement("input");
+        // iphtName.setAttribute('id','iphtName');
+        // iphtName.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tName);
+        // fr.appendChild(iphtName);
 
-        var tSDT = document.createElement("label");
-        tSDT.setAttribute('class','form-label'); 
-        tSDT.innerHTML = "Số điện thoại";
-        tSDT.setAttribute('style','margin-top:2vh');
-        var iphtSDT = document.createElement("input");
-        iphtSDT.setAttribute('id','iphtSDT');
-        iphtSDT.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tSDT);
-        fr.appendChild(iphtSDT);
+        // var tSDT = document.createElement("label");
+        // tSDT.setAttribute('class','form-label'); 
+        // tSDT.innerHTML = "Số điện thoại";
+        // tSDT.setAttribute('style','margin-top:2vh');
+        // var iphtSDT = document.createElement("input");
+        // iphtSDT.setAttribute('id','iphtSDT');
+        // iphtSDT.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tSDT);
+        // fr.appendChild(iphtSDT);
 
-        var tBirthDay = document.createElement("label");
-        tBirthDay.setAttribute('class','form-label'); 
-        tBirthDay.innerHTML = "Ngày sinh";
-        tBirthDay.setAttribute('style','margin-top:2vh');
-        var iphtBirthDay = document.createElement("input");
-        iphtBirthDay.setAttribute('id','iphtBirthDay');
-        iphtBirthDay.setAttribute('type','date');
-        iphtBirthDay.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tBirthDay);
-        fr.appendChild(iphtBirthDay);
+        // var tBirthDay = document.createElement("label");
+        // tBirthDay.setAttribute('class','form-label'); 
+        // tBirthDay.innerHTML = "Ngày sinh";
+        // tBirthDay.setAttribute('style','margin-top:2vh');
+        // var iphtBirthDay = document.createElement("input");
+        // iphtBirthDay.setAttribute('id','iphtBirthDay');
+        // iphtBirthDay.setAttribute('type','date');
+        // iphtBirthDay.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tBirthDay);
+        // fr.appendChild(iphtBirthDay);
 
-        var tCMND = document.createElement("label");
-        tCMND.setAttribute('class','form-label');
-        tCMND.innerHTML = "CMND";
-        tCMND.setAttribute('style','margin-top:2vh');
-        var iphtCMND = document.createElement("input");
-        iphtCMND.setAttribute('id','iphtCMND');
-        iphtCMND.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tCMND);
-        fr.appendChild(iphtCMND);
+        // var tCMND = document.createElement("label");
+        // tCMND.setAttribute('class','form-label');
+        // tCMND.innerHTML = "CMND";
+        // tCMND.setAttribute('style','margin-top:2vh');
+        // var iphtCMND = document.createElement("input");
+        // iphtCMND.setAttribute('id','iphtCMND');
+        // iphtCMND.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tCMND);
+        // fr.appendChild(iphtCMND);
 
-        var tDC = document.createElement("label");
-        tDC.setAttribute('class','form-label');
-        tDC.innerHTML = "Địa chỉ";
-        tDC.setAttribute('style','margin-top:2vh');
-        var iphtDC = document.createElement("input");
-        iphtDC.setAttribute('id','iphtDC');
-        iphtDC.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tDC);
-        fr.appendChild(iphtDC);
-        var id;
-        var btny = document.createElement("button");
-        btny.innerHTML = "Đồng ý";
-        btny.setAttribute('class','btn btn-outline-primary');
-        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
-        btny.setAttribute('id','btny');
-        fr.appendChild(btny);
-        myTableDiv.appendChild(t);
-        myTableDiv.appendChild(fr);
-        $("#iphtEmail").change(function()
-        {
-            var x = document.getElementById("iphtEmail").selectedIndex;
-            id = dt_User[x]._id;
-            iphtPassword.value = dt_User[x].Password;
-            iphtDC.value  = dt_User[x].DC;
-            iphtSDT.value = dt_User[x].SDT;
-            iphtCMND.value = dt_User[x].CMND;
-            iphtName.value = dt_User[x].Name;
-            iphtBirthDay.value = dt_User[x].BirthDay;
-        });
-        $("#btny").click(function()
-        {
-           $.post('../updatedt',{
-             Email:$("#iphtEmail").val() + "AAA!!!" + id,
-             Password:$("#iphtPassword").val(),
-             Name:$("#iphtName").val(),
-             SDT:$("#iphtSDT").val(),
-             BirthDay:$("#iphtBirthDay").val(),
-             CMND:$("#iphtCMND").val(),
-             DC:$("#iphtDC").val()
-           },function(data)
-           {
-               if(data.kq == 0)
-               {
-                   alert("ko");
-               }
-               else if(data.kq == 1)
-               {
-                alert("Cập nhật thông tin thành công");
-               }
-           });
-        });
+        // var tDC = document.createElement("label");
+        // tDC.setAttribute('class','form-label');
+        // tDC.innerHTML = "Địa chỉ";
+        // tDC.setAttribute('style','margin-top:2vh');
+        // var iphtDC = document.createElement("input");
+        // iphtDC.setAttribute('id','iphtDC');
+        // iphtDC.setAttribute('class','form-control col-sm-6');
+        // fr.appendChild(tDC);
+        // fr.appendChild(iphtDC);
+        // var id;
+        // var btny = document.createElement("button");
+        // btny.innerHTML = "Đồng ý";
+        // btny.setAttribute('class','btn btn-outline-primary');
+        // btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        // btny.setAttribute('id','btny');
+        // fr.appendChild(btny);
+        // myTableDiv.appendChild(t);
+        // myTableDiv.appendChild(fr);
+        // $("#iphtEmail").change(function()
+        // {
+        //     var x = document.getElementById("iphtEmail").selectedIndex;
+        //     id = dt_User[x]._id;
+        //     iphtPassword.value = dt_User[x].Password;
+        //     iphtDC.value  = dt_User[x].DC;
+        //     iphtSDT.value = dt_User[x].SDT;
+        //     iphtCMND.value = dt_User[x].CMND;
+        //     iphtName.value = dt_User[x].Name;
+        //     iphtBirthDay.value = dt_User[x].BirthDay;
+        // });
+        // $("#btny").click(function()
+        // {
+        //    $.post('../updatedt',{
+        //      Email:$("#iphtEmail").val() + "AAA!!!" + id,
+        //      Password:$("#iphtPassword").val(),
+        //      Name:$("#iphtName").val(),
+        //      SDT:$("#iphtSDT").val(),
+        //      BirthDay:$("#iphtBirthDay").val(),
+        //      CMND:$("#iphtCMND").val(),
+        //      DC:$("#iphtDC").val()
+        //    },function(data)
+        //    {
+        //        if(data.kq == 0)
+        //        {
+        //            alert("ko");
+        //        }
+        //        else if(data.kq == 1)
+        //        {
+        //         alert("Cập nhật thông tin thành công");
+        //        }
+        //    });
+        // });
       }
       function insert_vx()
       {

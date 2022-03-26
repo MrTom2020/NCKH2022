@@ -54,7 +54,7 @@ module.exports = function(app)
 // ]};
         //b
         //res.send(app.get('title'));
-        res.send(req);
+        res.send(res);
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.8kkbk.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

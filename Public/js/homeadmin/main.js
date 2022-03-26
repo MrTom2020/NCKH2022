@@ -268,7 +268,7 @@ $(document).ready(function()
     // });
     $("#inputdata").click(function()
     {
-        tableCreate();
+      //  tableCreate();
     });
     $("#test").click(function()
     {

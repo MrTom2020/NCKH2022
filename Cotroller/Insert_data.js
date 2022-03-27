@@ -34,7 +34,7 @@ module.exports = function(app)
                // res.json({kq:1,kqtv:u1[0].Email.length});
                 if(u1[0].Email.length != 0)
                 {
-                    res.json({kq:0,kqtv:"ok"});
+                    res.json({kq:1,kqtv:"ok"});
                 }
             //     u.save(function(error)
             // {

@@ -31,7 +31,7 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:err});
               }
               else{
-                  //if(Object.values(u1).length === 0)
+                  if(Object.v(u1).length === 0)
                   {
                     res.json({kq:1,kqtv:err});
                 //     u.save(function(error)
@@ -49,7 +49,7 @@ module.exports = function(app)
             //       else
             //       {
             //         res.json({kq:0,kqtv:error});
-            //       }
+                   }
               } 
               });
         }

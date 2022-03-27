@@ -353,7 +353,7 @@ function checkBM()
 
         var tName = document.createElement("label");
         tName.setAttribute('class','form-label');
-        tName.innerHTML = "Họ và tên";
+        tName.innerHTML = "Họ và tên 123";
         tName.setAttribute('style','margin-top:2vh');
         var iphtName = document.createElement("input");
         iphtName.setAttribute('id','iphtName');

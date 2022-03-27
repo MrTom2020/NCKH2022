@@ -5,7 +5,6 @@ module.exports = function(app)
     app.post('/insertdt',function(req,res)
     {
         if(!req.body.Email ||
-        !req.body.Password ||
         !req.body.Name ||
         !req.body.SDT ||
         !req.body.BirthDay ||
@@ -18,7 +17,6 @@ module.exports = function(app)
         {
             var u = new user({
                 Email:req.body.Email,
-                Password:req.body.Password,
                 Name:req.body.Name,
                 SDT:req.body.SDT,
                 BirthDay:req.body.BirthDay,

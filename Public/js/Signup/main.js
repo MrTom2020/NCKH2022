@@ -6,7 +6,6 @@
   $("#submit").click(function(){
     $.post('../insertdt',{
       Email:$("#email").val(),
-      Password:$("#iphtPassword").val(),
      Name: $("#father_name").val() + " " + $("#name").val(),
      SDT:$("#pincode").val(),
       BirthDay:$("#birth_date").val(),

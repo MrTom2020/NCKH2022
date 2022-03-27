@@ -31,19 +31,19 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:err});
               }
               else{
-                res.json({kq:1,kqtv:err});
-            //       if(u1.length == 0)
-            //       {
-            //         u.save(function(error)
-            //         {
-            //           if(error)
-            //         {
-            //            res.json({kq:0,kqtv:error});
-            //         }
-            //         else
-            //        {
-            //            res.json({kq:1,kqtv:u});
-            //        }
+                  if(u1.length === 0)
+                  {
+                    res.json({kq:1,kqtv:err});
+                //     u.save(function(error)
+                //     {
+                //       if(error)
+                //     {
+                //        res.json({kq:0,kqtv:error});
+                //     }
+                //     else
+                //    {
+                //        res.json({kq:1,kqtv:u});
+                //    }
             //    });
             //       }
             //       else

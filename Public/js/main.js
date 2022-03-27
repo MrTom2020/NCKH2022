@@ -22,16 +22,12 @@
             {
                 window.location="https://nckh2022.herokuapp.com/Admin/home";
             }
-            // alert(data.kq.toString());
         });
-       // window.location="https://nckh2022.herokuapp.com/home";
     });
     $('#btn_signup').click(function()
     {
         window.location="https://nckh2022.herokuapp.com/Signup";
     });
-    /*==================================================================
-    [ Validate ]*/
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){

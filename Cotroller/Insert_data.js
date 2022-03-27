@@ -28,27 +28,28 @@ module.exports = function(app)
             {
               if (err)
               {
-
+                res.json({kq:0,kqtv:err});
               }
               else{
-                  if(u1.length == 0)
-                  {
-                    u.save(function(error)
-                    {
-                      if(error)
-                    {
-                       res.json({kq:0,kqtv:error});
-                    }
-                    else
-                   {
-                       res.json({kq:1,kqtv:u});
-                   }
-               });
-                  }
-                  else
-                  {
-                    res.json({kq:0,kqtv:error});
-                  }
+                res.json({kq:1,kqtv:err});
+            //       if(u1.length == 0)
+            //       {
+            //         u.save(function(error)
+            //         {
+            //           if(error)
+            //         {
+            //            res.json({kq:0,kqtv:error});
+            //         }
+            //         else
+            //        {
+            //            res.json({kq:1,kqtv:u});
+            //        }
+            //    });
+            //       }
+            //       else
+            //       {
+            //         res.json({kq:0,kqtv:error});
+            //       }
               } 
               });
         }

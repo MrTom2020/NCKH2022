@@ -433,7 +433,6 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-           // alert("123");
              $.post('../insertdt',{
              Email:$("#iphtEmail").val(),
              Password:$("#iphtPassword").val(),

@@ -412,7 +412,7 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-            alert(document.getElementById("iphtBirthDay").value);
+            alert(document.getElementById("iphtCMND").value);
         //      $.post('../insertdt',{
         //      Email:$("#iphtEmail").val(),
         //     Name:$("#iphtName").val(),

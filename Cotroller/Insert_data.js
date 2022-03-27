@@ -15,55 +15,26 @@ module.exports = function(app)
         }
         else
         {
-            user.find({Email:req.body.Email}).exec(function(err, u1)
+            var u = new user({
+                Email:req.body.Email,
+                Name:req.body.Name,
+                SDT:req.body.SDT,
+                BirthDay:req.body.BirthDay,
+                CMND:req.body.CMND,
+                DC:req.body.DC,
+                ID_TH:""
+            });
+            u.save(function(error)
             {
-              if (err)
-              {
-
-              }
-              else{
-               // res.json({kq:1,kqtv:u1[0].Email.length});
-                if(u1[0].Email.length === 0)
-                {
-                    res.json({kq:1,kqtv:"ok"});
-                }
-                else
-                {
-                    var u = new user({
-                        Email:req.body.Email,
-                        Name:req.body.Name,
-                        SDT:req.body.SDT,
-                        BirthDay:req.body.BirthDay,
-                        CMND:req.body.CMND,
-                        DC:req.body.DC,
-                        ID_TH:""
-                    });
-                   u.save(function(error)
-                 {
                 if(error)
                 {
-                    res.json({kq:0,kqtv:error});
+                    res.json({kq:0,kqtv:"Thiếu tham số"});
                 }
                 else
                 {
                     res.json({kq:1,kqtv:u});
                 }
             });
-                }
-            //     u.save(function(error)
-            // {
-            //     if(error)
-            //     {
-            //         res.json({kq:0,kqtv:error});
-            //     }
-            //     else
-            //     {
-            //         res.json({kq:1,kqtv:u});
-            //     }
-            // });
-              }
-                res.send(u);  
-              });
         }
     });
 }

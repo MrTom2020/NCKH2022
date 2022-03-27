@@ -1,5 +1,6 @@
 var dt_User;
 var kt;
+var id;
 var currentAccount = "";
 var constract_MM;
 $(document).ready(function()
@@ -241,6 +242,19 @@ $(document).ready(function()
         else
         {
             console.log(error + "ok");
+            $.post('../update',{
+                Email:data.returnValues[0] +"AAA!!!" + id
+              },function(data)
+              {
+                  if(data.kq == 0)
+                  {
+                      alert("ko");
+                  }
+                  else if(data.kq == 1)
+                  {
+                   alert("Cập nhật thông tin thành công");
+                  }
+              });
         }
     });
     checkBM();
@@ -586,7 +600,6 @@ function checkBM()
         iphtDC.setAttribute('class','form-control col-sm-6');
         fr.appendChild(tDC);
         fr.appendChild(iphtDC);
-        var id;
         var btny = document.createElement("button");
         btny.innerHTML = "Đồng ý";
         btny.setAttribute('class','btn btn-outline-primary');
@@ -737,7 +750,7 @@ function checkBM()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
             i_id.value = dt_User[x]._id;
-            
+            id = dt_User[x]._id;
         });
         $("#btny").click(function(){
            $.post("../insert_vx",{

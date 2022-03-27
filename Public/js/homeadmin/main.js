@@ -536,28 +536,6 @@ function checkBM()
         fr.appendChild(tEmail);
         fr.appendChild(iphtEmail);
 
-        var tPassword = document.createElement("label");
-        tPassword.setAttribute('class','form-label');    
-        tPassword.innerHTML = "Mật khẩu"; 
-        tPassword.setAttribute('style','margin-top:2vh');
-        var iphtPassword = document.createElement("input");
-        iphtPassword.setAttribute('type','password');
-        iphtPassword.setAttribute('id','iphtPassword');
-        iphtPassword.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(tPassword);
-        fr.appendChild(iphtPassword);
-
-        var t_again_Password = document.createElement("label");
-        t_again_Password.setAttribute('class','form-label'); 
-        t_again_Password.innerHTML = "Nhập lại mật khẩu"; 
-        t_again_Password.setAttribute('style','margin-top:2vh');
-        var ipht_again_Password = document.createElement("input");
-        ipht_again_Password.setAttribute('type','password');
-        ipht_again_Password.setAttribute('id','ipht_again_Password');
-        ipht_again_Password.setAttribute('class','form-control col-sm-6');
-        fr.appendChild(t_again_Password);
-        fr.appendChild(ipht_again_Password);
-
         var tName = document.createElement("label");
         tName.setAttribute('class','form-label'); 
         tName.innerHTML = "Họ và tên";
@@ -621,7 +599,6 @@ function checkBM()
         {
             var x = document.getElementById("iphtEmail").selectedIndex;
             id = dt_User[x]._id;
-            iphtPassword.value = dt_User[x].Password;
             iphtDC.value  = dt_User[x].DC;
             iphtSDT.value = dt_User[x].SDT;
             iphtCMND.value = dt_User[x].CMND;
@@ -632,7 +609,6 @@ function checkBM()
         {
            $.post('../updatedt',{
              Email:$("#iphtEmail").val() + "AAA!!!" + id,
-             Password:$("#iphtPassword").val(),
              Name:$("#iphtName").val(),
              SDT:$("#iphtSDT").val(),
              BirthDay:$("#iphtBirthDay").val(),

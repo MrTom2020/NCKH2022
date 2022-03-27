@@ -54,7 +54,7 @@ module.exports = function(app)
         }
         else if(db)
          {
-            console.log("ok 3");
+            console.log("ok");
         }
         });
         user.find().exec(function(err, u)

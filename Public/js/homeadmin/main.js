@@ -3,7 +3,7 @@ var kt;
 var id;
 var currentAccount = "";
 var constract_MM;
-var user = require("../Models/user");
+import user from "../Models/use";
 $(document).ready(function()
 {
     const api = [

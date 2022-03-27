@@ -24,10 +24,6 @@
             }
         });
     });
-    $('#btn_signup').click(function()
-    {
-        window.location="https://nckh2022.herokuapp.com/Signup";
-    });
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){

@@ -31,7 +31,7 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:err});
               }
               else{
-                  if(u[0].Email !== req.body.Email.trim())
+                  if(u[0].Email !== req.body.Email)
                   {
                     res.json({kq:1,kqtv:err});
                     u.save(function(error)

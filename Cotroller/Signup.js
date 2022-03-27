@@ -42,7 +42,7 @@ module.exports = function(app)
         user.find({_id:nameUser}).exec(function(err, u)
         {
          if (err) throw err;
-         res.send(u[1]);  
+         res.send(u[0]);  
        });
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){

@@ -4,7 +4,7 @@ $(document).ready(function(){
       $('#register-form').reset();
   });
   $("#submit").click(function(){
-    $.post('../../insertdt',{
+    $.post('../../../insertdt',{
       Email:$("#email").val(),
      Name: $("#father_name").val() + " " + $("#name").val(),
      SDT:$("#pincode").val(),

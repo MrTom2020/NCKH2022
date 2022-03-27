@@ -245,9 +245,6 @@ $(document).ready(function()
             alert(data.transactionHash);
             var myTableDiv = document.getElementById("content2");
             myTableDiv.innerHTML = "";
-    
-           
-    
             var btny = document.createElement("button");
             btny.innerHTML ="Cập nhật mã Txn Hash";
             btny.setAttribute('class','btn btn-outline-primary');
@@ -269,14 +266,6 @@ $(document).ready(function()
                       }
                   });
             });
-
-            // web3_infura.eth.sendSignedTransaction(raw, function (err, transactionHash) {
-            //     //console.log(transactionHash);
-            //     alert(transaction);
-            //   });
-          //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
-          
-           // alert(data.blockHash);
         }
     });
     checkBM();

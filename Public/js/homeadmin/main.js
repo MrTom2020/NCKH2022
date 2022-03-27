@@ -245,7 +245,7 @@ $(document).ready(function()
             //     //console.log(transactionHash);
             //     alert(transaction);
             //   });
-            alert(constract_infura.eth.sendSignedTransaction.value);
+            alert(data.eth);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

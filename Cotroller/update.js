@@ -7,7 +7,7 @@ module.exports = function(app)
             var s = req.body.Email;
             var vt = s.indexOf("AAA!!!",0);
             var e = s.substring(0,vt);
-            var id = s.substring(e.length,s.length);
+            var id = s.substring(e.length + 6,s.length);
             user.findOneAndUpdate({_id:id},
             {
                 ID_TH:e

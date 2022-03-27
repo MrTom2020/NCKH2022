@@ -9,7 +9,7 @@ module.exports = function(app)
     app.get("/",function(req,res){
         res.render("login");
     });
-    app.get("/admin",function(req,res)
+    app.get("/Admin",function(req,res)
     {
         res.render("admin");
     });
@@ -17,19 +17,11 @@ module.exports = function(app)
     {
         res.render("Signup");
     });
-    app.get("/User/home",function(req,res)
-    {
-        res.render("User/home");
-    });
     app.get("/Admin/home",function(req,res)
     {
         res.render("Admin/home");
     });
     app.get("/Admin/*",function(req,res)
-    {
-        res.render("Err");
-    });
-    app.get("/User/*",function(req,res)
     {
         res.render("Err");
     });

@@ -31,24 +31,24 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:err});
               }
               else{
-                  if(Object.v(u1).length === 0)
+                  if(u[0].Email !== req.body.Email.trim())
                   {
                     res.json({kq:1,kqtv:err});
-                //     u.save(function(error)
-                //     {
-                //       if(error)
-                //     {
-                //        res.json({kq:0,kqtv:error});
-                //     }
-                //     else
-                //    {
-                //        res.json({kq:1,kqtv:u});
-                //    }
-            //    });
-            //       }
-            //       else
-            //       {
-            //         res.json({kq:0,kqtv:error});
+                    u.save(function(error)
+                    {
+                      if(error)
+                    {
+                       res.json({kq:0,kqtv:error});
+                    }
+                    else
+                   {
+                       res.json({kq:1,kqtv:u});
+                   }
+               });
+                  }
+                  else
+                  {
+                    res.json({kq:0,kqtv:error});
                    }
               } 
               });

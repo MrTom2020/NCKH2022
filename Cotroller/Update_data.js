@@ -5,7 +5,6 @@ module.exports = function(app)
     app.post('/updatedt',function(req,res)
     {
         if(!req.body.Email ||
-        !req.body.Password ||
         !req.body.Name ||
         !req.body.SDT ||
         !req.body.BirthDay ||
@@ -26,8 +25,7 @@ module.exports = function(app)
            SDT:req.body.SDT,
            BirthDay:req.body.BirthDay,
            CMND:req.body.CMND,
-           DC:req.body.DC,
-           Password:req.body.Password},(err)=>{
+           DC:req.body.DC},(err)=>{
               if(err)
               {
                 res.json({kq:0,kqtv:"Thiếu tham số"});

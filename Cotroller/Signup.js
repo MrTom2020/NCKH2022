@@ -13,10 +13,6 @@ module.exports = function(app)
     {
         res.render("admin");
     });
-    app.get("/Signup",function(req,res)
-    {
-        res.render("Signup");
-    });
     app.get("/Admin/home",function(req,res)
     {
         res.render("Admin/home");

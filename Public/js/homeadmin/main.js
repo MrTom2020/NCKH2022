@@ -241,7 +241,7 @@ $(document).ready(function()
         }
         else
         {
-            alert(data.returnValues[3]);
+            alert(data.constract_MM.Contract);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

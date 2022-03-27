@@ -241,20 +241,21 @@ $(document).ready(function()
         }
         else
         {
-            console.log(error + "ok");
-            $.post('../update',{
-                Email:data.returnValues[0] +"AAA!!!" + id
-              },function(data)
-              {
-                  if(data.kq == 0)
-                  {
-                      alert("ko");
-                  }
-                  else if(data.kq == 1)
-                  {
-                   alert("Cập nhật thông tin thành công");
-                  }
-              });
+            alert(data.returnValues[0]);
+            // console.log(error + "ok");
+            // $.post('../update',{
+            //     Email:data.returnValues[0] +"AAA!!!" + id
+            //   },function(data)
+            //   {
+            //       if(data.kq == 0)
+            //       {
+            //           alert("ko");
+            //       }
+            //       else if(data.kq == 1)
+            //       {
+            //        alert("Cập nhật thông tin thành công");
+            //       }
+            //   });
         }
     });
     checkBM();

@@ -57,12 +57,11 @@ module.exports = function(app)
             console.log("ok 3");
         }
         });
-        // user.find().exec(function(err, u)
-        //      {
-        //       if (err) throw err;
-        //       console.log(u[0].Email.toString());
-        //       chuoi2 = u;  
-        //     });
+        user.find().exec(function(err, u)
+             {
+              if (err) throw err;
+              chuoi2 = u;  
+            });
 
         //    user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},
         //    {Name:"hà lan anh abcdef",

@@ -245,7 +245,8 @@ $(document).ready(function()
             //     //console.log(transactionHash);
             //     alert(transaction);
             //   });
-            alert(data.eth.transactionConfirmationBlocks);
+            alert(web3.eth.getTransaction('0x9fc76417374aa880d4449a1f7f31ec597f00b1f6f3dd2d66f4c9c6c445836d8b§234')
+            .then(console.log));
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

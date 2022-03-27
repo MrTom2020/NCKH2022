@@ -497,8 +497,9 @@ function checkBM()
         tb.appendChild(thd);
 
         var tbody = document.createElement("tbody");
-
-        for($i = 0; $i < dt_User.length;$i++)
+        if(dt_User.length != 0)
+        {
+            for($i = 0; $i < dt_User.length;$i++)
         {
             var trr = document.createElement("tr");
             var td1 = document.createElement("td");
@@ -522,6 +523,8 @@ function checkBM()
                 trr.appendChild(td6);
             tbody.appendChild(trr);
         }
+        }
+        
         tb.appendChild(tbody);
         myTableDiv.appendChild(tb);
       }
@@ -542,12 +545,15 @@ function checkBM()
         tEmail.setAttribute('style','margin-top:6vh');
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < dt_User.length;$i++)
+        iphtEmail.setAttribute('class','form-control col-sm-6');\
+        if(dt_User.length != 0)
+        {
+            for($i = 0;$i < dt_User.length;$i++)
         {
             var op = document.createElement("option");
             op.innerHTML = dt_User[$i].Email.toString();
             iphtEmail.appendChild(op);
+        }
         }
         fr.appendChild(tEmail);
         fr.appendChild(iphtEmail);
@@ -687,11 +693,14 @@ function checkBM()
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        for($i = 0;$i < dt_User.length;$i++)
+        if(dt_User.length != 0)
+        {
+            for($i = 0;$i < dt_User.length;$i++)
         {
             var op = document.createElement("option");
             op.innerHTML = dt_User[$i].Email.toString();
             iphtEmail.appendChild(op);
+        }
         }
         fr.appendChild(iphtEmail);
 

@@ -3,7 +3,6 @@ var kt;
 var id;
 var currentAccount = "";
 var constract_MM;
-import user from "../../../Models/user";
 $(document).ready(function()
 {
     const api = [
@@ -249,7 +248,6 @@ $(document).ready(function()
           //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
           
            // alert(data.blockHash);
-            console.log(error + "ok");
             $.post('../update',{
                 Email:data.blockHash +"AAA!!!" + id
               },function(data)

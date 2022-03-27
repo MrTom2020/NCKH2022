@@ -268,7 +268,7 @@ $(document).ready(function()
     // });
     $("#inputdata").click(function()
     {
-      //  tableCreate();
+        tableCreate();
     });
     $("#test").click(function()
     {
@@ -278,9 +278,9 @@ $(document).ready(function()
     {
         updateuser();
     });
-    $("#submit").click(function()
+    $("#btnDangKy").click(function()
     {
-        alert("Vui lòng đăng nhập MetaMask");
+        //alert("Vui lòng đăng nhập MetaMask");
     //    if(currentAccount.length == 0)
     //    {
     //         alert("Vui lòng đăng nhập MetaMask");
@@ -433,27 +433,27 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-            alert("123");
-        //      $.post('../insertdt',{
-        //      Email:$("#iphtEmail").val(),
-        //      Password:$("#iphtPassword").val(),
-        //     Name:$("#iphtName").val(),
-        //     SDT:$("#iphtSDT").val(),
-        //      BirthDay:$("#iphtBirthDay").val(),
-        //      CMND:$("#iphtCMND").val(),
-        //     DC:$("#iphtDC").val()
-        //      },function(data)
-        //      {
-        //        if(data.kq == 1)
-        //        {
-        //         alert("Thêm dữ liệu thành công");
-        //        }
-        //        else if(data.kq == 0)
-        //        {
-        //            alert("Thiếu tham số");
-        //        }
+           // alert("123");
+             $.post('../insertdt',{
+             Email:$("#iphtEmail").val(),
+             Password:$("#iphtPassword").val(),
+            Name:$("#iphtName").val(),
+            SDT:$("#iphtSDT").val(),
+             BirthDay:$("#iphtBirthDay").val(),
+             CMND:$("#iphtCMND").val(),
+            DC:$("#iphtDC").val()
+             },function(data)
+             {
+               if(data.kq == 1)
+               {
+                alert("Thêm dữ liệu thành công");
+               }
+               else if(data.kq == 0)
+               {
+                   alert("Thiếu tham số");
+               }
                 
-        //    });
+           });
          }
         );
         

@@ -4,6 +4,6 @@
       $('#register-form').reset();
   });
   $("#submit").click(function(){
-    //alert("aaaa");
+    alert("aaaa");
   });
 })(jQuery);

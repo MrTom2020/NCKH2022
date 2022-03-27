@@ -24,17 +24,33 @@ module.exports = function(app)
                 DC:req.body.DC,
                 ID_TH:""
             });
-            u.save(function(error)
+            user.find({Email:req.body.Email}).exec(function(err, u1)
             {
-                if(error)
-                {
+              if (err)
+              {
+
+              }
+              else{
+                  if(u1.length == 0)
+                  {
+                    u.save(function(error)
+                    {
+                      if(error)
+                    {
+                       res.json({kq:0,kqtv:error});
+                    }
+                    else
+                   {
+                       res.json({kq:1,kqtv:u});
+                   }
+               });
+                  }
+                  else
+                  {
                     res.json({kq:0,kqtv:error});
-                }
-                else
-                {
-                    res.json({kq:1,kqtv:u});
-                }
-            });
+                  }
+              } 
+              });
         }
     });
 }

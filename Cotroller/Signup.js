@@ -42,7 +42,6 @@ module.exports = function(app)
         user.find({_id:nameUser}).exec(function(err, u)
         {
          if (err) throw err;
-         console.log(u[0].Email.toString());
          res.send(u);  
        });
     });

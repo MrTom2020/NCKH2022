@@ -241,6 +241,7 @@ $(document).ready(function()
         }
         else
         {
+            alert(data.transactionHash);
             var myTableDiv = document.getElementById("content2");
             myTableDiv.innerHTML = "";
     

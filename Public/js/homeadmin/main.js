@@ -241,6 +241,101 @@ $(document).ready(function()
         }
         else
         {
+            var myTableDiv = document.getElementById("content2");
+            myTableDiv.innerHTML = "";
+    
+            var tl = document.createElement("h3");
+            tl.setAttribute('style','margin-left:1vw');
+            tl.innerHTML = "Nhập thông tin người đã tiêm";
+            myTableDiv.appendChild(tl);
+            
+            var fr = document.createElement("div");
+            fr.setAttribute('style','margin-left:1vw;margin-top:4vh');
+    
+            var t_name_user = document.createElement("label");
+            t_name_user.innerHTML = "Tên người tiêm";
+            t_name_user.setAttribute('class','form-label');
+            fr.appendChild(t_name_user);
+            var iphtEmail = document.createElement("select");
+            iphtEmail.setAttribute('id','iphtEmail');
+            iphtEmail.setAttribute('class','form-control col-sm-6');
+            if(dt_User.length != 0)
+            {
+                for($i = 0;$i < dt_User.length;$i++)
+            {
+                var op = document.createElement("option");
+                op.innerHTML = dt_User[$i].Email.toString();
+                iphtEmail.appendChild(op);
+            }
+            }
+            fr.appendChild(iphtEmail);
+    
+            var t_id = document.createElement("label");
+            t_id.setAttribute('class','form-label');
+            t_id.setAttribute('style','margin-top:2vh');
+            t_id.innerHTML = "ID người dùng";
+            var i_id = document.createElement("input");
+            i_id.setAttribute('id','id_userr');
+            i_id.setAttribute('class','form-control col-sm-6');
+            fr.appendChild(t_id);
+            fr.appendChild(i_id);
+    
+    
+            var t_vx = document.createElement("label");
+            t_vx.setAttribute('class','form-label');
+            t_vx.setAttribute('style','margin-top:2vh');
+            t_vx.innerHTML = "Tên vắc xin";
+            var i_vx = document.createElement("input");
+            i_vx.setAttribute('id','t_vx');
+            i_vx.setAttribute('class','form-control col-sm-6');
+            fr.appendChild(t_vx);
+            fr.appendChild(i_vx);
+    
+            var l_vx = document.createElement("label");
+            l_vx.setAttribute('class','form-label');
+            l_vx.setAttribute('style','margin-top:2vh');
+            l_vx.innerHTML = "Loại vắc xin";
+            var i_vx = document.createElement("input");
+            i_vx.setAttribute('id','l_vx');
+            i_vx.setAttribute('class','form-control col-sm-6');
+            fr.appendChild(l_vx);
+            fr.appendChild(i_vx);
+    
+            var n_vx = document.createElement("label");
+            n_vx.setAttribute('class','form-label');
+            n_vx.setAttribute('style','margin-top:2vh');
+            n_vx.innerHTML = "Nơi tiêm vắc xin";
+            var i_vx = document.createElement("input");
+            i_vx.setAttribute('id','n_vx');
+            i_vx.setAttribute('class','form-control col-sm-6');
+            fr.appendChild(n_vx);
+            fr.appendChild(i_vx);
+    
+            var date_vx = document.createElement("label");
+            date_vx.setAttribute('style','margin-top:2vh');
+            date_vx.setAttribute('class','form-label');
+            date_vx.innerHTML = "Ngày tiêm vắc xin";
+            var i_vx = document.createElement("input");
+            i_vx.setAttribute('type','date');
+            i_vx.setAttribute('id','date_vx');
+            i_vx.setAttribute('class','form-control col-sm-6');
+            fr.appendChild(date_vx);
+            fr.appendChild(i_vx);
+    
+            var btny = document.createElement("button");
+            btny.innerHTML = "Đồng ý";
+            btny.setAttribute('class','btn btn-outline-primary');
+            btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+            btny.setAttribute('id','btny');
+            fr.appendChild(btny);
+    
+            var btn_connect = document.createElement("button");
+            btn_connect.innerHTML = "Kết nối ví";
+            btn_connect.setAttribute('id','btn_connect');
+            btn_connect.setAttribute('class','btn btn-outline-primary');
+            btn_connect.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:1vw;');
+            fr.appendChild(btn_connect);
+            myTableDiv.appendChild(fr);
             // web3_infura.eth.sendSignedTransaction(raw, function (err, transactionHash) {
             //     //console.log(transactionHash);
             //     alert(transaction);

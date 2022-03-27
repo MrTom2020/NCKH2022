@@ -241,7 +241,11 @@ $(document).ready(function()
         }
         else
         {
-            alert(data.message);
+            // web3_infura.eth.sendSignedTransaction(raw, function (err, transactionHash) {
+            //     //console.log(transactionHash);
+            //     alert(transaction);
+            //   });
+            alert(transaction);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

@@ -246,11 +246,8 @@ $(document).ready(function()
             //     alert(transaction);
             //   });
           //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
-          const txHash = await ethereum.request({
-            method: 'eth_sendTransaction',
-            params: [constract_infura],
-          });
-            alert(txHash);
+          
+            alert(data.returnValues[0]);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

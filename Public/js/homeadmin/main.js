@@ -253,7 +253,7 @@ $(document).ready(function()
             btny.setAttribute('id','btny');
             myTableDiv.appendChild(btny);
             $("#btny").click(function(){
-                $.post('../update1',{
+                $.post('../../update1',{
                     Email:data.blockHash +"AAA!!!" + id
                   },function(data1)
                   {

@@ -249,14 +249,14 @@ $(document).ready(function()
            
     
             var btny = document.createElement("button");
-            btny.innerHTML = txnHashh;//data.blockHash;//"Cập nhật mã Txn Hash";
+            btny.innerHTML ="Cập nhật mã Txn Hash";
             btny.setAttribute('class','btn btn-outline-primary');
             btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
             btny.setAttribute('id','btny');
             myTableDiv.appendChild(btny);
             $("#btny").click(function(){
                 $.post('../update1',{
-                    Email:data.blockHash +"AAA!!!" + id
+                    Email:txnHashh +"AAA!!!" + id
                   },function(data1)
                   {
                       if(data1.kq == 0)

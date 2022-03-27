@@ -475,7 +475,7 @@ function checkBM()
         tb.appendChild(thd);
 
         var tbody = document.createElement("tbody");
-        if(dt_User.length != 0)
+        ///if(dt_User.length != 0)
         {
             for($i = 0; $i < dt_User.length;$i++)
         {
@@ -524,7 +524,7 @@ function checkBM()
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        if(dt_User.length != 0)
+        //if(dt_User.length != 0)
         {
             for($i = 0;$i < dt_User.length;$i++)
         {
@@ -671,7 +671,7 @@ function checkBM()
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
         iphtEmail.setAttribute('class','form-control col-sm-6');
-        if(dt_User.length != 0)
+        //if(dt_User.length != 0)
         {
             for($i = 0;$i < dt_User.length;$i++)
         {

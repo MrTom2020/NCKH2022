@@ -107,9 +107,9 @@ module.exports = function(app)
 }
 function a(tk,mk)
 {
-    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/A?retryWrites=true&w=majority';
+    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
   //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/A?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             kqqq = 0;
@@ -128,9 +128,9 @@ function a(tk,mk)
 }
 function b(NameUser)
 {
-    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/A?retryWrites=true&w=majority';
+    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
   //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/A?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
             kqqq = 0;

@@ -1,4 +1,4 @@
-(function($) {
+$(document).ready(function(){
 
   $('#reset').on('click', function(){
       $('#register-form').reset();

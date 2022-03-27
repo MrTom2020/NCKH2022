@@ -32,9 +32,23 @@ module.exports = function(app)
               }
               else{
                // res.json({kq:1,kqtv:u1[0].Email.length});
-                if(u1[0].Email.length != 0)
+                if(u1[0].Email.length === 0)
                 {
                     res.json({kq:1,kqtv:"ok"});
+                }
+                else
+                {
+                   u.save(function(error)
+                 {
+                if(error)
+                {
+                    res.json({kq:0,kqtv:error});
+                }
+                else
+                {
+                    res.json({kq:1,kqtv:u});
+                }
+            });
                 }
             //     u.save(function(error)
             // {

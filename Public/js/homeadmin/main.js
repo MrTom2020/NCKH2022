@@ -245,8 +245,8 @@ $(document).ready(function()
             //     //console.log(transactionHash);
             //     alert(transaction);
             //   });
-            var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
-            alert(transaction1.returnValues[0]);
+          //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
+            alert(data.returnValues[0]);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

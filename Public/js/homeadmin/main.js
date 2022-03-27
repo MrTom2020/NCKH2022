@@ -241,7 +241,7 @@ $(document).ready(function()
         }
         else
         {
-            alert(data);
+            alert(data.message);
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

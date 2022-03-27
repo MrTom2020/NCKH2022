@@ -622,7 +622,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                alert("Cập nhật thông tin thành công");
+                alert(data.kqtv);
                }
            });
         });

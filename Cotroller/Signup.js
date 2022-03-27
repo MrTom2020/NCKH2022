@@ -6,9 +6,6 @@ var chuoi;
 var chuoi2;
 module.exports = function(app)
 {
-    app.get("/",function(req,res){
-        res.render("login");
-    });
     app.get("/Admin",function(req,res)
     {
         res.render("admin");

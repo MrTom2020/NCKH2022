@@ -15,15 +15,6 @@ module.exports = function(app)
         }
         else
         {
-            var u = new user({
-                Email:req.body.Email,
-                Name:req.body.Name,
-                SDT:req.body.SDT,
-                BirthDay:req.body.BirthDay,
-                CMND:req.body.CMND,
-                DC:req.body.DC,
-                ID_TH:""
-            });
             user.find({Email:req.body.Email}).exec(function(err, u1)
             {
               if (err)
@@ -33,6 +24,15 @@ module.exports = function(app)
               else{
                   if(u1[0].Email.length === 0)
                   {
+                    var u = new user({
+                        Email:req.body.Email,
+                        Name:req.body.Name,
+                        SDT:req.body.SDT,
+                        BirthDay:req.body.BirthDay,
+                        CMND:req.body.CMND,
+                        DC:req.body.DC,
+                        ID_TH:""
+                    });
                     res.json({kq:1,kqtv:err});
                     u.save(function(error)
                     {

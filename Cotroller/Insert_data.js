@@ -31,7 +31,7 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:err});
               }
               else{
-                  if(u1.length === 0)
+                  if(Object.entries(u1).length === 0)
                   {
                     res.json({kq:1,kqtv:err});
                 //     u.save(function(error)

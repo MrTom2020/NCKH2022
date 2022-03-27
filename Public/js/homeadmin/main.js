@@ -255,13 +255,13 @@ $(document).ready(function()
             $("#btny").click(function(){
                 $.post('../update1',{
                     Email:data.blockHash +"AAA!!!" + id
-                  },function(data)
+                  },function(data1)
                   {
-                      if(data.kq == 0)
+                      if(data1.kq == 0)
                       {
                           alert("ko");
                       }
-                      else if(data.kq == 1)
+                      else if(data1.kq == 1)
                       {
                        alert("Cập nhật thông tin thành công");
                       }

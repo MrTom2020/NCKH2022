@@ -39,30 +39,30 @@ module.exports = function(app)
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
         var chuoi3;
-        user.find({_id:nameUser}).exec(function(err, u)
-        {
-         if (err) throw err;
-         console.log(u[0].Email.toString());
-         res.send(u);  
-       });
+    //     user.find({_id:nameUser}).exec(function(err, u)
+    //     {
+    //      if (err) throw err;
+    //      console.log(u[0].Email.toString());
+    //      res.send(u);  
+    //    });
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)
         {
-            console.log(err);
+            //console.log(err);
            // kqqq = 0;
         }
         else if(db)
          {
-            console.log("ok");
+            console.log("ok 3");
         }
         });
-        user.find().exec(function(err, u)
-             {
-              if (err) throw err;
-              console.log(u[0].Email.toString());
-              chuoi2 = u;  
-            });
+        // user.find().exec(function(err, u)
+        //      {
+        //       if (err) throw err;
+        //       console.log(u[0].Email.toString());
+        //       chuoi2 = u;  
+        //     });
 
         //    user.findOneAndUpdate({_id:"619a43066dbcf3f00e6737f3"},
         //    {Name:"hà lan anh abcdef",
@@ -105,45 +105,45 @@ module.exports = function(app)
            res.json({loi1:chuoi2,loi2:chuoi})
          });
 }
-function a(tk,mk)
-{
-    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
-  //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-        if(err)
-        {
-            kqqq = 0;
-        }
-        else if(db)
-         {
-           kqqq = 1;
-           user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
-             {
-              if (err) throw err;
-              chuoi2 = u;  
-            });
-        }
-        });
-            return kqqq;
-}
-function b(NameUser)
-{
-    chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
-  //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-    mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
-        if(err)
-        {
-            kqqq = 0;
-        }
-        else if(db)
-         {
-           kqqq = 1;
-           user.find({Email:NameUser}).exec(function(err, u)
-             {
-              if (err) throw err;
-              chuoi2 = u;  
-            });
-        }
-        });
-            return chuoi2;
-}
+// function a(tk,mk)
+// {
+//     chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
+//   //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+//     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+//         if(err)
+//         {
+//             kqqq = 0;
+//         }
+//         else if(db)
+//          {
+//            kqqq = 1;
+//            user.find({Email:'tomhumchinvn@gmail.com'}).exec(function(err, u)
+//              {
+//               if (err) throw err;
+//               chuoi2 = u;  
+//             });
+//         }
+//         });
+//             return kqqq;
+// }
+// function b(NameUser)
+// {
+//     chuoi = 'mongodb+srv://'+ tk.toString() +':'+mk.toString() + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority';
+//   //mongoose.connect(chuoi,{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+//     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
+//         if(err)
+//         {
+//             kqqq = 0;
+//         }
+//         else if(db)
+//          {
+//            kqqq = 1;
+//            user.find({Email:NameUser}).exec(function(err, u)
+//              {
+//               if (err) throw err;
+//               chuoi2 = u;  
+//             });
+//         }
+//         });
+//             return chuoi2;
+// }

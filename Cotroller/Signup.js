@@ -39,12 +39,12 @@ module.exports = function(app)
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
         var chuoi3;
-    //     user.find({_id:nameUser}).exec(function(err, u)
-    //     {
-    //      if (err) throw err;
-    //      console.log(u[0].Email.toString());
-    //      res.send(u);  
-    //    });
+        user.find({_id:nameUser}).exec(function(err, u)
+        {
+         if (err) throw err;
+         console.log(u[0].Email.toString());
+         res.send(u);  
+       });
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){
         if(err)

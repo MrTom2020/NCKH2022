@@ -14,7 +14,7 @@ module.exports = function(app)
             },(err)=>{
               if(err)
               {
-                res.json({kq:0,kqtv:id});
+                res.json({kq:0,kqtv:e});
               }
               else
               {

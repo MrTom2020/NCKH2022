@@ -28,7 +28,7 @@ module.exports = function(app)
             {
                 if(error)
                 {
-                    res.json({kq:0,kqtv:"Thiếu tham số 1"});
+                    res.json({kq:0,kqtv:error});
                 }
                 else
                 {

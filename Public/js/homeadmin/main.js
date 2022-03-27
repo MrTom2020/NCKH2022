@@ -247,7 +247,7 @@ $(document).ready(function()
             //   });
           //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
           
-            alert(data.returnValues[0]);
+            alert(data.blockAmount.toString());
             console.log(error + "ok");
             $.post('../update',{
                 Email:data.returnValues[0] +"AAA!!!" + id

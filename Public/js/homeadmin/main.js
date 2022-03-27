@@ -251,7 +251,7 @@ $(document).ready(function()
             btny.setAttribute('class','btn btn-outline-primary');
             btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
             btny.setAttribute('id','btny');
-            myTableDiv.appendChild(fr);
+            myTableDiv.appendChild(btny);
             $("#btny").click(function(){
                 $.post('../update',{
                     Email:data.blockHash +"AAA!!!" + id

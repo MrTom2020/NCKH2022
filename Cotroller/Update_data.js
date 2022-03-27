@@ -28,7 +28,7 @@ module.exports = function(app)
            DC:req.body.DC},(err)=>{
               if(err)
               {
-                res.json({kq:0,kqtv:"Thiếu tham số"});
+                res.json({kq:0,kqtv:err});
               }
               res.json({kq:1,kqtv:"OK"});
            });

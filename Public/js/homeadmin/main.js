@@ -412,7 +412,7 @@ function checkBM()
         myTableDiv.appendChild(fr);
         $("#btny").click(function()
         {
-            alert(("#iphtEmail").val());
+            alert(("#iphtEmail").val().toString);
         //      $.post('../insertdt',{
         //      Email:$("#iphtEmail").val(),
         //     Name:$("#iphtName").val(),

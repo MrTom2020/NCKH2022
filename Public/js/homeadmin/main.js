@@ -545,7 +545,7 @@ function checkBM()
         tEmail.setAttribute('style','margin-top:6vh');
         var iphtEmail = document.createElement("select");
         iphtEmail.setAttribute('id','iphtEmail');
-        iphtEmail.setAttribute('class','form-control col-sm-6');\
+        iphtEmail.setAttribute('class','form-control col-sm-6');
         if(dt_User.length != 0)
         {
             for($i = 0;$i < dt_User.length;$i++)

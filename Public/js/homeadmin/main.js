@@ -247,10 +247,10 @@ $(document).ready(function()
             //   });
           //  var transaction1 = web3.eth.getTransactionFromBlock(data.returnValues[0], 2);
           
-            alert(data.blockHash);
+           // alert(data.blockHash);
             console.log(error + "ok");
             $.post('../update',{
-                Email:data.returnValues[0] +"AAA!!!" + id
+                Email:data.blockHash +"AAA!!!" + id
               },function(data)
               {
                   if(data.kq == 0)

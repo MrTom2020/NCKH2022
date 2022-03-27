@@ -424,7 +424,7 @@ function checkBM()
              {
                if(data.kq == 1)
                {
-                alert("Thêm dữ liệu thành công");
+                alert(data.kqtv);
                }
                else if(data.kq == 0)
                {
@@ -622,7 +622,7 @@ function checkBM()
                }
                else if(data.kq == 1)
                {
-                alert(data.kqtv.toString());
+                alert("Cập nhật thông tin thành công");
                }
            });
         });

@@ -259,7 +259,7 @@ $(document).ready(function()
                   {
                       if(data1.kq == 0)
                       {
-                          alert("ko");
+                          alert(data1.kqtv);
                       }
                       else if(data1.kq == 1)
                       {

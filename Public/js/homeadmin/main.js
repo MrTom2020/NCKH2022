@@ -241,6 +241,7 @@ $(document).ready(function()
         }
         else
         {
+            var txnHashh = data.transactionHash;
             alert(data.transactionHash);
             var myTableDiv = document.getElementById("content2");
             myTableDiv.innerHTML = "";
@@ -248,7 +249,7 @@ $(document).ready(function()
            
     
             var btny = document.createElement("button");
-            btny.innerHTML = data.blockHash;//"Cập nhật mã Txn Hash";
+            btny.innerHTML = txnHashh;//data.blockHash;//"Cập nhật mã Txn Hash";
             btny.setAttribute('class','btn btn-outline-primary');
             btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
             btny.setAttribute('id','btny');

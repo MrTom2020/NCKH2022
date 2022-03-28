@@ -23,7 +23,7 @@ module.exports = function(app)
                 }
                 else if(u[0].Email.length != 0)
                 {
-                    res.json({kq:0,kqtv:"Đã có tài khoản đăng ký"});
+                    res.json({kq:0,kqtv:"Đã có tài khoản đăng ký "});
                 }
              }  
            });

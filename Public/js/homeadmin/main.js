@@ -436,10 +436,10 @@ function checkBM()
         fr.appendChild(btny);
 
         var btkt = document.createElement("button");
-        btny.innerHTML = "Kiểm tra tài khoản Email";
-        btny.setAttribute('class','btn btn-outline-primary');
-        btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
-        btny.setAttribute('id','btkt');
+        btkt.innerHTML = "Kiểm tra tài khoản Email";
+        btkt.setAttribute('class','btn btn-outline-primary');
+        btkt.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btkt.setAttribute('id','btkt');
         fr.appendChild(btkt);
         
 

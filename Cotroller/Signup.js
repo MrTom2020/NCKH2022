@@ -39,7 +39,7 @@ module.exports = function(app)
         ht = str.substring(email.length + 2,l);
         nameUser = str.substring(l + 1,str.length);
         var chuoi3;
-        user.find({_id:nameUser}).exec(function(err, u)
+        user.find({Email:nameUser}).exec(function(err, u)
         {
          if (err) throw err;
          res.send(u);  

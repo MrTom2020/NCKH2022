@@ -17,11 +17,11 @@ module.exports = function(app)
                 res.json({kq:0,kqtv:"Thiếu tham số"});
              }
              else{
-                if(u[0].Email == null)
+                if(u == null)
                 {
                     res.json({kq:1,kqtv:"OK"});
                 }
-                else if(u[0].Email != null)
+                else if(u != null)
                 {
                     res.json({kq:0,kqtv:"Đã có tài khoản đăng ký "});
                 }

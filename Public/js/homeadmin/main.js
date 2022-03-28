@@ -432,7 +432,7 @@ function checkBM()
         btny.setAttribute('class','btn btn-outline-primary');
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btny');
-        document.getElementById("btny").disabled = true;
+        btny.setAttribute('disabled',true);
         fr.appendChild(btny);
 
         var btkt = document.createElement("button");

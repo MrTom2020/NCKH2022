@@ -455,13 +455,11 @@ function checkBM()
                if(data.kq == 1)
                {
                 btny.setAttribute('disabled',false);
-                fr.appendChild(btny);
                 alert(data.kqtv);
                }
                else if(data.kq == 0)
                {
                 btny.setAttribute('disabled',true);
-                fr.appendChild(btny);
                    alert(data.kqtv);
                }
                 

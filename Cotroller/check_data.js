@@ -21,7 +21,7 @@ module.exports = function(app)
                 {
                     res.json({kq:1,kqtv:"OK"});
                 }
-                else
+                else if(u[0].Email.length != 0
                 {
                     res.json({kq:0,kqtv:"Đã có tài khoản đăng ký"});
                 }

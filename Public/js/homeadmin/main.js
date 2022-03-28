@@ -454,10 +454,12 @@ function checkBM()
              {
                if(data.kq == 1)
                {
+                btny.setAttribute('disabled',false);
                 alert(data.kqtv);
                }
                else if(data.kq == 0)
                {
+                btny.setAttribute('disabled',true);
                    alert(data.kqtv);
                }
                 

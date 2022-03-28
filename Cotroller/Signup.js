@@ -42,7 +42,11 @@ module.exports = function(app)
         user.find({_id:nameUser}).exec(function(err, u)
         {
          if (err) throw err;
-         employees:[u];
+         employees:[
+                    {"firstName":"John", "lastName":"Doe"},
+                    {"firstName":"Anna", "lastName":"Smith"},
+                    {"firstName":"Peter", "lastName":"Jones"}
+                  ];
          res.send(employees);  
        });
     });

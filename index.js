@@ -32,3 +32,4 @@ require("./Cotroller/Insert_data")(app);
 require("./Cotroller/Update_data")(app);
 require("./Cotroller/insert_data_vx")(app);
 require("./Cotroller/update")(app);
+require("./Cotroller/check_data")(app);

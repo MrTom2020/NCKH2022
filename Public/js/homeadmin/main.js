@@ -453,13 +453,13 @@ function checkBM()
              },function(data)
              {
                if(data.kq == 1)
-               {
-                $("#iphtEmail").val() = "";   
+               {  
                 btny.setAttribute('disabled',false);
                 alert(data.kqtv);
                }
                else if(data.kq == 0)
                {
+                $("#iphtEmail").val() = ""; 
                 btny.setAttribute('disabled',true);
                    alert(data.kqtv);
                }

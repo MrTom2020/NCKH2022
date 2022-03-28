@@ -10,23 +10,23 @@ module.exports = function(app)
         }
         else
         {
-            user.find({Email:req.body.Email}).exec(function(err, u)
-            {
-             if (err)
-             {
-                res.json({kq:0,kqtv:"Thiếu tham số"});
-             }
-             else{
-                if(u[0].Email.length === 0)
-                {
-                    res.json({kq:1,kqtv:"OK"});
-                }
-                else
-                {
-                    res.json({kq:0,kqtv:"Đã có tài khoản đăng ký"});
-                }
-             }  
-           });
+        //     user.find({Email:req.body.Email}).exec(function(err, u)
+        //     {
+        //      if (err)
+        //      {
+        //         res.json({kq:0,kqtv:"Thiếu tham số"});
+        //      }
+        //      else{
+        //         if(u[0].Email.length === 0)
+        //         {
+        //             res.json({kq:1,kqtv:"OK"});
+        //         }
+        //         else
+        //         {
+        //             res.json({kq:0,kqtv:"Đã có tài khoản đăng ký"});
+        //         }
+        //      }  
+        //    });
          
         }
     });

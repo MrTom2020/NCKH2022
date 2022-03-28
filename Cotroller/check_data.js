@@ -10,7 +10,7 @@ module.exports = function(app)
         }
         else
         {
-            user.findOne({Email:req.body.Email}).exec(function(err, u)
+            user.find({Email:req.body.Email}).exec(function(err, u)
             {
              if (err)
              {

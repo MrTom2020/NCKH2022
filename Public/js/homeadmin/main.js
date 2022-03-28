@@ -438,7 +438,7 @@ function checkBM()
         var btkt = document.createElement("button");
         btkt.innerHTML = "Kiểm tra tài khoản Email";
         btkt.setAttribute('class','btn btn-outline-primary');
-        btkt.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
+        btkt.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:2vw;');
         btkt.setAttribute('id','btkt');
         fr.appendChild(btkt);
         

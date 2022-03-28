@@ -551,7 +551,7 @@ function checkBM()
         iphtEmail.setAttribute('class','form-control col-sm-6');
         if(dt_User.length != 0)
         {
-            for($i = 0;$i < dt_User.length;$i++)
+            for($i = 0;$i <= dt_User.length;$i++)
         {
             var op = document.createElement("option");
             op.innerHTML = dt_User[$i].Email.toString();

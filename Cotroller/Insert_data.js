@@ -60,7 +60,7 @@ module.exports = function(app)
                 }
                 else
                 {
-                    res.json({kq:1,kqtv:u});
+                    res.json({kq:1,kqtv:"Thêm dữ liệu thành công"});
                 }
             });
         }

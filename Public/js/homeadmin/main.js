@@ -454,6 +454,7 @@ function checkBM()
              {
                if(data.kq == 1)
                {
+                $("#iphtEmail").val() = "";   
                 btny.setAttribute('disabled',false);
                 alert(data.kqtv);
                }

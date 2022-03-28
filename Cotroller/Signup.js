@@ -43,7 +43,7 @@ module.exports = function(app)
         {
          if (err) throw err;
          th:[{u}];
-         res.send(u);  
+         res.send(th);  
        });
     });
     mongoose.connect('mongodb+srv://'+ 'admin01' +':'+'hiep1234' + '@cluster0.3ma3m.mongodb.net/Cluster0?retryWrites=true&w=majority',{useNewUrlParser:true,useUnifiedTopology: true},function(err,db){

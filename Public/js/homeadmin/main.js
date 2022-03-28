@@ -432,40 +432,9 @@ function checkBM()
         btny.setAttribute('class','btn btn-outline-primary');
         btny.setAttribute('style','margin-top:2vh;margin-bottom:2vh;');
         btny.setAttribute('id','btny');
-        btny.setAttribute('disabled',true);
         fr.appendChild(btny);
 
-        var btkt = document.createElement("button");
-        btkt.innerHTML = "Kiểm tra tài khoản Email";
-        btkt.setAttribute('class','btn btn-outline-primary');
-        btkt.setAttribute('style','margin-top:2vh;margin-bottom:2vh;margin-left:2vw;');
-        btkt.setAttribute('id','btkt');
-        fr.appendChild(btkt);
-        
-
         myTableDiv.appendChild(fr);
-        
-        $("#btkt").click(function()
-        {
-           // alert(document.getElementById("iphtDC").value);
-             $.post('../checkEmail',{
-             Email:$("#iphtEmail").val()
-             },function(data)
-             {
-               if(data.kq == 1)
-               {  
-               // btny.setAttribute('disabled',false);
-                alert(data.kqtv);
-               }
-               else if(data.kq == 0)
-               {
-               // btny.setAttribute('disabled',true);
-                   alert(data.kqtv);
-               }
-                
-           });
-         }
-        );
         $("#btny").click(function()
         {
            // alert(document.getElementById("iphtDC").value);

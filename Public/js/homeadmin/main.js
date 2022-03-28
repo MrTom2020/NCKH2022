@@ -454,13 +454,12 @@ function checkBM()
              {
                if(data.kq == 1)
                {  
-                btny.setAttribute('disabled',false);
+               // btny.setAttribute('disabled',false);
                 alert(data.kqtv);
                }
                else if(data.kq == 0)
                {
-                $("#iphtEmail").val() = ""; 
-                btny.setAttribute('disabled',true);
+               // btny.setAttribute('disabled',true);
                    alert(data.kqtv);
                }
                 

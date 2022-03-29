@@ -362,7 +362,7 @@ function checkBM()
        // t.setAttribute('style','margin-left:5vw');
         t.innerHTML = "Nhập thông tin người tiêm";//"Nhập thông tin người tiêm";
         myTableDiv.appendChild(t);
-         var fr = document.createElement("div");
+         var fr = document.createElement("form");
          fr.setAttribute('style','margin-left:2vh');
         
         var tEmail = document.createElement("label");

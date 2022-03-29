@@ -237,7 +237,6 @@ $(document).ready(function()
     constract_infura.events.Send_dt({filter:{},fromBlock:"latest"},function(error,data){
         if(error)
         {
-            console.log(error + "12344aaaaaaaa");
         }
         else
         {

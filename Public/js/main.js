@@ -17,7 +17,7 @@
            Password:$("#pass").val()
         },function(data)
         {
-            alert(data.kq.toString());
+            alert("Đăng nhập thành công");
             if(data.kq == 1)
             {
                 window.location="https://nckh2022.herokuapp.com/Admin/home";
